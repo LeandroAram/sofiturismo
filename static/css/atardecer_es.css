@@ -1,0 +1,1966 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f0e6d8;
+
+    color: #082b4d;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 535px;
+
+    background-image:
+        url("../img/humahuaca/portada.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(4,27,49,0.10),
+            rgba(4,27,49,0.01) 38%,
+            rgba(70,43,25,0.10) 62%,
+            rgba(4,27,49,0.84) 100%
+        );
+
+}
+
+
+.hero-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 535px;
+
+    padding:
+        28px 20px 38px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+
+
+.volver {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 22px;
+    left: 22px;
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid #efb54b;
+
+    border-radius: 22px;
+
+    background:
+        rgba(4,31,55,0.30);
+
+    backdrop-filter: blur(7px);
+
+    -webkit-backdrop-filter: blur(7px);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.marca {
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+}
+
+
+.marca span {
+    color: #efb54b;
+}
+
+
+.hero-texto {
+    margin-top: auto;
+}
+
+
+.tipo {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 61px;
+
+    line-height: 0.94;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 4px 18px
+        rgba(0,0,0,0.28);
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #efb54b;
+
+}
+
+
+.hero-texto p {
+
+    max-width: 520px;
+
+    margin:
+        11px auto 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ==================================================
+   SEPARADOR
+================================================== */
+
+.separador,
+.linea-dorada {
+
+    width: 145px;
+
+    margin:
+        13px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #d99835;
+
+}
+
+
+.separador span,
+.linea-dorada span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: currentColor;
+
+}
+
+
+.separador b,
+.linea-dorada b {
+
+    font-weight: normal;
+
+}
+
+
+
+/* ==================================================
+   DATOS
+================================================== */
+
+.datos {
+
+    position: relative;
+
+    z-index: 5;
+
+    width:
+        min(850px, calc(100% - 30px));
+
+    margin:
+        -27px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,249,241,0.97);
+
+    border:
+        1px solid
+        rgba(194,134,67,0.20);
+
+    box-shadow:
+        0 10px 30px
+        rgba(5,31,54,0.12);
+
+}
+
+
+.dato {
+
+    min-height: 94px;
+
+    padding:
+        13px 6px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-right:
+        1px solid #e4d9ca;
+
+}
+
+
+.dato:last-child {
+    border-right: none;
+}
+
+
+.dato-simbolo {
+
+    color: #bd772d;
+
+    font-size: 20px;
+
+}
+
+
+.dato-titulo {
+
+    margin-top: 4px;
+
+    color: #81766c;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.dato strong {
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ==================================================
+   FONDO PRINCIPAL
+================================================== */
+
+.contenido-principal {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 7% 16%,
+            rgba(210,145,64,0.13),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 93% 48%,
+            rgba(133,71,41,0.09),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 25% 87%,
+            rgba(8,45,80,0.07),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #f6eee3 0%,
+            #eee2d2 50%,
+            #f7f1e9 100%
+        );
+
+}
+
+
+.contenido-principal::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 520px;
+    left: -120px;
+
+    width: 260px;
+    height: 260px;
+
+    border:
+        1px solid
+        rgba(188,119,45,0.12);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.contenido-principal::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -170px;
+    bottom: 200px;
+
+    width: 350px;
+    height: 350px;
+
+    border:
+        1px solid
+        rgba(8,45,80,0.07);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+
+/* ==================================================
+   TÍTULOS
+================================================== */
+
+.titulo-seccion {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+}
+
+
+.titulo-seccion > span {
+
+    color: #b97428;
+
+    font-size: 8px;
+
+    letter-spacing: 2.4px;
+
+    font-weight: 700;
+
+}
+
+
+.titulo-seccion h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 37px;
+
+    font-weight: 500;
+
+}
+
+
+.titulo-seccion > p {
+
+    max-width: 620px;
+
+    margin:
+        12px auto 0;
+
+    color: #606b73;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==================================================
+   EXPERIENCIA
+================================================== */
+
+.experiencia {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        58px 0 32px;
+
+}
+
+
+
+/* ==================================================
+   CARRUSEL
+================================================== */
+
+.carrusel-experiencia {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin:
+        25px auto 0;
+
+    padding:
+        0 18px;
+
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    scroll-snap-type:
+        x mandatory;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+
+.carrusel-experiencia::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slide-experiencia {
+
+    flex:
+        0 0 80%;
+
+    height: 340px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    scroll-snap-align: center;
+
+    box-shadow:
+        0 10px 26px
+        rgba(8,43,77,0.08);
+
+}
+
+
+.slide-experiencia img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ==================================================
+   PUNTOS
+================================================== */
+
+.indicadores {
+
+    margin-top: 12px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+
+.punto {
+
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #bfb4a3;
+
+}
+
+
+.punto.activo {
+
+    width: 24px;
+
+    border-radius: 5px;
+
+    background: #c78531;
+
+}
+
+
+.deslizar {
+
+    margin-top: 6px;
+
+    color: #80796f;
+
+    font-size: 8px;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   INCLUYE
+================================================== */
+
+.incluye {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding:
+        30px 20px 38px;
+
+}
+
+
+.incluye-grid {
+
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+}
+
+
+.incluye-item {
+
+    padding:
+        17px 15px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,251,245,0.82),
+            rgba(237,225,210,0.88)
+        );
+
+    border:
+        1px solid
+        rgba(186,119,45,0.17);
+
+    box-shadow:
+        0 7px 20px
+        rgba(8,43,77,0.04);
+
+}
+
+
+.incluye-numero {
+
+    color: #bd772d;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+.incluye-item strong {
+
+    display: block;
+
+    margin-top: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+}
+
+
+.incluye-item p {
+
+    margin-top: 5px;
+
+    color: #68727a;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+}
+
+
+
+/* ==================================================
+   RECORRIDO
+================================================== */
+
+.recorrido {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding:
+        38px 20px 34px;
+
+}
+
+
+.recorrido-lista {
+
+    margin-top: 23px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+}
+
+
+
+/* ==================================================
+   PARADAS
+================================================== */
+
+.parada {
+
+    min-height: 210px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns:
+        45% 55%;
+
+    border-radius: 19px;
+
+    border:
+        1px solid
+        rgba(185,116,40,0.17);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,251,245,0.82),
+            rgba(235,221,204,0.90)
+        );
+
+    box-shadow:
+        0 8px 23px
+        rgba(8,43,77,0.05);
+
+}
+
+
+.parada-invertida {
+
+    grid-template-columns:
+        55% 45%;
+
+}
+
+
+.parada-invertida .parada-galeria {
+    order: 2;
+}
+
+
+.parada-invertida .parada-info {
+    order: 1;
+}
+
+
+
+/* ==================================================
+   FOTOS PARADAS
+================================================== */
+
+.parada-galeria {
+
+    min-height: 210px;
+
+    display: grid;
+
+    grid-template-rows:
+        1fr 1fr;
+
+    gap: 3px;
+
+    overflow: hidden;
+
+}
+
+
+.parada-galeria img {
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ==================================================
+   INFO PARADAS
+================================================== */
+
+.parada-info {
+
+    padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.numero {
+
+    width: fit-content;
+
+    padding:
+        4px 7px;
+
+    border-radius: 12px;
+
+    background: #082d50;
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+}
+
+
+.parada-mini {
+
+    margin-top: 8px;
+
+    color: #b97428;
+
+    font-size: 7px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: 700;
+
+}
+
+
+.parada-info h3 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+}
+
+
+.parada-info p {
+
+    margin-top: 8px;
+
+    color: #606c75;
+
+    font-size: 10.5px;
+
+    line-height: 1.55;
+
+}
+
+
+
+/* ==================================================
+   HORNOCAL
+================================================== */
+
+.hornocal {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 930px;
+
+    margin:
+        15px auto 30px;
+
+    padding:
+        28px;
+
+    border-radius: 23px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #763e2c,
+            #a85c36
+        );
+
+    color: white;
+
+    box-shadow:
+        0 12px 30px
+        rgba(83,43,28,0.12);
+
+}
+
+
+.hornocal-cabecera {
+
+    max-width: 580px;
+
+}
+
+
+.hornocal-cabecera > span {
+
+    color: #ffd28a;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.hornocal-cabecera h2 {
+
+    margin-top: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+}
+
+
+.hornocal-cabecera h2 strong {
+
+    display: block;
+
+    color: #ffd28a;
+
+    font-weight: 500;
+
+}
+
+
+.hornocal-cabecera p {
+
+    margin-top: 10px;
+
+    color:
+        rgba(255,255,255,0.82);
+
+    font-size: 11px;
+
+    line-height: 1.55;
+
+}
+
+
+
+/* ==================================================
+   MOSAICO HORNOCAL
+================================================== */
+
+.hornocal-mosaico {
+
+    height: 330px;
+
+    margin-top: 21px;
+
+    display: grid;
+
+    grid-template-columns:
+        62% 38%;
+
+    gap: 7px;
+
+}
+
+
+.hornocal-principal,
+.hornocal-secundarias {
+
+    min-width: 0;
+
+}
+
+
+.hornocal-principal {
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+}
+
+
+.hornocal-principal img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.hornocal-secundarias {
+
+    display: grid;
+
+    grid-template-rows:
+        1fr 1fr;
+
+    gap: 7px;
+
+}
+
+
+.hornocal-secundarias img {
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 14px;
+
+}
+
+
+
+/* ==================================================
+   MODALIDAD
+================================================== */
+
+.modalidad {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(800px, calc(100% - 40px));
+
+    margin:
+        0 auto 38px;
+
+    padding: 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr;
+
+    gap: 13px;
+
+    align-items: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082d50,
+            #0b3c66
+        );
+
+    color: white;
+
+}
+
+
+.modalidad-numero {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(239,181,75,0.65);
+
+    color: #efb54b;
+
+    font-size: 10px;
+
+}
+
+
+.modalidad-texto > span {
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+    letter-spacing: 1.7px;
+
+}
+
+
+.modalidad h2 {
+
+    margin-top: 3px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+}
+
+
+.modalidad p {
+
+    margin-top: 3px;
+
+    color:
+        rgba(255,255,255,0.74);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   RESERVA
+================================================== */
+
+.reserva {
+
+    padding:
+        52px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #082d50,
+            #0a385f
+        );
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.reserva > span {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.reserva h2 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+}
+
+
+.reserva p {
+
+    max-width: 470px;
+
+    margin:
+        9px auto 0;
+
+    color:
+        rgba(255,255,255,0.75);
+
+    font-size: 11px;
+
+    line-height: 1.55;
+
+}
+
+
+
+/* ==================================================
+   WHATSAPP
+================================================== */
+
+.boton-whatsapp {
+
+    width:
+        min(330px, 100%);
+
+    min-height: 52px;
+
+    margin:
+        20px auto 0;
+
+    padding:
+        11px 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20b85a,
+            #31ca6b
+        );
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.16);
+
+}
+
+
+.whatsapp-icono {
+
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+}
+
+
+.whatsapp-icono svg {
+
+    width: 100%;
+    height: 100%;
+
+    fill: white;
+
+}
+
+
+.whatsapp-icono .telefono {
+
+    fill: #25bf61;
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    padding:
+        26px 20px;
+
+    background: #061f38;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+footer strong {
+
+    font-size: 19px;
+
+}
+
+
+footer p {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 445px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 445px;
+
+        padding:
+            calc(
+                13px +
+                env(safe-area-inset-top)
+            )
+            13px
+            24px;
+
+    }
+
+
+    .volver {
+
+        top:
+            calc(
+                9px +
+                env(safe-area-inset-top)
+            );
+
+        left: 9px;
+
+        padding:
+            6px 10px;
+
+        font-size: 9px;
+
+    }
+
+
+    .marca {
+
+        font-size: 23px;
+
+    }
+
+
+    .tipo {
+
+        font-size: 7px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .hero-texto p {
+
+        max-width: 320px;
+
+        font-size: 11px;
+
+    }
+
+
+
+    /* DATOS */
+
+    .datos {
+
+        width:
+            calc(100% - 24px);
+
+        margin-top: -20px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .dato {
+
+        min-height: 74px;
+
+        padding:
+            8px 3px;
+
+    }
+
+
+    .dato-simbolo {
+
+        font-size: 16px;
+
+    }
+
+
+    .dato-titulo {
+
+        font-size: 6.5px;
+
+    }
+
+
+    .dato strong {
+
+        font-size: 10px;
+
+    }
+
+
+
+    /* TITULOS */
+
+    .titulo-seccion h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .titulo-seccion > p {
+
+        max-width: 330px;
+
+        margin-top: 8px;
+
+        padding: 0 10px;
+
+        font-size: 9.5px;
+
+        line-height: 1.5;
+
+    }
+
+
+
+    /* EXPERIENCIA */
+
+    .experiencia {
+
+        padding:
+            41px 0 24px;
+
+    }
+
+
+    .carrusel-experiencia {
+
+        margin-top: 17px;
+
+        padding:
+            0 10px;
+
+        gap: 7px;
+
+    }
+
+
+    .slide-experiencia {
+
+        flex:
+            0 0 77%;
+
+        height: 205px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .indicadores {
+
+        margin-top: 9px;
+
+    }
+
+
+    .deslizar {
+
+        font-size: 7px;
+
+    }
+
+
+
+    /* INCLUYE */
+
+    .incluye {
+
+        padding:
+            25px 10px 28px;
+
+    }
+
+
+    .incluye-grid {
+
+        margin-top: 15px;
+
+        gap: 6px;
+
+    }
+
+
+    .incluye-item {
+
+        padding:
+            10px 7px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .incluye-numero {
+
+        font-size: 6px;
+
+    }
+
+
+    .incluye-item strong {
+
+        margin-top: 4px;
+
+        font-size: 13px;
+
+    }
+
+
+    .incluye-item p {
+
+        font-size: 7px;
+
+        line-height: 1.35;
+
+    }
+
+
+
+    /* RECORRIDO */
+
+    .recorrido {
+
+        padding:
+            27px 10px 25px;
+
+    }
+
+
+    .recorrido-lista {
+
+        margin-top: 16px;
+
+        gap: 7px;
+
+    }
+
+
+    .parada,
+    .parada-invertida {
+
+        min-height: 140px;
+
+        grid-template-columns:
+            43% 57%;
+
+        border-radius: 14px;
+
+    }
+
+
+    .parada-invertida .parada-galeria {
+
+        order: 1;
+
+    }
+
+
+    .parada-invertida .parada-info {
+
+        order: 2;
+
+    }
+
+
+    .parada-galeria {
+
+        min-height: 140px;
+
+        gap: 2px;
+
+    }
+
+
+    .parada-info {
+
+        padding:
+            10px 9px;
+
+    }
+
+
+    .numero {
+
+        padding:
+            3px 5px;
+
+        font-size: 5.5px;
+
+    }
+
+
+    .parada-mini {
+
+        margin-top: 5px;
+
+        font-size: 5.5px;
+
+        letter-spacing: 1.2px;
+
+    }
+
+
+    .parada-info h3 {
+
+        margin-top: 2px;
+
+        font-size: 18px;
+
+        line-height: 1.05;
+
+    }
+
+
+    .parada-info p {
+
+        margin-top: 5px;
+
+        font-size: 7.8px;
+
+        line-height: 1.4;
+
+    }
+
+
+
+    /* HORNOCAL */
+
+    .hornocal {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            5px auto 15px;
+
+        padding:
+            18px 14px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .hornocal-cabecera > span {
+
+        font-size: 6px;
+
+    }
+
+
+    .hornocal-cabecera h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .hornocal-cabecera p {
+
+        max-width: 310px;
+
+        margin-top: 7px;
+
+        font-size: 8.5px;
+
+        line-height: 1.45;
+
+    }
+
+
+    .hornocal-mosaico {
+
+        height: 220px;
+
+        margin-top: 14px;
+
+        grid-template-columns:
+            61% 39%;
+
+        gap: 5px;
+
+    }
+
+
+    .hornocal-principal {
+
+        border-radius: 13px;
+
+    }
+
+
+    .hornocal-secundarias {
+
+        gap: 5px;
+
+    }
+
+
+    .hornocal-secundarias img {
+
+        border-radius: 10px;
+
+    }
+
+
+
+    /* MODALIDAD */
+
+    .modalidad {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            0 auto 23px;
+
+        padding: 12px;
+
+        grid-template-columns:
+            37px 1fr;
+
+        gap: 8px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .modalidad-numero {
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 8px;
+
+    }
+
+
+    .modalidad-texto > span {
+
+        font-size: 5.5px;
+
+    }
+
+
+    .modalidad h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .modalidad p {
+
+        font-size: 7px;
+
+    }
+
+
+
+    /* RESERVA */
+
+    .reserva {
+
+        padding:
+            42px 15px;
+
+    }
+
+
+    .reserva > span {
+
+        font-size: 7px;
+
+    }
+
+
+    .reserva h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .reserva p {
+
+        max-width: 315px;
+
+        font-size: 9px;
+
+    }
+
+
+    .boton-whatsapp {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        min-height: 49px;
+
+        font-size: 10px;
+
+    }
+
+
+    .whatsapp-icono {
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+}

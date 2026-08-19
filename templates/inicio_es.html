@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Sofiturismo | Excursiones en Jujuy</title>
+
+    <meta
+        name="description"
+        content="Excursiones desde Purmamarca para descubrir Salinas Grandes, Ojos del Salar, Atardecer en Salinas y Quebrada de Humahuaca."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/inicio_es.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PORTADA
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <a
+        href="/"
+        class="volver-index"
+        aria-label="Volver al inicio"
+    >
+        ←
+    </a>
+
+
+    <div class="hero-contenido">
+
+        <div class="marca">
+            Sofi<span>turismo</span>
+        </div>
+
+
+        <div class="hero-texto">
+
+            <span class="hero-mini">
+                EXCURSIONES DESDE PURMAMARCA
+            </span>
+
+
+            <h1>
+                Descubrí Jujuy
+                <span>con Sofiturismo</span>
+            </h1>
+
+
+            <p>
+                Viví la Quebrada y la Puna con excursiones
+                desde Purmamarca.
+            </p>
+
+
+            <div class="hero-botones">
+
+                <a
+                    href="#zona-excursiones"
+                    id="botonExplorar"
+                    class="boton boton-principal"
+                >
+                    Explorar excursiones
+                </a>
+
+
+                <a
+                    href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20por%20las%20excursiones%20de%20Sofiturismo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="boton boton-secundario"
+                >
+                    Consultar por WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTENIDO PRINCIPAL
+================================================== -->
+
+<main class="contenido-principal">
+
+
+    <!-- ==================================================
+         EXCURSIONES
+    ================================================== -->
+
+    <section
+        class="destacadas"
+        id="destacadas"
+    >
+
+        <div class="titulo-seccion">
+
+            <span>
+                EXPLORÁ JUJUY
+            </span>
+
+            <h2>
+                Nuestras excursiones
+            </h2>
+
+            <p>
+                Deslizá y tocá una excursión para conocer todos los detalles.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ANCLA REAL DEL BOTÓN EXPLORAR
+        ================================================== -->
+
+        <div
+            class="ancla-excursiones"
+            id="zona-excursiones"
+        ></div>
+
+
+
+        <!-- ==================================================
+             CARRUSEL
+        ================================================== -->
+
+        <div
+            class="carrusel"
+            id="carruselExcursiones"
+        >
+
+
+            <!-- SALINAS -->
+
+            <a
+                href="/es/salinas"
+                class="tarjeta"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas.png') }}"
+                    alt="Salinas Grandes"
+                >
+
+                <div class="tarjeta-sombra"></div>
+
+
+                <div class="tarjeta-info">
+
+                    <span class="numero">
+                        01
+                    </span>
+
+                    <h3>
+                        Salinas Grandes
+                    </h3>
+
+                    <p>
+                        9:30 · 13:30
+                    </p>
+
+                    <div class="tarjeta-pie">
+
+                        <span class="duracion">
+                            4 hs
+                        </span>
+
+                        <span class="ver-detalles">
+                            Ver detalles →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- OJOS DEL SALAR -->
+
+            <a
+                href="/es/ojos-del-salar"
+                class="tarjeta"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='img/ojos/portada.jpg') }}"
+                    alt="Ojos del Salar"
+                >
+
+                <div class="tarjeta-sombra"></div>
+
+
+                <div class="tarjeta-info">
+
+                    <span class="numero">
+                        02
+                    </span>
+
+                    <h3>
+                        Ojos del Salar
+                    </h3>
+
+                    <p>
+                        Excursión completa
+                    </p>
+
+                    <div class="tarjeta-pie">
+
+                        <span class="duracion">
+                            4 hs 30 min
+                        </span>
+
+                        <span class="ver-detalles">
+                            Ver detalles →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ATARDECER -->
+
+            <a
+                href="/es/atardecer"
+                class="tarjeta"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='img/atardecer/portada.jpg') }}"
+                    alt="Atardecer en Salinas"
+                >
+
+                <div class="tarjeta-sombra"></div>
+
+
+                <div class="tarjeta-info">
+
+                    <span class="numero">
+                        03
+                    </span>
+
+                    <h3>
+                        Atardecer en Salinas
+                    </h3>
+
+                    <p>
+                        Salida 17:00 hs
+                    </p>
+
+                    <div class="tarjeta-pie">
+
+                        <span class="duracion">
+                            4 a 5 hs
+                        </span>
+
+                        <span class="ver-detalles">
+                            Ver detalles →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- HUMAHUACA -->
+
+            <a
+                href="/es/humahuaca"
+                class="tarjeta"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/portada.jpg') }}"
+                    alt="Quebrada de Humahuaca"
+                >
+
+                <div class="tarjeta-sombra"></div>
+
+
+                <div class="tarjeta-info">
+
+                    <span class="numero">
+                        04
+                    </span>
+
+                    <h3>
+                        Quebrada de Humahuaca
+                    </h3>
+
+                    <p>
+                        9:30 · 19:00
+                    </p>
+
+                    <div class="tarjeta-pie">
+
+                        <span class="duracion">
+                            Día completo
+                        </span>
+
+                        <span class="ver-detalles">
+                            Ver detalles →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             INDICADORES
+        ================================================== -->
+
+        <div class="indicadores">
+
+            <button
+                class="punto activo"
+                data-slide="0"
+                aria-label="Salinas Grandes"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="1"
+                aria-label="Ojos del Salar"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="2"
+                aria-label="Atardecer en Salinas"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="3"
+                aria-label="Quebrada de Humahuaca"
+            ></button>
+
+        </div>
+
+
+        <p class="ayuda-carrusel">
+            Deslizá para explorar · tocá para ver más
+        </p>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONOCÉ SOFITURISMO
+    ================================================== -->
+
+    <section class="conoce">
+
+
+        <div class="conoce-imagen">
+
+            <img
+                src="{{ url_for('static', filename='img/conoce.jpg') }}"
+                alt="Conocé Sofiturismo"
+            >
+
+        </div>
+
+
+        <div class="conoce-texto">
+
+            <span class="conoce-mini">
+                CONOCÉ SOFITURISMO
+            </span>
+
+
+            <h2>
+                Jujuy
+                <span>a tu ritmo</span>
+            </h2>
+
+
+            <p>
+                Excursiones desde Purmamarca para descubrir
+                algunos de los paisajes más increíbles de Jujuy.
+            </p>
+
+
+            <p class="conoce-secundario">
+                Experiencias privadas o grupales para disfrutar
+                la Quebrada y la Puna.
+            </p>
+
+
+            <a
+                href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20para%20una%20excursión%20con%20Sofiturismo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="conoce-link"
+            >
+                Consultar →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TRASLADOS AEROPUERTO
+    ================================================== -->
+
+    <a
+        href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20por%20un%20traslado%20al%20aeropuerto%20de%20Jujuy%20o%20Salta."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="servicio-extra"
+    >
+
+        <div class="servicio-icono">
+            ✈
+        </div>
+
+
+        <div class="servicio-info">
+
+            <span>
+                SERVICIO ADICIONAL
+            </span>
+
+            <h2>
+                Traslados al aeropuerto
+            </h2>
+
+            <p>
+                Jujuy y Salta · sujeto a disponibilidad
+            </p>
+
+        </div>
+
+
+        <div class="servicio-flecha">
+            →
+        </div>
+
+    </a>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     CONTACTO
+================================================== -->
+
+<section
+    class="contacto"
+    id="contacto"
+>
+
+    <span>
+        ¿PLANIFICANDO TU VIAJE?
+    </span>
+
+
+    <h2>
+        Hablemos
+    </h2>
+
+
+    <p>
+        Consultanos por excursiones,
+        disponibilidad y traslados.
+    </p>
+
+
+    <div class="contacto-botones">
+
+        <a
+            href="https://www.instagram.com/sofiturismo_salinasgrandes/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contacto-boton instagram"
+        >
+            Instagram
+        </a>
+
+
+        <a
+            href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20por%20Sofiturismo."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contacto-boton whatsapp"
+        >
+            WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <strong>
+        Sofiturismo
+    </strong>
+
+    <p>
+        Purmamarca · Jujuy · Argentina
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+    const carrusel =
+        document.getElementById("carruselExcursiones");
+
+    const tarjetas =
+        carrusel.querySelectorAll(".tarjeta");
+
+    const puntos =
+        document.querySelectorAll(".punto");
+
+    const botonExplorar =
+        document.getElementById("botonExplorar");
+
+    const zonaExcursiones =
+        document.getElementById("zona-excursiones");
+
+
+    let indiceActual = 0;
+    let intervalo;
+    let temporizadorScroll;
+
+
+
+    /* ==================================================
+       BOTÓN EXPLORAR
+       BAJA DIRECTAMENTE AL CARRUSEL
+    ================================================== */
+
+    botonExplorar.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const destino =
+                zonaExcursiones.getBoundingClientRect().top
+                + window.scrollY
+                - 8;
+
+
+            window.scrollTo({
+
+                top: destino,
+
+                behavior: "smooth"
+
+            });
+
+        }
+    );
+
+
+
+    /* ==================================================
+       MOVER CARRUSEL
+    ================================================== */
+
+    function moverA(indice) {
+
+        if (!tarjetas[indice]) {
+            return;
+        }
+
+
+        indiceActual = indice;
+
+
+        const posicion =
+            tarjetas[indice].offsetLeft -
+            carrusel.offsetLeft;
+
+
+        carrusel.scrollTo({
+
+            left: posicion,
+
+            behavior: "smooth"
+
+        });
+
+
+        actualizarPuntos();
+
+    }
+
+
+
+    function actualizarPuntos() {
+
+        puntos.forEach((punto, indice) => {
+
+            punto.classList.toggle(
+                "activo",
+                indice === indiceActual
+            );
+
+        });
+
+    }
+
+
+
+    function detenerCarrusel() {
+
+        if (intervalo) {
+
+            clearInterval(intervalo);
+
+            intervalo = null;
+
+        }
+
+    }
+
+
+
+    function iniciarCarrusel() {
+
+        detenerCarrusel();
+
+
+        intervalo = setInterval(() => {
+
+            indiceActual++;
+
+
+            if (
+                indiceActual >= tarjetas.length
+            ) {
+
+                indiceActual = 0;
+
+            }
+
+
+            moverA(indiceActual);
+
+        }, 2000);
+
+    }
+
+
+
+    puntos.forEach((punto, indice) => {
+
+        punto.addEventListener(
+            "click",
+            () => {
+
+                moverA(indice);
+
+                iniciarCarrusel();
+
+            }
+        );
+
+    });
+
+
+
+    carrusel.addEventListener(
+        "scroll",
+        () => {
+
+            clearTimeout(
+                temporizadorScroll
+            );
+
+
+            temporizadorScroll =
+                setTimeout(() => {
+
+                    let tarjetaMasCercana = 0;
+
+                    let menorDistancia =
+                        Infinity;
+
+
+                    tarjetas.forEach(
+                        (tarjeta, indice) => {
+
+                            const posicion =
+                                tarjeta.offsetLeft -
+                                carrusel.offsetLeft;
+
+
+                            const distancia =
+                                Math.abs(
+                                    posicion -
+                                    carrusel.scrollLeft
+                                );
+
+
+                            if (
+                                distancia <
+                                menorDistancia
+                            ) {
+
+                                menorDistancia =
+                                    distancia;
+
+                                tarjetaMasCercana =
+                                    indice;
+
+                            }
+
+                        }
+                    );
+
+
+                    indiceActual =
+                        tarjetaMasCercana;
+
+                    actualizarPuntos();
+
+                }, 100);
+
+        }
+    );
+
+
+
+    carrusel.addEventListener(
+        "touchstart",
+        detenerCarrusel
+    );
+
+
+    carrusel.addEventListener(
+        "touchend",
+        () => {
+
+            setTimeout(
+                iniciarCarrusel,
+                1200
+            );
+
+        }
+    );
+
+
+    carrusel.addEventListener(
+        "mouseenter",
+        detenerCarrusel
+    );
+
+
+    carrusel.addEventListener(
+        "mouseleave",
+        iniciarCarrusel
+    );
+
+
+    iniciarCarrusel();
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Quebrada de Humahuaca | Sofiturismo</title>
+
+    <meta
+        name="description"
+        content="Quebrada de Humahuaca full-day tour from Purmamarca with Sofiturismo."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/humahuaca_en.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <a
+        href="/en#tours"
+        class="volver"
+    >
+        ← Back
+    </a>
+
+
+    <div class="hero-contenido">
+
+        <div class="marca">
+            Sofi<span>turismo</span>
+        </div>
+
+
+        <div class="hero-texto">
+
+            <span class="tipo">
+                FULL-DAY TOUR
+            </span>
+
+
+            <h1>
+                Quebrada de
+                <span>Humahuaca</span>
+            </h1>
+
+
+            <div class="separador"></div>
+
+
+            <p>
+                Discover villages, colorful mountains and
+                unforgettable landscapes all the way to Hornocal.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     QUICK INFO
+================================================== -->
+
+<section class="datos">
+
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ◷
+        </span>
+
+        <span>
+            Departure
+        </span>
+
+        <strong>
+            9:30 AM
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ◴
+        </span>
+
+        <span>
+            Return
+        </span>
+
+        <strong>
+            7:00 PM
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ◉
+        </span>
+
+        <span>
+            From
+        </span>
+
+        <strong>
+            Purmamarca
+        </strong>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     MAIN CONTENT
+================================================== -->
+
+<main class="contenido">
+
+
+    <!-- ==================================================
+         EXPERIENCE
+    ================================================== -->
+
+    <section class="seccion experiencia">
+
+        <div class="titulo-seccion">
+
+            <span>
+                THE EXPERIENCE
+            </span>
+
+
+            <h2>
+                A full day through the Quebrada
+            </h2>
+
+
+            <p>
+                We depart from Purmamarca and travel north
+                to discover some of the most iconic places
+                in the Quebrada de Humahuaca.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="carrusel"
+            id="carruselExperiencia"
+        >
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia1.jpg') }}"
+                    alt="Quebrada de Humahuaca"
+                >
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia2.jpg') }}"
+                    alt="Landscapes of Quebrada de Humahuaca"
+                >
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia3.png') }}"
+                    alt="Humahuaca experience"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="puntos">
+
+            <button
+                class="punto activo"
+                data-slide="0"
+                aria-label="Image 1"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="1"
+                aria-label="Image 2"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="2"
+                aria-label="Image 3"
+            ></button>
+
+        </div>
+
+
+        <p class="ayuda">
+            Swipe to see more
+        </p>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         INCLUDED
+    ================================================== -->
+
+    <section class="seccion incluye">
+
+        <div class="titulo-seccion">
+
+            <span>
+                INCLUDED
+            </span>
+
+
+            <h2>
+                Everything ready for your trip
+            </h2>
+
+        </div>
+
+
+
+        <div class="incluye-grid">
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    🚖
+                </div>
+
+                <strong>
+                    Transportation
+                </strong>
+
+                <p>
+                    Round trip from Purmamarca
+                </p>
+
+            </div>
+
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    🧭
+                </div>
+
+                <strong>
+                    Guided tour
+                </strong>
+
+                <p>
+                    Assistance during the journey
+                </p>
+
+            </div>
+
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    📸
+                </div>
+
+                <strong>
+                    Photo stops
+                </strong>
+
+                <p>
+                    Time to enjoy and take pictures
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ROUTE
+    ================================================== -->
+
+    <section class="seccion recorrido">
+
+        <div class="titulo-seccion">
+
+            <span>
+                OUR ROUTE
+            </span>
+
+
+            <h2>
+                From village to village
+            </h2>
+
+
+            <p>
+                Four special stops before reaching
+                the final destination: Hornocal.
+            </p>
+
+        </div>
+
+
+
+        <div class="recorrido-lista">
+
+
+            <!-- ==================================================
+                 01 MAIMARÁ
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    1
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/maimara1.jpg') }}"
+                        alt="Paleta del Pintor in Maimará"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Paleta del Pintor
+                    </h3>
+
+
+                    <span>
+                        Maimará
+                    </span>
+
+
+                    <p>
+                        Colorful mountain formations
+                        overlooking the village of Maimará.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 02 HUACALERA
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    2
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/tropico1.jpg') }}"
+                        alt="Tropic of Capricorn in Huacalera"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Tropic of Capricorn
+                    </h3>
+
+
+                    <span>
+                        Huacalera
+                    </span>
+
+
+                    <p>
+                        One of the most recognized
+                        geographical stops in the Quebrada.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 03 UQUÍA
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    3
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/uquia1.jpg') }}"
+                        alt="Quebrada de la Señorita in Uquía"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Quebrada de la Señorita
+                    </h3>
+
+
+                    <span>
+                        Uquía
+                    </span>
+
+
+                    <p>
+                        Red rock formations and
+                        one of the area's most unique landscapes.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 04 HUMAHUACA
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    4
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/humahuaca1.png') }}"
+                        alt="Town of Humahuaca"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Town of Humahuaca
+                    </h3>
+
+
+                    <span>
+                        Humahuaca
+                    </span>
+
+
+                    <p>
+                        History, culture and traditions
+                        in the heart of the Quebrada.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         HORNOCAL
+    ================================================== -->
+
+    <section class="seccion hornocal">
+
+        <div class="titulo-seccion">
+
+            <span>
+                FINAL DESTINATION
+            </span>
+
+
+            <h2>
+                Serranías del Hornocal
+            </h2>
+
+
+            <p>
+                The perfect ending to the tour and one
+                of northern Argentina's most impressive landscapes.
+            </p>
+
+        </div>
+
+
+
+        <div class="hornocal-galeria">
+
+
+            <div class="hornocal-principal">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal1.png') }}"
+                    alt="Serranías del Hornocal"
+                >
+
+            </div>
+
+
+
+            <div class="hornocal-secundarias">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal2.png') }}"
+                    alt="Hornocal Jujuy"
+                >
+
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal3.jpg') }}"
+                    alt="Hornocal landscape"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ENGLISH GUIDE
+    ================================================== -->
+
+    <section class="guia-ingles">
+
+
+        <div class="guia-icono">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <path
+                    d="M4 5h16v11H9l-5 4z"
+                ></path>
+
+                <path
+                    d="M8 9h8M8 12h5"
+                ></path>
+
+            </svg>
+
+        </div>
+
+
+
+        <div class="guia-texto">
+
+            <span>
+                OPTIONAL ADD-ON
+            </span>
+
+
+            <h2>
+                English-speaking guide
+            </h2>
+
+
+            <p>
+                An English-speaking guide can be added
+                for private trips of up to 3 people.
+            </p>
+
+
+            <small>
+                Ask us about availability and additional cost.
+            </small>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TRIP TYPE
+    ================================================== -->
+
+    <section class="modalidad">
+
+        <div class="modalidad-icono">
+            ◇
+        </div>
+
+
+        <div class="modalidad-texto">
+
+            <span>
+                TRIP TYPE
+            </span>
+
+
+            <h2>
+                Private or group
+            </h2>
+
+
+            <p>
+                Choose the option that best fits your trip.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section class="reserva">
+
+    <span>
+        READY TO EXPLORE THE QUEBRADA?
+    </span>
+
+
+    <h2>
+        Check your tour
+    </h2>
+
+
+    <p>
+        Contact us for prices, availability
+        and the English-speaking guide option.
+    </p>
+
+
+
+    <a
+        href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20check%20the%20price%20and%20availability%20for%20the%20Quebrada%20de%20Humahuaca%20tour.%20I%20would%20also%20like%20information%20about%20the%20English-speaking%20guide%20option."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton-whatsapp"
+    >
+
+
+        <span class="whatsapp-icono">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <path
+                    d="M12 2.5a9.3 9.3 0 0 0-8 14.1L2.7 21.5l5-1.3A9.4 9.4 0 1 0 12 2.5z"
+                ></path>
+
+                <path
+                    class="telefono"
+                    d="M9 7.5c.3-.7.6-.7.9-.7h.5c.2 0 .4.1.5.5l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.2.4-.1.6.5 1 1.2 1.8 2.1 2.4.8.6 1.5.9 1.8 1 .3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.3.8-.2l1.9.9c.3.1.5.3.5.5 0 .2-.1 1.3-.8 2-.7.8-1.8 1.1-2.8.8-1-.3-3.2-1.1-5.4-3.1-1.8-1.6-3-3.6-3.3-4.6-.3-1 .1-1.9.6-2.4z"
+                ></path>
+
+            </svg>
+
+        </span>
+
+
+        <span>
+            Check price and availability
+        </span>
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <strong>
+        Sofi<span>turismo</span>
+    </strong>
+
+    <p>
+        Purmamarca · Jujuy · Argentina
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     EXPERIENCE CAROUSEL
+================================================== -->
+
+<script>
+
+    const carrusel =
+        document.getElementById("carruselExperiencia");
+
+    const slides =
+        Array.from(
+            carrusel.querySelectorAll(".slide")
+        );
+
+    const puntos =
+        Array.from(
+            document.querySelectorAll(".punto")
+        );
+
+
+    let indiceActual = 0;
+
+    let intervalo;
+
+
+
+    function actualizarPuntos() {
+
+        puntos.forEach((punto, indice) => {
+
+            punto.classList.toggle(
+                "activo",
+                indice === indiceActual
+            );
+
+        });
+
+    }
+
+
+
+    function moverA(indice) {
+
+        if (!slides[indice]) {
+            return;
+        }
+
+
+        indiceActual = indice;
+
+
+        carrusel.scrollTo({
+
+            left:
+                slides[indice].offsetLeft
+                - carrusel.offsetLeft,
+
+            behavior: "smooth"
+
+        });
+
+
+        actualizarPuntos();
+
+    }
+
+
+
+    function detenerCarrusel() {
+
+        clearInterval(intervalo);
+
+    }
+
+
+
+    function iniciarCarrusel() {
+
+        detenerCarrusel();
+
+
+        intervalo = setInterval(() => {
+
+            indiceActual++;
+
+
+            if (
+                indiceActual >= slides.length
+            ) {
+
+                indiceActual = 0;
+
+            }
+
+
+            moverA(indiceActual);
+
+        }, 3500);
+
+    }
+
+
+
+    puntos.forEach((punto, indice) => {
+
+        punto.addEventListener(
+            "click",
+            () => {
+
+                moverA(indice);
+
+                iniciarCarrusel();
+
+            }
+        );
+
+    });
+
+
+
+    carrusel.addEventListener(
+        "touchstart",
+        detenerCarrusel,
+        { passive: true }
+    );
+
+
+    carrusel.addEventListener(
+        "touchend",
+        iniciarCarrusel,
+        { passive: true }
+    );
+
+
+    iniciarCarrusel();
+
+</script>
+
+
+</body>
+
+</html>

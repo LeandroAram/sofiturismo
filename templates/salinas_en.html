@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Salinas Grandes | Sofiturismo</title>
+
+    <meta
+        name="description"
+        content="Salinas Grandes tour from Purmamarca with Sofiturismo."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/salinas_en.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <a
+        href="/en#tours"
+        class="volver"
+    >
+        ← Back
+    </a>
+
+
+    <div class="hero-contenido">
+
+        <div class="marca">
+            Sofi<span>turismo</span>
+        </div>
+
+
+        <div class="hero-texto">
+
+            <span class="tipo">
+                TOUR
+            </span>
+
+
+            <h1>
+                Salinas
+                <span>Grandes</span>
+            </h1>
+
+
+            <div class="separador">
+
+                <span></span>
+                <b>◇</b>
+                <span></span>
+
+            </div>
+
+
+            <p>
+                Discover one of Jujuy's most iconic landscapes
+                on a journey from the Quebrada to the Puna.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     QUICK INFO
+================================================== -->
+
+<section class="datos">
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ◷
+        </span>
+
+        <span>
+            Departure
+        </span>
+
+        <strong>
+            9:30 AM
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ◴
+        </span>
+
+        <span>
+            Return
+        </span>
+
+        <strong>
+            1:30 PM
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <span class="dato-icono">
+            ⌛
+        </span>
+
+        <span>
+            Duration
+        </span>
+
+        <strong>
+            4 hours
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<main class="contenido-principal">
+
+
+    <!-- ==================================================
+         EXPERIENCE
+    ================================================== -->
+
+    <section class="experiencia">
+
+        <div class="titulo-seccion">
+
+            <span>
+                THE EXPERIENCE
+            </span>
+
+            <h2>
+                Discover Salinas Grandes
+            </h2>
+
+
+            <div class="linea-dorada">
+
+                <span></span>
+                <b>◇</b>
+                <span></span>
+
+            </div>
+
+
+            <p>
+                We depart from Purmamarca and travel toward
+                the high-altitude Puna, crossing spectacular
+                landscapes before reaching Salinas Grandes.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="carrusel-experiencia"
+            id="carruselExperiencia"
+        >
+
+
+            <div class="slide-experiencia">
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas/experiencia1.jpg') }}"
+                    alt="Salinas Grandes experience"
+                >
+
+            </div>
+
+
+            <div class="slide-experiencia">
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas/experiencia2.jpg') }}"
+                    alt="Salinas Grandes landscape"
+                >
+
+            </div>
+
+
+            <div class="slide-experiencia">
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas/experiencia3.jpg') }}"
+                    alt="Salinas Grandes tour"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="indicadores">
+
+            <button class="punto activo" data-slide="0"></button>
+            <button class="punto" data-slide="1"></button>
+            <button class="punto" data-slide="2"></button>
+
+        </div>
+
+
+        <p class="deslizar">
+            Swipe to see more
+        </p>
+
+    </section>
+
+
+
+    <!-- ==================================================
+     INCLUDED
+================================================== -->
+
+<section class="incluye">
+
+    <div class="titulo-seccion">
+
+        <span>
+            INCLUDED
+        </span>
+
+        <h2>
+            Everything ready for your trip
+        </h2>
+
+    </div>
+
+
+    <div class="incluye-grid">
+
+
+        <!-- TRANSPORTATION -->
+
+        <div class="incluye-item">
+
+            <div class="incluye-icono">
+                🚖
+            </div>
+
+            <strong>
+                Transportation
+            </strong>
+
+            <p>
+                Round trip from Purmamarca
+            </p>
+
+        </div>
+
+
+        <!-- GUIDED TOUR -->
+
+        <div class="incluye-item">
+
+            <div class="incluye-icono">
+                🧭
+            </div>
+
+            <strong>
+                Guided tour
+            </strong>
+
+            <p>
+                Assistance during the journey
+            </p>
+
+        </div>
+
+
+        <!-- PHOTO STOPS -->
+
+        <div class="incluye-item">
+
+            <div class="incluye-icono">
+                📸
+            </div>
+
+            <strong>
+                Photo stops
+            </strong>
+
+            <p>
+                Time to enjoy and take pictures
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+        <!-- CUESTA DE LIPÁN -->
+
+        <article class="parada">
+
+            <div class="parada-foto">
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas/lipan1.jpg') }}"
+                    alt="Cuesta de Lipán"
+                >
+
+                <span class="numero-parada">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="parada-info">
+
+                <span>
+                    SCENIC STOP
+                </span>
+
+                <h3>
+                    Cuesta de Lipán
+                </h3>
+
+                <p>
+                    Travel along one of Jujuy's most spectacular
+                    mountain roads as we climb from the Quebrada
+                    toward the high-altitude Puna.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MAXIMUM ALTITUDE -->
+
+        <article class="parada">
+
+            <div class="parada-foto">
+
+                <img
+                    src="{{ url_for('static', filename='img/salinas/altura2.jpg') }}"
+                    alt="Maximum altitude 4170 meters"
+                >
+
+                <span class="numero-parada">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="parada-info">
+
+                <span>
+                    HIGHEST POINT
+                </span>
+
+                <h3>
+                    Maximum altitude
+                </h3>
+
+                <strong class="altura">
+                    4,170 m / 13,681 ft
+                </strong>
+
+                <p>
+                    A panoramic stop to take in the vast
+                    landscapes of the Puna before continuing
+                    toward the salt flats.
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         ENGLISH GUIDE ADD-ON
+    ================================================== -->
+
+    <section class="guia-ingles">
+
+        <div class="guia-icono">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                <path
+                    d="M4 5h16v11H9l-5 4z"
+                ></path>
+
+                <path
+                    d="M8 9h8M8 12h5"
+                ></path>
+
+            </svg>
+
+        </div>
+
+
+        <div class="guia-texto">
+
+            <span>
+                OPTIONAL ADD-ON
+            </span>
+
+            <h2>
+                English-speaking guide
+            </h2>
+
+            <p>
+                An English-speaking guide can be added
+                for private trips of up to 3 people.
+            </p>
+
+            <small>
+                Ask us about availability and additional cost.
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TRIP TYPE
+    ================================================== -->
+
+    <section class="modalidad">
+
+        <div class="modalidad-numero">
+            03
+        </div>
+
+
+        <div>
+
+            <span>
+                TRIP TYPE
+            </span>
+
+            <h2>
+                Private or group
+            </h2>
+
+            <p>
+                Choose the option that best fits your trip.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section class="reserva">
+
+    <span>
+        READY TO DISCOVER SALINAS GRANDES?
+    </span>
+
+
+    <h2>
+        Check your tour
+    </h2>
+
+
+    <p>
+        Contact us for prices, availability
+        and the English-speaking guide option.
+    </p>
+
+
+    <a
+        href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20check%20the%20price%20and%20availability%20for%20the%20Salinas%20Grandes%20tour.%20I%20would%20also%20like%20information%20about%20the%20English-speaking%20guide%20option."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton-whatsapp"
+    >
+
+        <span class="whatsapp-icono">
+
+            <svg viewBox="0 0 24 24">
+
+                <path
+                    d="M12 2.5a9.3 9.3 0 0 0-8 14.1L2.7 21.5l5-1.3A9.4 9.4 0 1 0 12 2.5z"
+                ></path>
+
+                <path
+                    class="telefono"
+                    d="M9 7.5c.3-.7.6-.7.9-.7h.5c.2 0 .4.1.5.5l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.2.4-.1.6.5 1 1.2 1.8 2.1 2.4.8.6 1.5.9 1.8 1 .3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.3.8-.2l1.9.9c.3.1.5.3.5.5 0 .2-.1 1.3-.8 2-.7.8-1.8 1.1-2.8.8-1-.3-3.2-1.1-5.4-3.1-1.8-1.6-3-3.6-3.3-4.6-.3-1 .1-1.9.6-2.4z"
+                ></path>
+
+            </svg>
+
+        </span>
+
+
+        <span>
+            Check price and availability
+        </span>
+
+    </a>
+
+</section>
+
+
+
+<footer>
+
+    <strong>
+        Sofiturismo
+    </strong>
+
+    <p>
+        Purmamarca · Jujuy · Argentina
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     CAROUSEL
+================================================== -->
+
+<script>
+
+    const carrusel =
+        document.getElementById("carruselExperiencia");
+
+    const slides =
+        carrusel.querySelectorAll(".slide-experiencia");
+
+    const puntos =
+        document.querySelectorAll(".punto");
+
+
+    let indiceActual = 0;
+    let intervalo;
+
+
+
+    function moverA(indice) {
+
+        if (!slides[indice]) {
+            return;
+        }
+
+
+        indiceActual = indice;
+
+
+        carrusel.scrollTo({
+
+            left:
+                slides[indice].offsetLeft
+                - carrusel.offsetLeft,
+
+            behavior: "smooth"
+
+        });
+
+
+        actualizarPuntos();
+
+    }
+
+
+
+    function actualizarPuntos() {
+
+        puntos.forEach((punto, indice) => {
+
+            punto.classList.toggle(
+                "activo",
+                indice === indiceActual
+            );
+
+        });
+
+    }
+
+
+
+    function detener() {
+
+        clearInterval(intervalo);
+
+    }
+
+
+
+    function iniciar() {
+
+        detener();
+
+
+        intervalo = setInterval(() => {
+
+            indiceActual++;
+
+
+            if (
+                indiceActual >= slides.length
+            ) {
+
+                indiceActual = 0;
+
+            }
+
+
+            moverA(indiceActual);
+
+        }, 3500);
+
+    }
+
+
+
+    puntos.forEach((punto, indice) => {
+
+        punto.addEventListener(
+            "click",
+            () => {
+
+                moverA(indice);
+
+                iniciar();
+
+            }
+        );
+
+    });
+
+
+    carrusel.addEventListener(
+        "touchstart",
+        detener,
+        { passive: true }
+    );
+
+
+    carrusel.addEventListener(
+        "touchend",
+        iniciar,
+        { passive: true }
+    );
+
+
+    iniciar();
+
+</script>
+
+
+</body>
+
+</html>

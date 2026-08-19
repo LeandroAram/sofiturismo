@@ -1,0 +1,2103 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f0e4d6;
+
+    color: #082b4d;
+
+    overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 500px;
+
+    background-image:
+        url("../img/atardecer/portada.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(5,25,45,0.10),
+            rgba(5,25,45,0.01) 35%,
+            rgba(70,35,20,0.12) 62%,
+            rgba(5,24,42,0.84) 100%
+        );
+
+}
+
+
+.hero-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 500px;
+
+    padding:
+        25px 20px 36px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   BACK
+================================================== */
+
+.volver {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 20px;
+    left: 18px;
+
+    padding:
+        8px 13px;
+
+    border:
+        1px solid #efb54b;
+
+    border-radius: 22px;
+
+    background:
+        rgba(4,31,55,0.32);
+
+    backdrop-filter: blur(7px);
+
+    -webkit-backdrop-filter: blur(7px);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ==================================================
+   BRAND
+================================================== */
+
+.marca {
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+}
+
+
+.marca span {
+    color: #efb54b;
+}
+
+
+
+/* ==================================================
+   HERO TEXT
+================================================== */
+
+.hero-texto {
+    margin-top: auto;
+}
+
+
+.tipo {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 58px;
+
+    line-height: 0.93;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 4px 18px
+        rgba(0,0,0,0.28);
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #efb54b;
+
+}
+
+
+.hero-texto p {
+
+    max-width: 500px;
+
+    margin:
+        11px auto 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ==================================================
+   SEPARATOR
+================================================== */
+
+.separador {
+
+    width: 145px;
+
+    margin:
+        13px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #d99a30;
+
+}
+
+
+.separador span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: currentColor;
+
+}
+
+
+.separador b {
+    font-weight: normal;
+}
+
+
+
+/* ==================================================
+   QUICK INFO
+================================================== */
+
+.datos {
+
+    position: relative;
+
+    z-index: 5;
+
+    width:
+        min(820px, calc(100% - 28px));
+
+    margin:
+        -25px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,248,240,0.97);
+
+    box-shadow:
+        0 10px 28px
+        rgba(5,31,54,0.12);
+
+}
+
+
+.dato {
+
+    min-width: 0;
+
+    min-height: 90px;
+
+    padding:
+        12px 5px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-right:
+        1px solid #e7d8ca;
+
+    text-align: center;
+
+}
+
+
+.dato:last-child {
+    border-right: none;
+}
+
+
+.dato-icono {
+
+    color: #c77838;
+
+    font-size: 19px;
+
+}
+
+
+.dato span:not(.dato-icono) {
+
+    margin-top: 4px;
+
+    color: #81756c;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.dato strong {
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ==================================================
+   BACKGROUND
+================================================== */
+
+.contenido-principal {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 10px;
+
+    background:
+        radial-gradient(
+            circle at 7% 18%,
+            rgba(224,145,77,0.14),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 94% 58%,
+            rgba(200,117,55,0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(13,57,86,0.08),
+            transparent 27%
+        ),
+        linear-gradient(
+            180deg,
+            #f6ede2 0%,
+            #eee1d2 48%,
+            #f6efe7 100%
+        );
+
+}
+
+
+
+/* ==================================================
+   TITLES
+================================================== */
+
+.titulo-seccion {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+}
+
+
+.titulo-seccion > span {
+
+    color: #b96b2f;
+
+    font-size: 8px;
+
+    letter-spacing: 2.4px;
+
+    font-weight: 700;
+
+}
+
+
+.titulo-seccion h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+
+}
+
+
+.titulo-seccion > p {
+
+    max-width: 620px;
+
+    margin:
+        13px auto 0;
+
+    color: #626b72;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+}
+
+
+.linea-dorada {
+
+    width: 130px;
+
+    margin:
+        11px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #cf873d;
+
+}
+
+
+.linea-dorada span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: currentColor;
+
+}
+
+
+.linea-dorada b {
+    font-weight: normal;
+}
+
+
+
+/* ==================================================
+   EXPERIENCE
+================================================== */
+
+.experiencia {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        55px 20px 34px;
+
+}
+
+
+
+/* ==================================================
+   VIDEO + PHOTOS
+================================================== */
+
+.experiencia-media {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    height: 430px;
+
+    margin:
+        24px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        43% 57%;
+
+    gap: 10px;
+
+}
+
+
+.video-marco {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 21px;
+
+    background: #061f38;
+
+    box-shadow:
+        0 10px 28px
+        rgba(5,30,55,0.10);
+
+}
+
+
+.video-marco video {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.video-degrade {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5,26,45,0.83),
+            transparent 47%
+        );
+
+}
+
+
+.video-texto {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 17px;
+    right: 12px;
+    bottom: 17px;
+
+    color: white;
+
+}
+
+
+.video-texto span {
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+    letter-spacing: 1.8px;
+
+}
+
+
+.video-texto h3 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+}
+
+
+.mini-galeria {
+
+    display: grid;
+
+    grid-template-rows:
+        1fr 1fr;
+
+    gap: 10px;
+
+}
+
+
+.mini-foto {
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(8,43,77,0.06);
+
+}
+
+
+.mini-foto img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ==================================================
+   INCLUDED
+================================================== */
+
+.incluye {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 940px;
+
+    margin: auto;
+
+    padding:
+        32px 20px 38px;
+
+}
+
+
+.incluye-grid {
+
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 9px;
+
+}
+
+
+.incluye-item {
+
+    padding:
+        16px 13px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,250,244,0.78);
+
+    border:
+        1px solid
+        rgba(194,119,55,0.18);
+
+    box-shadow:
+        0 6px 18px
+        rgba(8,43,77,0.04);
+
+    text-align: center;
+
+}
+
+
+.incluye-icono {
+
+    margin-bottom: 7px;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+}
+
+
+.incluye-item strong {
+
+    display: block;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+}
+
+
+.incluye-item p {
+
+    margin-top: 4px;
+
+    color: #68727a;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+}
+
+
+
+/* ==================================================
+   ROUTE
+================================================== */
+
+.recorrido {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 930px;
+
+    margin: auto;
+
+    padding:
+        34px 20px 37px;
+
+}
+
+
+.recorrido-grid {
+
+    margin-top: 19px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+}
+
+
+.recorrido-card {
+
+    min-height: 210px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns:
+        47% 53%;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,250,244,0.82);
+
+    border:
+        1px solid
+        rgba(194,119,55,0.18);
+
+    box-shadow:
+        0 8px 22px
+        rgba(8,43,77,0.05);
+
+}
+
+
+.recorrido-foto {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.recorrido-foto img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.numero {
+
+    position: absolute;
+
+    left: 10px;
+    bottom: 9px;
+
+    padding:
+        4px 7px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(5,31,54,0.72);
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+}
+
+
+.recorrido-info {
+
+    padding: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.recorrido-info > span {
+
+    color: #b96b2f;
+
+    font-size: 6.5px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+}
+
+
+.recorrido-info h3 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+}
+
+
+.recorrido-info p {
+
+    margin-top: 7px;
+
+    color: #626d75;
+
+    font-size: 9.5px;
+
+    line-height: 1.5;
+
+}
+
+
+.altura {
+
+    margin-top: 5px;
+
+    color: #c77838;
+
+    font-size: 15px;
+
+}
+
+
+
+/* ==================================================
+   SUNSET MOMENT
+================================================== */
+
+.momento {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(850px, calc(100% - 40px));
+
+    height: 380px;
+
+    margin:
+        7px auto 20px;
+
+    overflow: hidden;
+
+    border-radius: 23px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(8,43,77,0.12);
+
+}
+
+
+.momento-imagen {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.momento-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5,25,43,0.90) 0%,
+            rgba(5,25,43,0.50) 45%,
+            rgba(5,25,43,0.04) 100%
+        );
+
+}
+
+
+.momento-contenido {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 30px;
+    right: 30px;
+    bottom: 28px;
+
+    max-width: 560px;
+
+    color: white;
+
+}
+
+
+.momento-mini {
+
+    color: #f3bd61;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.momento h2 {
+
+    margin-top: 8px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+}
+
+
+.momento h2 span {
+
+    display: block;
+
+    color: #f3bd61;
+
+}
+
+
+.momento-linea {
+
+    width: 46px;
+
+    height: 1px;
+
+    margin-top: 14px;
+
+    background: #f3bd61;
+
+}
+
+
+.momento p {
+
+    margin-top: 12px;
+
+    color:
+        rgba(255,255,255,0.88);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==================================================
+   ENGLISH GUIDE
+================================================== */
+
+.guia-ingles {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(850px, calc(100% - 36px));
+
+    margin:
+        10px auto 12px;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        54px 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #79512c,
+            #b17839
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 26px
+        rgba(87,55,25,0.12);
+
+}
+
+
+.guia-icono {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.12);
+
+}
+
+
+.guia-icono svg {
+
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: #ffe0a4;
+
+    stroke-width: 1.7;
+
+}
+
+
+.guia-texto > span {
+
+    color: #ffe0a4;
+
+    font-size: 7px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: 700;
+
+}
+
+
+.guia-texto h2 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+}
+
+
+.guia-texto p {
+
+    margin-top: 5px;
+
+    color:
+        rgba(255,255,255,0.87);
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+}
+
+
+.guia-texto small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #ffe0a4;
+
+    font-size: 8px;
+
+}
+
+
+
+/* ==================================================
+   TRIP TYPE
+================================================== */
+
+.modalidad {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(800px, calc(100% - 36px));
+
+    margin:
+        0 auto 33px;
+
+    padding: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        46px 1fr;
+
+    gap: 12px;
+
+    align-items: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082d50,
+            #0b3c66
+        );
+
+    color: white;
+
+}
+
+
+.modalidad-icono {
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(239,181,75,0.65);
+
+    color: #efb54b;
+
+    font-size: 15px;
+
+}
+
+
+.modalidad-texto > span {
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+    letter-spacing: 1.6px;
+
+}
+
+
+.modalidad h2 {
+
+    margin-top: 3px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+}
+
+
+.modalidad p {
+
+    margin-top: 3px;
+
+    color:
+        rgba(255,255,255,0.74);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   RESERVATION
+================================================== */
+
+.reserva {
+
+    padding:
+        50px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #082d50,
+            #0a385f
+        );
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.reserva > span {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.reserva h2 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+}
+
+
+.reserva p {
+
+    max-width: 450px;
+
+    margin:
+        9px auto 0;
+
+    color:
+        rgba(255,255,255,0.75);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+.boton-whatsapp {
+
+    width:
+        min(340px, 100%);
+
+    min-height: 51px;
+
+    margin:
+        19px auto 0;
+
+    padding:
+        10px 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 27px;
+
+    background: #25bf61;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.whatsapp-icono {
+
+    width: 24px;
+    height: 24px;
+
+}
+
+
+.whatsapp-icono svg {
+
+    width: 100%;
+    height: 100%;
+
+    fill: white;
+
+}
+
+
+.whatsapp-icono .telefono {
+
+    fill: #25bf61;
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    padding:
+        26px 20px;
+
+    background: #061f38;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+footer strong {
+
+    font-size: 19px;
+
+}
+
+
+footer p {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 440px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 440px;
+
+        padding:
+            calc(
+                13px +
+                env(safe-area-inset-top)
+            )
+            13px
+            24px;
+
+    }
+
+
+    .volver {
+
+        top:
+            calc(
+                9px +
+                env(safe-area-inset-top)
+            );
+
+        left: 9px;
+
+        padding:
+            6px 10px;
+
+        font-size: 9px;
+
+    }
+
+
+    .marca {
+
+        font-size: 23px;
+
+    }
+
+
+    .tipo {
+
+        font-size: 7px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 41px;
+
+        line-height: 0.96;
+
+    }
+
+
+    .hero-texto p {
+
+        max-width: 315px;
+
+        font-size: 11px;
+
+    }
+
+
+
+    /* DATA */
+
+    .datos {
+
+        width:
+            calc(100% - 22px);
+
+        margin-top: -20px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .dato {
+
+        min-height: 73px;
+
+        padding:
+            8px 3px;
+
+    }
+
+
+    .dato-icono {
+
+        font-size: 15px;
+
+    }
+
+
+    .dato span:not(.dato-icono) {
+
+        font-size: 7px;
+
+    }
+
+
+    .dato strong {
+
+        font-size: 10px;
+
+    }
+
+
+
+    /* TITLES */
+
+    .titulo-seccion > span {
+
+        font-size: 7px;
+
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .titulo-seccion > p {
+
+        padding:
+            0 11px;
+
+        margin-top: 8px;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+    }
+
+
+
+    /* EXPERIENCE */
+
+    .experiencia {
+
+        padding:
+            42px 10px 25px;
+
+    }
+
+
+    .experiencia-media {
+
+        height: 300px;
+
+        margin-top: 17px;
+
+        grid-template-columns:
+            43% 57%;
+
+        gap: 7px;
+
+    }
+
+
+    .video-marco {
+
+        border-radius: 15px;
+
+    }
+
+
+    .video-texto {
+
+        left: 9px;
+        right: 7px;
+        bottom: 10px;
+
+    }
+
+
+    .video-texto span {
+
+        font-size: 6px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .video-texto h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .mini-galeria {
+
+        gap: 7px;
+
+    }
+
+
+    .mini-foto {
+
+        border-radius: 13px;
+
+    }
+
+
+
+    /* INCLUDED */
+
+    .incluye {
+
+        padding:
+            25px 10px 27px;
+
+    }
+
+
+    .incluye-grid {
+
+        margin-top: 15px;
+
+        gap: 6px;
+
+    }
+
+
+    .incluye-item {
+
+        padding:
+            10px 5px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .incluye-icono {
+
+        margin-bottom: 4px;
+
+        font-size: 22px;
+
+    }
+
+
+    .incluye-item strong {
+
+        font-size: 12px;
+
+    }
+
+
+    .incluye-item p {
+
+        margin-top: 3px;
+
+        font-size: 7.5px;
+
+        line-height: 1.3;
+
+    }
+
+
+
+    /* ROUTE */
+
+    .recorrido {
+
+        padding:
+            27px 10px 28px;
+
+    }
+
+
+    .recorrido-grid {
+
+        margin-top: 15px;
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+    }
+
+
+    .recorrido-card {
+
+        grid-template-columns:
+            42% 58%;
+
+        min-height: 125px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .recorrido-info {
+
+        padding: 10px;
+
+    }
+
+
+    .recorrido-info > span {
+
+        font-size: 6px;
+
+    }
+
+
+    .recorrido-info h3 {
+
+        margin-top: 3px;
+
+        font-size: 18px;
+
+    }
+
+
+    .recorrido-info p {
+
+        margin-top: 4px;
+
+        font-size: 8px;
+
+        line-height: 1.35;
+
+    }
+
+
+    .altura {
+
+        margin-top: 3px;
+
+        font-size: 13px;
+
+    }
+
+
+
+    /* SUNSET MOMENT */
+
+    .momento {
+
+        width:
+            calc(100% - 20px);
+
+        height: 270px;
+
+        margin:
+            3px auto 11px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .momento-contenido {
+
+        left: 17px;
+        right: 17px;
+        bottom: 17px;
+
+    }
+
+
+    .momento-mini {
+
+        font-size: 6px;
+
+        letter-spacing: 1.4px;
+
+    }
+
+
+    .momento h2 {
+
+        margin-top: 5px;
+
+        font-size: 27px;
+
+    }
+
+
+    .momento-linea {
+
+        margin-top: 8px;
+
+    }
+
+
+    .momento p {
+
+        max-width: 290px;
+
+        margin-top: 7px;
+
+        font-size: 8.5px;
+
+        line-height: 1.4;
+
+    }
+
+
+
+    /* ENGLISH GUIDE */
+
+    .guia-ingles {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            5px auto 10px;
+
+        padding: 13px;
+
+        grid-template-columns:
+            42px 1fr;
+
+        gap: 10px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .guia-icono {
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .guia-icono svg {
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+
+    .guia-texto > span {
+
+        font-size: 6px;
+
+    }
+
+
+    .guia-texto h2 {
+
+        margin-top: 3px;
+
+        font-size: 18px;
+
+    }
+
+
+    .guia-texto p {
+
+        margin-top: 4px;
+
+        font-size: 8.5px;
+
+        line-height: 1.35;
+
+    }
+
+
+    .guia-texto small {
+
+        margin-top: 4px;
+
+        font-size: 7px;
+
+    }
+
+
+
+    /* TRIP TYPE */
+
+    .modalidad {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            0 auto 23px;
+
+        padding: 12px;
+
+        grid-template-columns:
+            37px 1fr;
+
+        gap: 8px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .modalidad-icono {
+
+        width: 35px;
+        height: 35px;
+
+        font-size: 12px;
+
+    }
+
+
+    .modalidad-texto > span {
+
+        font-size: 6px;
+
+    }
+
+
+    .modalidad h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .modalidad p {
+
+        font-size: 7.5px;
+
+    }
+
+
+
+    /* RESERVATION */
+
+    .reserva {
+
+        padding:
+            41px 15px;
+
+    }
+
+
+    .reserva > span {
+
+        font-size: 7px;
+
+    }
+
+
+    .reserva h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .reserva p {
+
+        max-width: 315px;
+
+        font-size: 9px;
+
+    }
+
+
+    .boton-whatsapp {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        min-height: 49px;
+
+        font-size: 10px;
+
+    }
+
+
+    .whatsapp-icono {
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+}

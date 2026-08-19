@@ -1,0 +1,1570 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #efe7da;
+
+    color: #082b4d;
+
+    overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 520px;
+
+    background-image:
+        url("../img/portada.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(4,28,51,0.14),
+            rgba(4,28,51,0.02) 35%,
+            rgba(4,28,51,0.22) 66%,
+            rgba(4,28,51,0.82) 100%
+        );
+
+}
+
+
+.hero-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 520px;
+
+    padding:
+        28px 20px 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   BACK
+================================================== */
+
+.volver-index {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 20px;
+    left: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid #efb54b;
+
+    background:
+        rgba(5,30,52,0.28);
+
+    color: white;
+
+    font-size: 19px;
+
+    backdrop-filter: blur(6px);
+
+}
+
+
+
+/* ==================================================
+   BRAND
+================================================== */
+
+.marca {
+
+    font-size: 31px;
+
+    font-weight: 700;
+
+}
+
+
+.marca span {
+
+    color: #efb54b;
+
+}
+
+
+
+/* ==================================================
+   HERO TEXT
+================================================== */
+
+.hero-texto {
+
+    margin-top: auto;
+
+}
+
+
+.hero-mini {
+
+    color: #efb54b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 8px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 50px;
+
+    line-height: 0.98;
+
+    font-weight: 500;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #efb54b;
+
+}
+
+
+.hero-texto > p {
+
+    max-width: 470px;
+
+    margin: 13px auto 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color:
+        rgba(255,255,255,0.93);
+
+}
+
+
+
+/* ==================================================
+   HERO BUTTONS
+================================================== */
+
+.hero-botones {
+
+    width: 100%;
+
+    max-width: 345px;
+
+    margin: 21px auto 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.boton {
+
+    min-height: 48px;
+
+    padding:
+        12px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 26px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.boton-principal {
+
+    background: #efb54b;
+
+    color: #082b4d;
+
+}
+
+
+.boton-secundario {
+
+    border:
+        1px solid
+        rgba(255,255,255,0.74);
+
+    background:
+        rgba(255,255,255,0.07);
+
+    backdrop-filter: blur(6px);
+
+    color: white;
+
+}
+
+
+
+/* ==================================================
+   MAIN BACKGROUND
+================================================== */
+
+.contenido-principal {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 18%,
+            rgba(220,161,68,0.12),
+            transparent 23%
+        ),
+        radial-gradient(
+            circle at 94% 55%,
+            rgba(21,73,105,0.10),
+            transparent 27%
+        ),
+        linear-gradient(
+            180deg,
+            #f5efe5 0%,
+            #efe6d7 52%,
+            #f6f1e9 100%
+        );
+
+}
+
+
+
+/* ==================================================
+   SECTION TITLES
+================================================== */
+
+.titulo-seccion {
+
+    text-align: center;
+
+}
+
+
+.titulo-seccion > span {
+
+    color: #bf801d;
+
+    font-size: 9px;
+
+    letter-spacing: 2.4px;
+
+    font-weight: 700;
+
+}
+
+
+.titulo-seccion h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+}
+
+
+.titulo-seccion p {
+
+    max-width: 520px;
+
+    margin:
+        8px auto 0;
+
+    padding: 0 15px;
+
+    color: #626d76;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+
+}
+
+
+
+/* ==================================================
+   TOURS
+================================================== */
+
+.destacadas {
+
+    padding:
+        34px 0 15px;
+
+}
+
+
+
+/* ==================================================
+   CAROUSEL
+================================================== */
+
+.carrusel {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding:
+        0 14px 2px;
+
+    display: flex;
+
+    gap: 9px;
+
+    overflow-x: auto;
+
+    scroll-snap-type:
+        x mandatory;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+
+    scroll-margin-top: 10px;
+
+}
+
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* ==================================================
+   TOUR CARDS
+================================================== */
+
+.tarjeta {
+
+    position: relative;
+
+    flex:
+        0 0 220px;
+
+    height: 255px;
+
+    overflow: hidden;
+
+    display: block;
+
+    border-radius: 18px;
+
+    scroll-snap-align: start;
+
+    background: #082d50;
+
+    color: white;
+
+    box-shadow:
+        0 8px 24px
+        rgba(8,43,77,0.10);
+
+}
+
+
+.tarjeta img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.tarjeta-sombra {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(4,25,45,0.95),
+            rgba(4,25,45,0.27) 55%,
+            transparent
+        );
+
+}
+
+
+.tarjeta-info {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 14px;
+    right: 14px;
+    bottom: 13px;
+
+}
+
+
+.numero {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.tarjeta h3 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+}
+
+
+.tarjeta-info > p {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.82);
+
+    font-size: 9px;
+
+}
+
+
+.tarjeta-pie {
+
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 6px;
+
+}
+
+
+.duracion {
+
+    padding:
+        4px 7px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    font-size: 8px;
+
+}
+
+
+.ver-detalles {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ==================================================
+   INDICATORS
+================================================== */
+
+.indicadores {
+
+    margin-top: 12px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+
+.punto {
+
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: #c1b7a7;
+
+}
+
+
+.punto.activo {
+
+    width: 24px;
+
+    border-radius: 5px;
+
+    background: #d99a30;
+
+}
+
+
+.ayuda-carrusel {
+
+    margin-top: 7px;
+
+    color: #807a70;
+
+    font-size: 9px;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   MEET SOFITURISMO
+================================================== */
+
+.conoce {
+
+    max-width: 900px;
+
+    margin:
+        18px auto 0;
+
+    padding: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        42% 58%;
+
+    align-items: stretch;
+
+    border-radius: 23px;
+
+    border:
+        1px solid
+        rgba(191,128,29,0.18);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.65),
+            rgba(239,230,215,0.83)
+        );
+
+    box-shadow:
+        0 12px 35px
+        rgba(8,43,77,0.06);
+
+}
+
+
+.conoce-imagen {
+
+    min-height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+}
+
+
+.conoce-imagen img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.conoce-texto {
+
+    padding:
+        21px 23px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.conoce-mini {
+
+    color: #be801d;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.conoce-texto h2 {
+
+    margin-top: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    line-height: 0.96;
+
+    font-weight: 500;
+
+}
+
+
+.conoce-texto h2 span {
+
+    display: block;
+
+    color: #c98a22;
+
+}
+
+
+.conoce-texto p {
+
+    margin-top: 12px;
+
+    color: #56636d;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+}
+
+
+.conoce-secundario {
+
+    opacity: 0.85;
+
+}
+
+
+.conoce-link {
+
+    width: fit-content;
+
+    margin-top: 15px;
+
+    padding-bottom: 3px;
+
+    border-bottom:
+        1px solid #c98a22;
+
+    color: #082d50;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* ==================================================
+   AIRPORT TRANSFER
+================================================== */
+
+.servicio-extra {
+
+    max-width: 850px;
+
+    margin:
+        15px auto 15px;
+
+    padding: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr 25px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082d50,
+            #0b3c66
+        );
+
+    color: white;
+
+    border-radius: 19px;
+
+    box-shadow:
+        0 12px 28px
+        rgba(8,45,80,0.11);
+
+}
+
+
+.servicio-icono {
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.10);
+
+}
+
+
+.servicio-icono svg {
+
+    width: 25px;
+    height: 25px;
+
+    fill: none;
+
+    stroke: #efb54b;
+
+    stroke-width: 1.7;
+
+}
+
+
+.servicio-info > span {
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.servicio-info h2 {
+
+    margin-top: 3px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+}
+
+
+.servicio-info p {
+
+    margin-top: 4px;
+
+    color:
+        rgba(255,255,255,0.72);
+
+    font-size: 9px;
+
+}
+
+
+.servicio-flecha {
+
+    color: #efb54b;
+
+    font-size: 21px;
+
+}
+
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contacto {
+
+    padding:
+        45px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #e9dfcf,
+            #e5d8c5
+        );
+
+    text-align: center;
+
+}
+
+
+.contacto > span {
+
+    color: #b97816;
+
+    font-size: 8px;
+
+    letter-spacing: 2.3px;
+
+}
+
+
+.contacto h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+
+}
+
+
+.contacto > p {
+
+    max-width: 450px;
+
+    margin:
+        8px auto 0;
+
+    color: #606a72;
+
+    font-size: 11px;
+
+}
+
+
+.contacto-botones {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 9px;
+
+}
+
+
+.contacto-boton {
+
+    min-width: 140px;
+
+    min-height: 43px;
+
+    padding:
+        10px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 24px;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.instagram {
+
+    background: #082d50;
+
+}
+
+
+.whatsapp {
+
+    background: #25bf61;
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    padding:
+        26px 20px;
+
+    background: #061f38;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+footer strong {
+
+    font-size: 20px;
+
+}
+
+
+footer p {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.64);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 455px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 455px;
+
+        padding:
+            calc(
+                14px +
+                env(safe-area-inset-top)
+            )
+            14px
+            28px;
+
+    }
+
+
+    .volver-index {
+
+        top:
+            calc(
+                10px +
+                env(safe-area-inset-top)
+            );
+
+        left: 10px;
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 16px;
+
+    }
+
+
+    .marca {
+
+        font-size: 25px;
+
+    }
+
+
+    .hero-mini {
+
+        font-size: 8px;
+
+        letter-spacing: 1.9px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .hero-texto > p {
+
+        max-width: 315px;
+
+        margin-top: 10px;
+
+        font-size: 11px;
+
+    }
+
+
+    .hero-botones {
+
+        max-width: 300px;
+
+        margin-top: 16px;
+
+        gap: 8px;
+
+    }
+
+
+    .boton {
+
+        min-height: 43px;
+
+        font-size: 10px;
+
+    }
+
+
+
+    /* TOURS */
+
+    .destacadas {
+
+        padding:
+            25px 0 10px;
+
+    }
+
+
+    .titulo-seccion > span {
+
+        font-size: 7px;
+
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .titulo-seccion p {
+
+        margin-top: 5px;
+
+        font-size: 10px;
+
+        line-height: 1.45;
+
+    }
+
+
+    .carrusel {
+
+        margin-top: 13px;
+
+        padding:
+            0 10px 2px;
+
+        gap: 7px;
+
+    }
+
+
+    .tarjeta {
+
+        flex:
+            0 0 46%;
+
+        height: 180px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .tarjeta-info {
+
+        left: 10px;
+        right: 9px;
+        bottom: 9px;
+
+    }
+
+
+    .numero {
+
+        font-size: 7px;
+
+    }
+
+
+    .tarjeta h3 {
+
+        margin-top: 2px;
+
+        font-size: 15px;
+
+    }
+
+
+    .tarjeta-info > p {
+
+        margin-top: 4px;
+
+        font-size: 8px;
+
+    }
+
+
+    .tarjeta-pie {
+
+        margin-top: 5px;
+
+    }
+
+
+    .duracion {
+
+        padding:
+            3px 5px;
+
+        font-size: 7px;
+
+    }
+
+
+    .ver-detalles {
+
+        font-size: 7px;
+
+    }
+
+
+    .indicadores {
+
+        margin-top: 9px;
+
+    }
+
+
+    .ayuda-carrusel {
+
+        margin-top: 5px;
+
+        font-size: 8px;
+
+    }
+
+
+
+    /* ABOUT */
+
+    .conoce {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            12px auto 0;
+
+        padding: 9px;
+
+        grid-template-columns:
+            43% 57%;
+
+        border-radius: 17px;
+
+    }
+
+
+    .conoce-imagen {
+
+        min-height: 165px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .conoce-texto {
+
+        padding:
+            11px 10px;
+
+    }
+
+
+    .conoce-mini {
+
+        font-size: 6px;
+
+        letter-spacing: 1.2px;
+
+    }
+
+
+    .conoce-texto h2 {
+
+        margin-top: 4px;
+
+        font-size: 22px;
+
+    }
+
+
+    .conoce-texto p {
+
+        margin-top: 6px;
+
+        font-size: 9px;
+
+        line-height: 1.4;
+
+    }
+
+
+    .conoce-secundario {
+
+        display: none;
+
+    }
+
+
+    .conoce-link {
+
+        margin-top: 8px;
+
+        font-size: 8px;
+
+    }
+
+
+
+    /* AIRPORT */
+
+    .servicio-extra {
+
+        width:
+            calc(100% - 20px);
+
+        margin:
+            10px auto 16px;
+
+        padding: 11px;
+
+        grid-template-columns:
+            37px 1fr 17px;
+
+        gap: 8px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .servicio-icono {
+
+        width: 36px;
+        height: 36px;
+
+    }
+
+
+    .servicio-icono svg {
+
+        width: 20px;
+        height: 20px;
+
+    }
+
+
+    .servicio-info > span {
+
+        font-size: 6px;
+
+    }
+
+
+    .servicio-info h2 {
+
+        margin-top: 2px;
+
+        font-size: 18px;
+
+    }
+
+
+    .servicio-info p {
+
+        margin-top: 2px;
+
+        font-size: 8px;
+
+    }
+
+
+    .servicio-flecha {
+
+        font-size: 16px;
+
+    }
+
+
+
+    /* CONTACT */
+
+    .contacto {
+
+        padding:
+            35px 15px;
+
+    }
+
+
+    .contacto > span {
+
+        font-size: 7px;
+
+    }
+
+
+    .contacto h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .contacto > p {
+
+        font-size: 10px;
+
+    }
+
+
+    .contacto-botones {
+
+        margin-top: 15px;
+
+        gap: 7px;
+
+    }
+
+
+    .contacto-boton {
+
+        min-width: 130px;
+
+        min-height: 40px;
+
+        font-size: 10px;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding:
+            24px 15px;
+
+    }
+
+
+    footer strong {
+
+        font-size: 19px;
+
+    }
+
+
+    footer p {
+
+        font-size: 8px;
+
+    }
+
+}

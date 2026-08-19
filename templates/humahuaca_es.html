@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Quebrada de Humahuaca | Sofiturismo</title>
+
+    <meta
+        name="description"
+        content="Excursión por la Quebrada de Humahuaca desde Purmamarca con Sofiturismo."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/humahuaca_es.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PORTADA
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <a
+        href="/es#destacadas"
+        class="volver"
+        aria-label="Volver a las excursiones"
+    >
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7"></path>
+        </svg>
+
+        <span>Volver</span>
+
+    </a>
+
+
+    <div class="hero-contenido">
+
+        <div class="marca">
+            Sofi<span>turismo</span>
+        </div>
+
+
+        <div class="hero-texto">
+
+            <span class="tipo">
+                EXCURSIÓN DÍA COMPLETO
+            </span>
+
+
+            <h1>
+                Quebrada de
+                <span>Humahuaca</span>
+            </h1>
+
+
+            <p>
+                Un recorrido por pueblos, paisajes y colores
+                hasta llegar a las imponentes Serranías del Hornocal.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     DATOS PRINCIPALES
+================================================== -->
+
+<section class="datos">
+
+
+    <div class="dato">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"></circle>
+            <path d="M12 7v5l3 2"></path>
+        </svg>
+
+        <span>Salida</span>
+
+        <strong>
+            9:30 hs
+        </strong>
+
+    </div>
+
+
+
+    <div class="dato">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"></circle>
+            <path d="M12 7v5l3 2"></path>
+        </svg>
+
+        <span>Regreso</span>
+
+        <strong>
+            19:00 hs
+        </strong>
+
+    </div>
+
+
+
+    <div class="dato">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+                d="M12 21s6-5.5 6-11a6 6 0 1 0-12 0c0 5.5 6 11 6 11z"
+            ></path>
+
+            <circle cx="12" cy="10" r="2"></circle>
+        </svg>
+
+        <span>Desde</span>
+
+        <strong>
+            Purmamarca
+        </strong>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTENIDO
+================================================== -->
+
+<main class="contenido">
+
+
+    <!-- ==================================================
+         EXPERIENCIA
+    ================================================== -->
+
+    <section class="seccion experiencia">
+
+        <div class="titulo-seccion">
+
+            <span>
+                LA EXPERIENCIA
+            </span>
+
+            <h2>
+                Un día recorriendo la Quebrada
+            </h2>
+
+            <p>
+                Partimos desde Purmamarca para recorrer algunos
+                de los lugares más emblemáticos de la Quebrada
+                de Humahuaca.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="carrusel"
+            id="carruselExperiencia"
+        >
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia1.jpg') }}"
+                    alt="Paisajes de la Quebrada de Humahuaca"
+                >
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia2.jpg') }}"
+                    alt="Quebrada de Humahuaca"
+                >
+
+            </div>
+
+
+            <div class="slide">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/experiencia3.png') }}"
+                    alt="Experiencia en la Quebrada de Humahuaca"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="puntos">
+
+            <button
+                class="punto activo"
+                data-slide="0"
+                aria-label="Imagen 1"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="1"
+                aria-label="Imagen 2"
+            ></button>
+
+            <button
+                class="punto"
+                data-slide="2"
+                aria-label="Imagen 3"
+            ></button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         INCLUYE
+    ================================================== -->
+
+    <section class="seccion incluye">
+
+        <div class="titulo-seccion">
+
+            <span>
+                INCLUIDO
+            </span>
+
+            <h2>
+                Todo preparado para el recorrido
+            </h2>
+
+        </div>
+
+
+
+        <div class="incluye-grid">
+
+
+            <!-- TRASLADO -->
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect
+                            x="4"
+                            y="5"
+                            width="16"
+                            height="13"
+                            rx="3"
+                        ></rect>
+
+                        <path d="M7 5l1-2h8l1 2"></path>
+
+                        <path d="M7 18v2"></path>
+
+                        <path d="M17 18v2"></path>
+
+                        <circle cx="8" cy="15" r="1"></circle>
+
+                        <circle cx="16" cy="15" r="1"></circle>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Traslado
+                    </strong>
+
+                    <p>
+                        Ida y vuelta desde Purmamarca
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GUÍA -->
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="4"
+                        ></circle>
+
+                        <path
+                            d="M5 21c0-4 3-7 7-7s7 3 7 7"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Guiado
+                    </strong>
+
+                    <p>
+                        Acompañamiento durante el recorrido
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOTOS -->
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect
+                            x="3"
+                            y="6"
+                            width="18"
+                            height="14"
+                            rx="2"
+                        ></rect>
+
+                        <path d="M8 6l2-3h4l2 3"></path>
+
+                        <circle
+                            cx="12"
+                            cy="13"
+                            r="4"
+                        ></circle>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Fotos
+                    </strong>
+
+                    <p>
+                        Tiempo para disfrutar y fotografiar
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         RECORRIDO
+    ================================================== -->
+
+    <section class="seccion recorrido">
+
+        <div class="titulo-seccion">
+
+            <span>
+                NUESTRO RECORRIDO
+            </span>
+
+            <h2>
+                De pueblo en pueblo
+            </h2>
+
+        </div>
+
+
+
+        <div class="recorrido-lista">
+
+
+            <!-- ==================================================
+                 01 MAIMARÁ
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    1
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/maimara1.jpg') }}"
+                        alt="Paleta del Pintor en Maimará"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Paleta del Pintor
+                    </h3>
+
+                    <span>
+                        Maimará
+                    </span>
+
+                    <p>
+                        Colores y formaciones naturales
+                        características de la Quebrada.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 02 TRÓPICO
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    2
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/tropico1.jpg') }}"
+                        alt="Trópico de Capricornio en Huacalera"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Trópico de Capricornio
+                    </h3>
+
+                    <span>
+                        Huacalera
+                    </span>
+
+                    <p>
+                        Una de las paradas geográficas
+                        más conocidas del recorrido.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 03 UQUÍA
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    3
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/uquia1.jpg') }}"
+                        alt="Quebrada de la Señorita en Uquía"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Quebrada de la Señorita
+                    </h3>
+
+                    <span>
+                        Uquía
+                    </span>
+
+                    <p>
+                        Formaciones rojizas que acompañan
+                        uno de los paisajes más particulares.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 04 HUMAHUACA
+            ================================================== -->
+
+            <article class="parada">
+
+                <div class="numero">
+                    4
+                </div>
+
+
+                <div class="parada-imagen">
+
+                    <img
+                        src="{{ url_for('static', filename='img/humahuaca/humahuaca1.png') }}"
+                        alt="Pueblo de Humahuaca"
+                    >
+
+                </div>
+
+
+                <div class="parada-texto">
+
+                    <h3>
+                        Pueblo de Humahuaca
+                    </h3>
+
+                    <span>
+                        Humahuaca
+                    </span>
+
+                    <p>
+                        Historia, cultura y tradición
+                        en el corazón de la Quebrada.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         HORNOCAL
+    ================================================== -->
+
+    <section class="seccion hornocal">
+
+        <div class="titulo-seccion">
+
+            <span>
+                DESTINO FINAL
+            </span>
+
+            <h2>
+                Serranías del Hornocal
+            </h2>
+
+            <p>
+                El gran cierre del recorrido y uno de los paisajes
+                más impresionantes del norte argentino.
+            </p>
+
+        </div>
+
+
+
+        <div class="hornocal-galeria">
+
+
+            <div class="hornocal-principal">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal1.png') }}"
+                    alt="Serranías del Hornocal"
+                >
+
+            </div>
+
+
+
+            <div class="hornocal-secundarias">
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal2.png') }}"
+                    alt="Hornocal Jujuy"
+                >
+
+                <img
+                    src="{{ url_for('static', filename='img/humahuaca/hornocal3.jpg') }}"
+                    alt="Paisaje de las Serranías del Hornocal"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONSULTA COMPACTA
+    ================================================== -->
+
+    <section class="consulta">
+
+        <span class="consulta-mini">
+            ¿QUERÉS RECORRER LA QUEBRADA?
+        </span>
+
+
+        <h2>
+            Consultá tu excursión
+        </h2>
+
+
+        <p>
+            Consultá precio, disponibilidad
+            y modalidad privada o grupal.
+        </p>
+
+
+        <a
+            href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20el%20precio%20y%20la%20disponibilidad%20para%20la%20excursión%20Quebrada%20de%20Humahuaca."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp"
+        >
+
+            <svg viewBox="0 0 24 24">
+
+                <path
+                    d="M12 2.5a9.3 9.3 0 0 0-8 14.1L2.7 21.5l5-1.3A9.4 9.4 0 1 0 12 2.5z"
+                ></path>
+
+                <path
+                    class="telefono"
+                    d="M9 7.5c.3-.7.6-.7.9-.7h.5c.2 0 .4.1.5.5l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.2.4-.1.6.5 1 1.2 1.8 2.1 2.4.8.6 1.5.9 1.8 1 .3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.3.8-.2l1.9.9c.3.1.5.3.5.5 0 .2-.1 1.3-.8 2-.7.8-1.8 1.1-2.8.8-1-.3-3.2-1.1-5.4-3.1-1.8-1.6-3-3.6-3.3-4.6-.3-1 .1-1.9.6-2.4z"
+                ></path>
+
+            </svg>
+
+
+            <span>
+                Consultar precio y disponibilidad
+            </span>
+
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <strong>
+        Sofi<span>turismo</span>
+    </strong>
+
+    <p>
+        Purmamarca · Jujuy · Argentina
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     CARRUSEL
+================================================== -->
+
+<script>
+
+    const carrusel =
+        document.getElementById("carruselExperiencia");
+
+    const slides =
+        Array.from(
+            carrusel.querySelectorAll(".slide")
+        );
+
+    const puntos =
+        Array.from(
+            document.querySelectorAll(".punto")
+        );
+
+
+    let indiceActual = 0;
+
+    let intervalo;
+
+
+
+    function actualizarPuntos() {
+
+        puntos.forEach((punto, indice) => {
+
+            punto.classList.toggle(
+                "activo",
+                indice === indiceActual
+            );
+
+        });
+
+    }
+
+
+
+    function moverA(indice) {
+
+        if (!slides[indice]) {
+            return;
+        }
+
+
+        indiceActual = indice;
+
+
+        carrusel.scrollTo({
+
+            left:
+                slides[indice].offsetLeft
+                - carrusel.offsetLeft,
+
+            behavior: "smooth"
+
+        });
+
+
+        actualizarPuntos();
+
+    }
+
+
+
+    function detener() {
+
+        clearInterval(intervalo);
+
+    }
+
+
+
+    function iniciar() {
+
+        detener();
+
+
+        intervalo = setInterval(() => {
+
+            indiceActual++;
+
+
+            if (
+                indiceActual >= slides.length
+            ) {
+
+                indiceActual = 0;
+
+            }
+
+
+            moverA(indiceActual);
+
+        }, 3500);
+
+    }
+
+
+
+    puntos.forEach((punto, indice) => {
+
+        punto.addEventListener(
+            "click",
+            () => {
+
+                moverA(indice);
+
+                iniciar();
+
+            }
+        );
+
+    });
+
+
+
+    carrusel.addEventListener(
+        "touchstart",
+        detener,
+        { passive: true }
+    );
+
+
+    carrusel.addEventListener(
+        "touchend",
+        iniciar,
+        { passive: true }
+    );
+
+
+    iniciar();
+
+</script>
+
+
+</body>
+
+</html>

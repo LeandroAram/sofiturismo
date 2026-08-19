@@ -1,0 +1,1178 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #061f38;
+
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ==================================================
+   PORTADA
+================================================== */
+
+.portada {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    background-image:
+        url("../img/portada.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+
+/* ==================================================
+   SOMBRA GENERAL
+================================================== */
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+
+            rgba(4, 28, 50, 0.02) 0%,
+
+            rgba(4, 28, 50, 0.00) 38%,
+
+            rgba(4, 28, 50, 0.03) 55%,
+
+            rgba(4, 25, 44, 0.32) 73%,
+
+            rgba(4, 22, 39, 0.83) 100%
+        );
+
+}
+
+
+
+/* ==================================================
+   CONTENIDO
+================================================== */
+
+.contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    padding:
+        calc(30px + env(safe-area-inset-top))
+        25px
+        calc(18px + env(safe-area-inset-bottom));
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+
+/* ==================================================
+   ENCABEZADO
+================================================== */
+
+.encabezado {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   LOGO MONTAÑAS
+================================================== */
+
+.logo-montanas {
+
+    position: relative;
+
+    width: 112px;
+
+    height: 55px;
+
+}
+
+
+.montana {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left:
+        32px solid transparent;
+
+    border-right:
+        32px solid transparent;
+
+    border-bottom:
+        45px solid;
+
+}
+
+
+.montana-verde {
+
+    left: 0;
+
+    border-bottom-color:
+        #3c7a58;
+
+}
+
+
+.montana-amarilla {
+
+    left: 28px;
+
+    bottom: 10px;
+
+    border-bottom-color:
+        #f0b441;
+
+}
+
+
+.montana-roja {
+
+    right: 0;
+
+    border-bottom-color:
+        #e4573c;
+
+}
+
+
+
+/* ==================================================
+   SOFITURISMO
+================================================== */
+
+.marca {
+
+    margin-top: 3px;
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    text-shadow:
+        0 2px 14px
+        rgba(0,0,0,0.18);
+
+}
+
+
+.sofi {
+
+    color: #ffffff;
+
+}
+
+
+.turismo {
+
+    color: #efb54b;
+
+}
+
+
+.linea-marca {
+
+    width: 48px;
+
+    height: 2px;
+
+    margin-top: 17px;
+
+    background: #efb54b;
+
+    border-radius: 10px;
+
+}
+
+
+.descripcion-marca {
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    color:
+        rgba(255,255,255,0.96);
+
+    text-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.35);
+
+}
+
+
+
+/* ==================================================
+   IDIOMAS
+   AHORA ARRIBA
+================================================== */
+
+.idiomas {
+
+    width: 100%;
+
+    max-width: 640px;
+
+    margin-top: 27px;
+
+}
+
+
+.titulo-idiomas {
+
+    text-align: center;
+
+    text-shadow:
+        0 2px 12px
+        rgba(0,0,0,0.50);
+
+}
+
+
+.titulo-idiomas h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: white;
+
+}
+
+
+.titulo-idiomas p {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    color: #efb54b;
+
+}
+
+
+.mini-linea {
+
+    display: block;
+
+    width: 53px;
+
+    height: 1px;
+
+    margin: 11px auto 0;
+
+    background: #efb54b;
+
+}
+
+
+
+/* ==================================================
+   BOTONES IDIOMA
+================================================== */
+
+.idiomas-botones {
+
+    margin-top: 14px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 13px;
+
+}
+
+
+.idioma-boton {
+
+    min-height: 62px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 35px;
+
+    border:
+        1.3px solid
+        rgba(239,181,75,0.90);
+
+    background:
+        rgba(10,20,30,0.12);
+
+    backdrop-filter: blur(3px);
+
+    -webkit-backdrop-filter: blur(3px);
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    text-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.60);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.idioma-boton:active {
+
+    transform: scale(0.97);
+
+    background:
+        rgba(239,181,75,0.15);
+
+}
+
+
+
+/* ==================================================
+   GRAN ESPACIO CENTRAL
+   FOTO PROTAGONISTA
+================================================== */
+
+.espacio-foto {
+
+    flex: 1;
+
+    width: 100%;
+
+    min-height: 260px;
+
+}
+
+
+
+/* ==================================================
+   SEPARADOR REDES
+================================================== */
+
+.separador {
+
+    width: 100%;
+
+    max-width: 360px;
+
+    margin:
+        9px auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #d99a30;
+
+}
+
+
+.separador span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            currentColor
+        );
+
+}
+
+
+.separador span:last-child {
+
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            currentColor
+        );
+
+}
+
+
+.separador b {
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+}
+
+
+
+/* ==================================================
+   REDES
+================================================== */
+
+.redes {
+
+    width: 100%;
+
+    max-width: 590px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.red-boton {
+
+    width: 100%;
+
+    min-height: 58px;
+
+    padding:
+        10px 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        42px 1fr 30px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.62);
+
+    background:
+        rgba(8,17,25,0.18);
+
+    backdrop-filter: blur(3px);
+
+    -webkit-backdrop-filter: blur(3px);
+
+    color: white;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.red-boton:active {
+
+    transform: scale(0.985);
+
+}
+
+
+.whatsapp-boton {
+
+    border-color:
+        rgba(239,181,75,0.95);
+
+}
+
+
+
+/* ==================================================
+   ICONOS
+================================================== */
+
+.red-icono {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.red-icono svg {
+
+    width: 32px;
+
+    height: 32px;
+
+}
+
+
+
+/* ==================================================
+   INSTAGRAM
+================================================== */
+
+.instagram-icono svg {
+
+    fill: none;
+
+    stroke: white;
+
+    stroke-width: 1.8;
+
+}
+
+
+.instagram-icono .relleno {
+
+    fill: white;
+
+    stroke: none;
+
+}
+
+
+
+/* ==================================================
+   TIKTOK
+================================================== */
+
+.tiktok-icono svg {
+
+    overflow: visible;
+
+}
+
+
+.tiktok-sombra-cyan {
+
+    fill: #25f4ee;
+
+    transform:
+        translate(-0.6px, 0.5px);
+
+}
+
+
+.tiktok-sombra-roja {
+
+    fill: #fe2c55;
+
+    transform:
+        translate(0.7px, -0.4px);
+
+}
+
+
+.tiktok-principal {
+
+    fill: white;
+
+}
+
+
+
+/* ==================================================
+   WHATSAPP
+================================================== */
+
+.whatsapp-icono svg {
+
+    fill: #25d366;
+
+}
+
+
+.whatsapp-telefono {
+
+    fill: white;
+
+}
+
+
+
+/* ==================================================
+   TEXTO REDES
+================================================== */
+
+.red-nombre {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.60);
+
+}
+
+
+.flecha {
+
+    color: #efb54b;
+
+    font-size: 23px;
+
+    font-weight: 300;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   DISEÑO WEB LEANDRO
+================================================== */
+
+.credito {
+
+    margin-top: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    color:
+        rgba(255,255,255,0.67);
+
+}
+
+
+.credito-texto {
+
+    font-size: 9px;
+
+    letter-spacing: 0.3px;
+
+    text-shadow:
+        0 1px 5px
+        rgba(0,0,0,0.5);
+
+}
+
+
+.credito-redes {
+
+    display: flex;
+
+    gap: 6px;
+
+}
+
+
+.credito-boton {
+
+    width: 29px;
+
+    height: 29px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(239,181,75,0.48);
+
+    background:
+        rgba(5,16,26,0.16);
+
+    backdrop-filter: blur(3px);
+
+    -webkit-backdrop-filter: blur(3px);
+
+}
+
+
+.credito-boton svg {
+
+    width: 15px;
+
+    height: 15px;
+
+    fill: none;
+
+    stroke:
+        rgba(255,255,255,0.82);
+
+    stroke-width: 1.7;
+
+}
+
+
+.credito-boton .relleno {
+
+    fill:
+        rgba(255,255,255,0.82);
+
+    stroke: none;
+
+}
+
+
+.credito-boton .telefono-mini {
+
+    fill:
+        rgba(255,255,255,0.82);
+
+    stroke: none;
+
+}
+
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    .contenido {
+
+        padding:
+            calc(17px + env(safe-area-inset-top))
+            15px
+            calc(12px + env(safe-area-inset-bottom));
+
+    }
+
+
+
+    /* LOGO */
+
+    .logo-montanas {
+
+        width: 88px;
+
+        height: 43px;
+
+    }
+
+
+    .montana {
+
+        border-left-width: 25px;
+
+        border-right-width: 25px;
+
+        border-bottom-width: 36px;
+
+    }
+
+
+    .montana-amarilla {
+
+        left: 22px;
+
+        bottom: 8px;
+
+    }
+
+
+    .marca {
+
+        margin-top: 1px;
+
+        font-size: 34px;
+
+    }
+
+
+    .linea-marca {
+
+        width: 41px;
+
+        margin-top: 12px;
+
+    }
+
+
+    .descripcion-marca {
+
+        margin-top: 8px;
+
+        font-size: 10px;
+
+    }
+
+
+
+    /* IDIOMA ARRIBA */
+
+    .idiomas {
+
+        margin-top: 20px;
+
+    }
+
+
+    .titulo-idiomas h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .titulo-idiomas p {
+
+        margin-top: 3px;
+
+        font-size: 12px;
+
+    }
+
+
+    .mini-linea {
+
+        width: 42px;
+
+        margin-top: 8px;
+
+    }
+
+
+    .idiomas-botones {
+
+        margin-top: 11px;
+
+        gap: 8px;
+
+    }
+
+
+    .idioma-boton {
+
+        min-height: 52px;
+
+        border-radius: 29px;
+
+        font-size: 14px;
+
+    }
+
+
+
+    /* GRAN ESPACIO FOTO */
+
+    .espacio-foto {
+
+        min-height: 250px;
+
+    }
+
+
+
+    /* SEPARADOR */
+
+    .separador {
+
+        max-width: 295px;
+
+        margin:
+            6px auto 12px;
+
+    }
+
+
+
+    /* REDES */
+
+    .redes {
+
+        gap: 7px;
+
+    }
+
+
+    .red-boton {
+
+        min-height: 51px;
+
+        padding:
+            7px 14px;
+
+        grid-template-columns:
+            34px 1fr 24px;
+
+        gap: 9px;
+
+        border-radius: 27px;
+
+    }
+
+
+    .red-icono {
+
+        width: 31px;
+
+        height: 31px;
+
+    }
+
+
+    .red-icono svg {
+
+        width: 27px;
+
+        height: 27px;
+
+    }
+
+
+    .red-nombre {
+
+        font-size: 13px;
+
+    }
+
+
+    .flecha {
+
+        font-size: 19px;
+
+    }
+
+
+
+    /* CRÉDITO */
+
+    .credito {
+
+        margin-top: 13px;
+
+        gap: 8px;
+
+    }
+
+
+    .credito-texto {
+
+        font-size: 8px;
+
+    }
+
+
+    .credito-boton {
+
+        width: 27px;
+
+        height: 27px;
+
+    }
+
+
+    .credito-boton svg {
+
+        width: 14px;
+
+        height: 14px;
+
+    }
+
+}
+
+
+
+/* ==================================================
+   CELULARES MÁS BAJOS
+================================================== */
+
+@media
+(max-width: 600px)
+and (max-height: 760px) {
+
+
+    .logo-montanas {
+
+        transform: scale(0.86);
+
+        margin-bottom: -3px;
+
+    }
+
+
+    .marca {
+
+        font-size: 30px;
+
+    }
+
+
+    .descripcion-marca {
+
+        font-size: 9px;
+
+    }
+
+
+    .idiomas {
+
+        margin-top: 13px;
+
+    }
+
+
+    .titulo-idiomas h1 {
+
+        font-size: 20px;
+
+    }
+
+
+    .titulo-idiomas p {
+
+        font-size: 11px;
+
+    }
+
+
+    .idioma-boton {
+
+        min-height: 46px;
+
+    }
+
+
+    .espacio-foto {
+
+        min-height: 90px;
+
+    }
+
+
+    .separador {
+
+        margin:
+            5px auto 10px;
+
+    }
+
+
+    .red-boton {
+
+        min-height: 46px;
+
+    }
+
+
+    .credito {
+
+        margin-top: 9px;
+
+    }
+
+}

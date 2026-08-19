@@ -1,0 +1,1636 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f1e8da;
+
+    color: #082b4d;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 535px;
+
+    background-image:
+        url("../img/salinas/portada.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(4,27,49,0.17),
+            rgba(4,27,49,0.02) 38%,
+            rgba(4,27,49,0.18) 64%,
+            rgba(4,27,49,0.82) 100%
+        );
+
+}
+
+
+.hero-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 535px;
+
+    padding:
+        28px 20px 38px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+}
+
+
+.volver {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 22px;
+    left: 22px;
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid #efb54b;
+
+    border-radius: 22px;
+
+    background:
+        rgba(4,31,55,0.30);
+
+    backdrop-filter: blur(7px);
+
+    -webkit-backdrop-filter: blur(7px);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.marca {
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+}
+
+
+.marca span {
+
+    color: #efb54b;
+
+}
+
+
+.hero-texto {
+
+    margin-top: auto;
+
+}
+
+
+.tipo {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 66px;
+
+    line-height: 0.92;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 4px 18px
+        rgba(0,0,0,0.28);
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #efb54b;
+
+}
+
+
+.hero-texto p {
+
+    max-width: 500px;
+
+    margin:
+        11px auto 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ==================================================
+   SEPARADORES
+================================================== */
+
+.separador,
+.linea-dorada {
+
+    width: 150px;
+
+    margin:
+        13px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #d99a30;
+
+}
+
+
+.separador span,
+.linea-dorada span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: currentColor;
+
+}
+
+
+.separador b,
+.linea-dorada b {
+
+    font-weight: normal;
+
+}
+
+
+
+/* ==================================================
+   DATOS
+================================================== */
+
+.datos {
+
+    position: relative;
+
+    z-index: 5;
+
+    width:
+        min(850px, calc(100% - 30px));
+
+    margin:
+        -27px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,251,245,0.96);
+
+    border:
+        1px solid
+        rgba(207,174,119,0.20);
+
+    box-shadow:
+        0 10px 30px
+        rgba(5,31,54,0.12);
+
+}
+
+
+.dato {
+
+    min-height: 95px;
+
+    padding:
+        14px 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-right:
+        1px solid #e7ddcf;
+
+}
+
+
+.dato:last-child {
+
+    border-right: none;
+
+}
+
+
+.dato-icono {
+
+    font-size: 20px;
+
+}
+
+
+.dato span {
+
+    margin-top: 4px;
+
+    color: #7c746c;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.dato strong {
+
+    margin-top: 3px;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ==================================================
+   FONDO INTERIOR
+================================================== */
+
+.contenido-principal {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 5% 16%,
+            rgba(218,154,48,0.10),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 96% 63%,
+            rgba(8,45,80,0.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #f6efe5 0%,
+            #efe5d6 54%,
+            #f7f2ea 100%
+        );
+
+}
+
+
+.contenido-principal::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 470px;
+    left: -120px;
+
+    width: 270px;
+    height: 270px;
+
+    border:
+        1px solid
+        rgba(201,138,34,0.11);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.contenido-principal::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -160px;
+    bottom: 180px;
+
+    width: 340px;
+    height: 340px;
+
+    border:
+        1px solid
+        rgba(8,45,80,0.07);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+
+/* ==================================================
+   TITULOS
+================================================== */
+
+.titulo-seccion {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+}
+
+
+.titulo-seccion > span {
+
+    color: #bf801d;
+
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+
+    font-weight: 700;
+
+}
+
+
+.titulo-seccion h2 {
+
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+}
+
+
+.titulo-seccion > p {
+
+    max-width: 650px;
+
+    margin:
+        15px auto 0;
+
+    color: #616b73;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ==================================================
+   EXPERIENCIA
+================================================== */
+
+.experiencia {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        60px 0 40px;
+
+}
+
+
+
+/* ==================================================
+   CARRUSEL
+================================================== */
+
+.carrusel-experiencia {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin:
+        28px auto 0;
+
+    padding:
+        0 20px;
+
+    display: flex;
+
+    gap: 14px;
+
+    overflow-x: auto;
+
+    scroll-snap-type:
+        x mandatory;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+
+.carrusel-experiencia::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+.slide-experiencia {
+
+    flex:
+        0 0 82%;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    scroll-snap-align: center;
+
+    border:
+        1px solid
+        rgba(213,154,48,0.32);
+
+    box-shadow:
+        0 10px 28px
+        rgba(5,30,55,0.09);
+
+}
+
+
+.slide-experiencia img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* ==================================================
+   PUNTOS
+================================================== */
+
+.indicadores {
+
+    margin-top: 13px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+
+.punto {
+
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #beb4a5;
+
+}
+
+
+.punto.activo {
+
+    width: 24px;
+
+    border-radius: 5px;
+
+    background: #d99a30;
+
+}
+
+
+.deslizar {
+
+    margin-top: 7px;
+
+    color: #817a70;
+
+    font-size: 9px;
+
+    text-align: center;
+
+}
+
+
+
+/* ==================================================
+   INCLUYE
+================================================== */
+
+.incluye-seccion {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding:
+        40px 25px 55px;
+
+}
+
+
+.incluye-grid {
+
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 13px;
+
+}
+
+
+.incluye-item {
+
+    min-height: 130px;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid
+        rgba(204,172,119,0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,252,247,0.84),
+            rgba(240,230,214,0.86)
+        );
+
+    box-shadow:
+        0 7px 20px
+        rgba(8,43,77,0.05);
+
+    text-align: center;
+
+}
+
+
+.incluye-icono {
+
+    font-size: 28px;
+
+}
+
+
+.incluye-item strong {
+
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 13px;
+
+}
+
+
+.incluye-item p {
+
+    margin-top: 5px;
+
+    color: #68727a;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+}
+
+
+
+/* ==================================================
+   PARADAS
+================================================== */
+
+.paradas {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        50px 25px 55px;
+
+}
+
+
+.parada {
+
+    max-width: 950px;
+
+    margin:
+        30px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1.15fr 0.85fr;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,251,245,0.87),
+            rgba(235,224,207,0.92)
+        );
+
+    border:
+        1px solid
+        rgba(204,172,119,0.23);
+
+    box-shadow:
+        0 10px 28px
+        rgba(8,43,77,0.06);
+
+}
+
+
+.parada-invertida {
+
+    grid-template-columns:
+        0.85fr 1.15fr;
+
+}
+
+
+.parada-invertida .parada-foto {
+
+    order: 2;
+
+}
+
+
+.parada-invertida .parada-info {
+
+    order: 1;
+
+}
+
+
+.parada-foto {
+
+    position: relative;
+
+    min-height: 320px;
+
+    overflow: hidden;
+
+}
+
+
+.parada-foto img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.foto-degrade {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5,32,57,0.45),
+            transparent 60%
+        );
+
+}
+
+
+.numero-parada {
+
+    position: absolute;
+
+    left: 18px;
+    bottom: 16px;
+
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.parada-info {
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.parada-mini {
+
+    color: #bf801d;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.parada-info h3 {
+
+    margin-top: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 31px;
+
+    font-weight: 500;
+
+}
+
+
+.parada-info p {
+
+    margin-top: 10px;
+
+    color: #626d75;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+}
+
+
+.altura {
+
+    margin-top: 7px;
+
+    color: #c98a22;
+
+    font-size: 20px;
+
+}
+
+
+
+/* ==================================================
+   MODALIDAD
+================================================== */
+
+.modalidad {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    margin:
+        25px auto 45px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082d50,
+            #0b3c66
+        );
+
+    color: white;
+
+    box-shadow:
+        0 12px 30px
+        rgba(8,45,80,0.11);
+
+}
+
+
+.modalidad-icono {
+
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    font-size: 24px;
+
+}
+
+
+.modalidad span {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.modalidad h2 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+}
+
+
+.modalidad p {
+
+    margin-top: 4px;
+
+    color:
+        rgba(255,255,255,0.74);
+
+    font-size: 10px;
+
+}
+
+
+
+/* ==================================================
+   RESERVA
+================================================== */
+
+.reserva {
+
+    padding:
+        57px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #082d50 0%,
+            #0a385f 100%
+        );
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.reserva > span {
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.reserva h2 {
+
+    margin-top: 7px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+
+}
+
+
+.reserva p {
+
+    max-width: 500px;
+
+    margin:
+        10px auto 0;
+
+    color:
+        rgba(255,255,255,0.75);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==================================================
+   BOTON WHATSAPP
+================================================== */
+
+.boton-whatsapp {
+
+    width:
+        min(330px, 100%);
+
+    min-height: 52px;
+
+    margin:
+        21px auto 0;
+
+    padding:
+        11px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20b85a,
+            #31ca6b
+        );
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.16);
+
+}
+
+
+.whatsapp-icono {
+
+    width: 26px;
+    height: 26px;
+
+    flex-shrink: 0;
+
+}
+
+
+.whatsapp-icono svg {
+
+    width: 100%;
+    height: 100%;
+
+    fill: white;
+
+}
+
+
+.whatsapp-icono .telefono {
+
+    fill: #25bf61;
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    padding:
+        26px 20px;
+
+    background: #061f38;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+footer strong {
+
+    font-size: 19px;
+
+}
+
+
+footer p {
+
+    margin-top: 6px;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 9px;
+
+}
+
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 450px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 450px;
+
+        padding:
+            calc(
+                13px +
+                env(safe-area-inset-top)
+            )
+            13px
+            25px;
+
+    }
+
+
+    .volver {
+
+        top:
+            calc(
+                9px +
+                env(safe-area-inset-top)
+            );
+
+        left: 9px;
+
+        padding:
+            6px 10px;
+
+        font-size: 9px;
+
+    }
+
+
+    .marca {
+
+        font-size: 23px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 47px;
+
+    }
+
+
+    .hero-texto p {
+
+        max-width: 320px;
+
+        font-size: 11px;
+
+    }
+
+
+
+    /* DATOS */
+
+    .datos {
+
+        width:
+            calc(100% - 24px);
+
+        margin-top: -21px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .dato {
+
+        min-height: 75px;
+
+        padding:
+            8px 4px;
+
+    }
+
+
+    .dato-icono {
+
+        font-size: 17px;
+
+    }
+
+
+    .dato span {
+
+        font-size: 7px;
+
+    }
+
+
+    .dato strong {
+
+        font-size: 11px;
+
+    }
+
+
+
+    /* TITULOS */
+
+    .titulo-seccion h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .titulo-seccion > p {
+
+        padding:
+            0 17px;
+
+        margin-top: 10px;
+
+        font-size: 10px;
+
+        line-height: 1.55;
+
+    }
+
+
+
+    /* EXPERIENCIA */
+
+    .experiencia {
+
+        padding:
+            43px 0 26px;
+
+    }
+
+
+    .carrusel-experiencia {
+
+        margin-top: 18px;
+
+        padding:
+            0 12px;
+
+        gap: 8px;
+
+    }
+
+
+    .slide-experiencia {
+
+        flex:
+            0 0 84%;
+
+        height: 235px;
+
+        border-radius: 16px;
+
+    }
+
+
+
+    /* INCLUYE */
+
+    .incluye-seccion {
+
+        padding:
+            29px 12px 35px;
+
+    }
+
+
+    .incluye-grid {
+
+        margin-top: 18px;
+
+        gap: 7px;
+
+    }
+
+
+    .incluye-item {
+
+        min-height: 102px;
+
+        padding:
+            10px 5px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .incluye-icono {
+
+        font-size: 22px;
+
+    }
+
+
+    .incluye-item strong {
+
+        margin-top: 5px;
+
+        font-size: 10px;
+
+    }
+
+
+    .incluye-item p {
+
+        font-size: 7.5px;
+
+    }
+
+
+
+    /* PARADAS */
+
+    .paradas {
+
+        padding:
+            34px 12px 40px;
+
+    }
+
+
+    .parada,
+    .parada-invertida {
+
+        margin-top: 20px;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 17px;
+
+    }
+
+
+    .parada-invertida .parada-foto {
+
+        order: 1;
+
+    }
+
+
+    .parada-invertida .parada-info {
+
+        order: 2;
+
+    }
+
+
+    .parada-foto {
+
+        min-height: 195px;
+
+        height: 195px;
+
+    }
+
+
+    .parada-info {
+
+        padding: 17px;
+
+    }
+
+
+    .parada-mini {
+
+        font-size: 7px;
+
+    }
+
+
+    .parada-info h3 {
+
+        font-size: 24px;
+
+    }
+
+
+    .parada-info p {
+
+        margin-top: 7px;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .altura {
+
+        font-size: 17px;
+
+    }
+
+
+
+    /* MODALIDAD */
+
+    .modalidad {
+
+        margin:
+            15px 12px 28px;
+
+        padding: 15px;
+
+        gap: 10px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .modalidad-icono {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 19px;
+
+    }
+
+
+    .modalidad h2 {
+
+        font-size: 19px;
+
+    }
+
+
+    .modalidad p {
+
+        font-size: 8px;
+
+        line-height: 1.4;
+
+    }
+
+
+
+    /* RESERVA */
+
+    .reserva {
+
+        padding:
+            44px 16px;
+
+    }
+
+
+    .reserva h2 {
+
+        font-size: 29px;
+
+    }
+
+
+    .reserva p {
+
+        max-width: 320px;
+
+        font-size: 9.5px;
+
+    }
+
+
+    .boton-whatsapp {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        min-height: 49px;
+
+        font-size: 10px;
+
+    }
+
+
+    .whatsapp-icono {
+
+        width: 23px;
+        height: 23px;
+
+    }
+
+}

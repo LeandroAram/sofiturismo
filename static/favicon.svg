@@ -1,0 +1,62 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+>
+
+    <rect
+        width="512"
+        height="512"
+        rx="110"
+        fill="#082d50"
+    />
+
+    <!-- SOL -->
+    <circle
+        cx="365"
+        cy="135"
+        r="48"
+        fill="#efb54b"
+    />
+
+    <!-- MONTAÑA TRASERA -->
+    <path
+        d="M55 350
+           L185 175
+           L255 265
+           L325 185
+           L458 350
+           Z"
+        fill="#d9903d"
+    />
+
+    <!-- MONTAÑA PRINCIPAL -->
+    <path
+        d="M60 360
+           L225 145
+           L390 360
+           Z"
+        fill="#f1c06c"
+    />
+
+    <!-- NIEVE / LUZ -->
+    <path
+        d="M225 145
+           L176 209
+           L208 199
+           L225 220
+           L248 194
+           L274 209
+           Z"
+        fill="#fff8ec"
+    />
+
+    <!-- CAMINO -->
+    <path
+        d="M232 360
+           C245 325 262 296 286 270
+           C266 310 260 335 265 360
+           Z"
+        fill="#082d50"
+    />
+
+</svg>

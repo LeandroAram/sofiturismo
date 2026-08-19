@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Ojos del Salar | Sofiturismo</title>
+
+    <meta
+        name="description"
+        content="Excursión Ojos del Salar desde Purmamarca con Sofiturismo."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/ojos_es.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PORTADA
+================================================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <a
+        href="/es#destacadas"
+        class="volver"
+        aria-label="Volver a las excursiones"
+    >
+        ← Volver
+    </a>
+
+
+    <div class="hero-contenido">
+
+        <div class="marca">
+            Sofi<span>turismo</span>
+        </div>
+
+
+        <div class="hero-texto">
+
+            <span class="tipo">
+                EXCURSIÓN COMPLETA
+            </span>
+
+
+            <h1>
+                Ojos del
+                <span>Salar</span>
+            </h1>
+
+
+            <div class="separador">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
+
+
+            <p>
+                Una experiencia diferente para conocer
+                uno de los paisajes más particulares
+                de las Salinas Grandes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     DATOS
+================================================== -->
+
+<section class="datos">
+
+    <div class="dato">
+
+        <div class="dato-icono">
+            📍
+        </div>
+
+        <span>
+            Salida
+        </span>
+
+        <strong>
+            Purmamarca
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <div class="dato-icono">
+            ⏱
+        </div>
+
+        <span>
+            Duración
+        </span>
+
+        <strong>
+            4 hs 30 min
+        </strong>
+
+    </div>
+
+
+    <div class="dato">
+
+        <div class="dato-icono">
+            🚖
+        </div>
+
+        <span>
+            Modalidad
+        </span>
+
+        <strong>
+            Privada / grupal
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTENIDO
+================================================== -->
+
+<main class="contenido-principal">
+
+
+    <!-- ==================================================
+         EXPERIENCIA
+    ================================================== -->
+
+    <section class="experiencia">
+
+        <div class="titulo-seccion">
+
+            <span>
+                LA EXPERIENCIA
+            </span>
+
+            <h2>
+                Viví los Ojos del Salar
+            </h2>
+
+
+            <div class="linea-dorada">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
+
+
+            <p>
+                Partimos desde Purmamarca hacia la Puna,
+                atravesando paisajes increíbles hasta llegar
+                a las Salinas Grandes.
+            </p>
+
+        </div>
+
+
+
+        <!-- VIDEO + FOTOS -->
+
+        <div class="experiencia-media">
+
+
+            <div class="video-marco">
+
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="{{ url_for('static', filename='img/ojos/experiencia1.jpg') }}"
+                >
+
+                    <source
+                        src="{{ url_for('static', filename='img/ojos/experiencia.mp4') }}"
+                        type="video/mp4"
+                    >
+
+                </video>
+
+
+                <div class="video-degrade"></div>
+
+
+                <div class="video-texto">
+
+                    <span>
+                        VIVÍ LA EXPERIENCIA
+                    </span>
+
+                    <h3>
+                        Ojos del Salar
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mini-galeria">
+
+
+                <div class="mini-foto">
+
+                    <img
+                        src="{{ url_for('static', filename='img/ojos/experiencia1.jpg') }}"
+                        alt="Experiencia Ojos del Salar"
+                    >
+
+                </div>
+
+
+                <div class="mini-foto">
+
+                    <img
+                        src="{{ url_for('static', filename='img/ojos/experiencia2.jpg') }}"
+                        alt="Paisaje de las Salinas"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         INCLUYE
+    ================================================== -->
+
+    <section class="incluye-seccion">
+
+        <div class="titulo-seccion">
+
+            <span>
+                INCLUIDO
+            </span>
+
+            <h2>
+                Todo preparado para disfrutar
+            </h2>
+
+
+            <div class="linea-dorada">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+
+        <div class="incluye-grid">
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    🚖
+                </div>
+
+                <strong>
+                    Traslado
+                </strong>
+
+                <p>
+                    Ida y vuelta desde Purmamarca
+                </p>
+
+            </div>
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    🧭
+                </div>
+
+                <strong>
+                    Guiado
+                </strong>
+
+                <p>
+                    Acompañamiento durante el recorrido
+                </p>
+
+            </div>
+
+
+            <div class="incluye-item">
+
+                <div class="incluye-icono">
+                    📸
+                </div>
+
+                <strong>
+                    Fotos
+                </strong>
+
+                <p>
+                    Tiempo para disfrutar y fotografiar
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         PARADAS
+    ================================================== -->
+
+    <section class="paradas">
+
+        <div class="titulo-seccion">
+
+            <span>
+                DURANTE EL RECORRIDO
+            </span>
+
+            <h2>
+                Paradas del recorrido
+            </h2>
+
+
+            <div class="linea-dorada">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             CUESTA DE LIPÁN
+        ================================================== -->
+
+        <article class="parada">
+
+            <div class="parada-foto">
+
+                <img
+                    src="{{ url_for('static', filename='img/ojos/lipan1.jpg') }}"
+                    alt="Cuesta de Lipán"
+                >
+
+                <div class="foto-degrade"></div>
+
+                <span class="numero-parada">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="parada-info">
+
+                <span class="parada-mini">
+                    PARADA PANORÁMICA
+                </span>
+
+                <h3>
+                    Cuesta de Lipán
+                </h3>
+
+                <p>
+                    Ascendemos desde la Quebrada hacia la Puna
+                    por uno de los caminos panorámicos
+                    más impactantes de Jujuy.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             ALTURA MÁXIMA
+        ================================================== -->
+
+        <article class="parada parada-invertida">
+
+            <div class="parada-foto">
+
+                <img
+                    src="{{ url_for('static', filename='img/ojos/altura1.jpg') }}"
+                    alt="Altura máxima 4170 metros"
+                >
+
+                <div class="foto-degrade"></div>
+
+                <span class="numero-parada">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="parada-info">
+
+                <span class="parada-mini">
+                    PUNTO MÁS ALTO
+                </span>
+
+                <h3>
+                    Altura máxima
+                </h3>
+
+                <strong class="altura">
+                    4.170 msnm
+                </strong>
+
+                <p>
+                    Una parada para contemplar
+                    la inmensidad del paisaje de la Puna
+                    antes de llegar al salar.
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         DESTINO PRINCIPAL
+    ================================================== -->
+
+    <section class="destino-destacado">
+
+        <div class="destino-foto">
+
+            <img
+                src="{{ url_for('static', filename='img/ojos/salar1.jpg') }}"
+                alt="Ojos del Salar"
+            >
+
+            <div class="destino-degrade"></div>
+
+
+            <div class="destino-texto">
+
+                <span>
+                    DESTINO PRINCIPAL
+                </span>
+
+                <h2>
+                    En el corazón del salar
+                </h2>
+
+                <p>
+                    Llegamos hasta uno de los rincones más especiales
+                    de las Salinas Grandes para disfrutar de sus ojos
+                    de agua y de la inmensidad del paisaje.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         MODALIDAD
+    ================================================== -->
+
+    <section class="modalidad">
+
+        <div class="modalidad-icono">
+            🚖
+        </div>
+
+
+        <div>
+
+            <span>
+                MODALIDAD
+            </span>
+
+            <h2>
+                Privada o grupal
+            </h2>
+
+            <p>
+                Elegí la alternativa que mejor se adapte
+                a tu viaje y consultá disponibilidad.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     CONSULTA
+================================================== -->
+
+<section class="reserva">
+
+    <span>
+        ¿QUERÉS CONOCER LOS OJOS DEL SALAR?
+    </span>
+
+    <h2>
+        Consultá tu excursión
+    </h2>
+
+    <p>
+        Escribinos para conocer precio,
+        disponibilidad y modalidad.
+    </p>
+
+
+    <a
+        href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20el%20precio%20y%20la%20disponibilidad%20para%20la%20excursión%20Ojos%20del%20Salar."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton-whatsapp"
+    >
+
+        <span class="whatsapp-icono">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <path
+                    d="M12 2.5a9.3 9.3 0 0 0-8 14.1L2.7 21.5l5-1.3A9.4 9.4 0 1 0 12 2.5z"
+                />
+
+                <path
+                    class="telefono"
+                    d="M9 7.5c.3-.7.6-.7.9-.7h.5c.2 0 .4.1.5.5l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.2.4-.1.6.5 1 1.2 1.8 2.1 2.4.8.6 1.5.9 1.8 1 .3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.3.8-.2l1.9.9c.3.1.5.3.5.5 0 .2-.1 1.3-.8 2-.7.8-1.8 1.1-2.8.8-1-.3-3.2-1.1-5.4-3.1-1.8-1.6-3-3.6-3.3-4.6-.3-1 .1-1.9.6-2.4z"
+                />
+
+            </svg>
+
+        </span>
+
+
+        <span>
+            Consultar precio y disponibilidad
+        </span>
+
+    </a>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <strong>
+        Sofiturismo
+    </strong>
+
+    <p>
+        Purmamarca · Jujuy · Argentina
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

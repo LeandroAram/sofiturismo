@@ -1,0 +1,17 @@
+{
+    "name": "Sofiturismo",
+    "short_name": "Sofiturismo",
+    "description": "Excursiones y traslados desde Purmamarca, Jujuy.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4eee6",
+    "theme_color": "#082d50",
+    "icons": [
+        {
+            "src": "/static/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
