@@ -14,7 +14,7 @@
 
     <meta
         name="description"
-        content="Tours from Purmamarca to discover Salinas Grandes, Ojos del Salar, sunsets at the salt flats and Quebrada de Humahuaca."
+        content="Tours from Purmamarca to discover Salinas Grandes, Ojos del Salar, Sunset at Salinas Grandes and Quebrada de Humahuaca."
     >
 
     <link
@@ -40,14 +40,13 @@
     <a
         href="/"
         class="volver-index"
-        aria-label="Back to language selection"
+        aria-label="Back to home"
     >
         ←
     </a>
 
 
     <div class="hero-contenido">
-
 
         <div class="marca">
             Sofi<span>turismo</span>
@@ -76,7 +75,8 @@
             <div class="hero-botones">
 
                 <a
-                    href="#tours-carousel"
+                    href="#tour-zone"
+                    id="botonExplorar"
                     class="boton boton-principal"
                 >
                     Explore tours
@@ -103,7 +103,7 @@
 
 
 <!-- ==================================================
-     MAIN
+     MAIN CONTENT
 ================================================== -->
 
 <main class="contenido-principal">
@@ -129,10 +129,21 @@
             </h2>
 
             <p>
-                Swipe and tap a tour to see all the details.
+                Swipe and tap a tour to discover all the details.
             </p>
 
         </div>
+
+
+
+        <!-- ==================================================
+             REAL ANCHOR FOR EXPLORE BUTTON
+        ================================================== -->
+
+        <div
+            class="ancla-excursiones"
+            id="tour-zone"
+        ></div>
 
 
 
@@ -142,7 +153,7 @@
 
         <div
             class="carrusel"
-            id="tours-carousel"
+            id="carruselExcursiones"
         >
 
 
@@ -158,7 +169,6 @@
                     alt="Salinas Grandes"
                 >
 
-
                 <div class="tarjeta-sombra"></div>
 
 
@@ -168,16 +178,13 @@
                         01
                     </span>
 
-
                     <h3>
                         Salinas Grandes
                     </h3>
 
-
                     <p>
-                        9:30 · 13:30
+                        9:30 AM · 1:30 PM
                     </p>
-
 
                     <div class="tarjeta-pie">
 
@@ -209,7 +216,6 @@
                     alt="Ojos del Salar"
                 >
 
-
                 <div class="tarjeta-sombra"></div>
 
 
@@ -219,16 +225,13 @@
                         02
                     </span>
 
-
                     <h3>
                         Ojos del Salar
                     </h3>
 
-
                     <p>
                         Complete experience
                     </p>
-
 
                     <div class="tarjeta-pie">
 
@@ -260,7 +263,6 @@
                     alt="Sunset at Salinas Grandes"
                 >
 
-
                 <div class="tarjeta-sombra"></div>
 
 
@@ -270,16 +272,13 @@
                         03
                     </span>
 
-
                     <h3>
-                        Sunset at the Salt Flats
+                        Sunset at Salinas
                     </h3>
 
-
                     <p>
-                        Departure 17:00
+                        Departure 5:00 PM
                     </p>
-
 
                     <div class="tarjeta-pie">
 
@@ -311,7 +310,6 @@
                     alt="Quebrada de Humahuaca"
                 >
 
-
                 <div class="tarjeta-sombra"></div>
 
 
@@ -321,16 +319,13 @@
                         04
                     </span>
 
-
                     <h3>
                         Quebrada de Humahuaca
                     </h3>
 
-
                     <p>
-                        9:30 · 19:00
+                        9:30 AM · 7:00 PM
                     </p>
-
 
                     <div class="tarjeta-pie">
 
@@ -374,7 +369,7 @@
             <button
                 class="punto"
                 data-slide="2"
-                aria-label="Sunset"
+                aria-label="Sunset at Salinas Grandes"
             ></button>
 
             <button
@@ -387,7 +382,7 @@
 
 
         <p class="ayuda-carrusel">
-            Swipe to explore · tap a tour to learn more
+            Swipe to explore · tap to learn more
         </p>
 
     </section>
@@ -395,7 +390,7 @@
 
 
     <!-- ==================================================
-         ABOUT
+         MEET SOFITURISMO
     ================================================== -->
 
     <section class="conoce">
@@ -405,11 +400,10 @@
 
             <img
                 src="{{ url_for('static', filename='img/conoce.jpg') }}"
-                alt="Meet Sofiturismo"
+                alt="Nelson Tolaba - Sofiturismo"
             >
 
         </div>
-
 
 
         <div class="conoce-texto">
@@ -426,28 +420,32 @@
 
 
             <p>
-                Tours from Purmamarca to discover
-                some of Jujuy's most incredible landscapes.
+                Hi, I'm <strong>Nelson Tolaba</strong>. I'm 38 years old
+                and I was born in Saladillo, Jujuy. For more than 6 years,
+                I have been working with tours and transfers throughout
+                different parts of our province.
             </p>
 
 
             <p class="conoce-secundario">
-                Private or group experiences through
-                the Quebrada and the Puna.
+                I know these roads, their landscapes and the character
+                of each place, and I enjoy sharing them with visitors
+                who come to discover Jujuy. My goal is to make every trip
+                safe, comfortable and personal, so you can enjoy our land
+                peacefully and at your own pace.
             </p>
 
 
             <a
-                href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20check%20availability%20for%20a%20Sofiturismo%20tour."
+                href="https://wa.me/5493884694300?text=Hello%2C%20Nelson.%20I%20would%20like%20to%20check%20availability%20for%20a%20tour%20with%20Sofiturismo."
                 target="_blank"
                 rel="noopener noreferrer"
                 class="conoce-link"
             >
-                Check availability →
+                Contact Nelson →
             </a>
 
         </div>
-
 
     </section>
 
@@ -464,22 +462,9 @@
         class="servicio-extra"
     >
 
-
         <div class="servicio-icono">
-
-            <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-
-                <path
-                    d="M2 16l20-8-1.5 4-6.5 3-.5 5-3-3-4 1z"
-                ></path>
-
-            </svg>
-
+            ✈
         </div>
-
 
 
         <div class="servicio-info">
@@ -499,11 +484,9 @@
         </div>
 
 
-
         <div class="servicio-flecha">
             →
         </div>
-
 
     </a>
 
@@ -516,7 +499,10 @@
      CONTACT
 ================================================== -->
 
-<section class="contacto">
+<section
+    class="contacto"
+    id="contact"
+>
 
     <span>
         PLANNING YOUR TRIP?
@@ -529,13 +515,12 @@
 
 
     <p>
-        Ask us about tours,
+        Contact us about tours,
         availability and transfers.
     </p>
 
 
     <div class="contacto-botones">
-
 
         <a
             href="https://www.instagram.com/sofiturismo_salinasgrandes/"
@@ -555,7 +540,6 @@
         >
             WhatsApp
         </a>
-
 
     </div>
 
@@ -582,13 +566,13 @@
 
 
 <!-- ==================================================
-     CAROUSEL JS
+     JAVASCRIPT
 ================================================== -->
 
 <script>
 
     const carrusel =
-        document.getElementById("tours-carousel");
+        document.getElementById("carruselExcursiones");
 
     const tarjetas =
         carrusel.querySelectorAll(".tarjeta");
@@ -596,14 +580,52 @@
     const puntos =
         document.querySelectorAll(".punto");
 
+    const botonExplorar =
+        document.getElementById("botonExplorar");
+
+    const zonaExcursiones =
+        document.getElementById("tour-zone");
+
 
     let indiceActual = 0;
-
     let intervalo;
-
     let temporizadorScroll;
 
 
+
+    /* ==================================================
+       EXPLORE BUTTON
+    ================================================== */
+
+    botonExplorar.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const destino =
+                zonaExcursiones.getBoundingClientRect().top
+                + window.scrollY
+                - 8;
+
+
+            window.scrollTo({
+
+                top: destino,
+
+                behavior: "smooth"
+
+            });
+
+        }
+    );
+
+
+
+    /* ==================================================
+       MOVE CAROUSEL
+    ================================================== */
 
     function moverA(indice) {
 
@@ -674,7 +696,9 @@
             indiceActual++;
 
 
-            if (indiceActual >= tarjetas.length) {
+            if (
+                indiceActual >= tarjetas.length
+            ) {
 
                 indiceActual = 0;
 
@@ -759,7 +783,6 @@
                     indiceActual =
                         tarjetaMasCercana;
 
-
                     actualizarPuntos();
 
                 }, 100);
@@ -771,8 +794,7 @@
 
     carrusel.addEventListener(
         "touchstart",
-        detenerCarrusel,
-        { passive: true }
+        detenerCarrusel
     );
 
 
@@ -785,8 +807,19 @@
                 1200
             );
 
-        },
-        { passive: true }
+        }
+    );
+
+
+    carrusel.addEventListener(
+        "mouseenter",
+        detenerCarrusel
+    );
+
+
+    carrusel.addEventListener(
+        "mouseleave",
+        iniciarCarrusel
     );
 
 

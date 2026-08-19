@@ -21,11 +21,13 @@ body {
         Helvetica,
         sans-serif;
 
-    background: #f0e6d8;
+    background: #f0e4d6;
 
     color: #082b4d;
 
     overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
 
 }
 
@@ -45,10 +47,10 @@ a {
 
     position: relative;
 
-    min-height: 535px;
+    min-height: 500px;
 
     background-image:
-        url("../img/humahuaca/portada.jpg");
+        url("../img/atardecer/portada.jpg");
 
     background-size: cover;
 
@@ -68,10 +70,10 @@ a {
     background:
         linear-gradient(
             to bottom,
-            rgba(4,27,49,0.10),
-            rgba(4,27,49,0.01) 38%,
-            rgba(70,43,25,0.10) 62%,
-            rgba(4,27,49,0.84) 100%
+            rgba(5,25,45,0.10),
+            rgba(5,25,45,0.01) 35%,
+            rgba(70,35,20,0.12) 62%,
+            rgba(5,24,42,0.84) 100%
         );
 
 }
@@ -83,10 +85,10 @@ a {
 
     z-index: 2;
 
-    min-height: 535px;
+    min-height: 500px;
 
     padding:
-        28px 20px 38px;
+        25px 20px 36px;
 
     display: flex;
 
@@ -101,17 +103,22 @@ a {
 }
 
 
+
+/* ==================================================
+   BACK
+================================================== */
+
 .volver {
 
     position: absolute;
 
     z-index: 10;
 
-    top: 22px;
-    left: 22px;
+    top: 20px;
+    left: 18px;
 
     padding:
-        8px 14px;
+        8px 13px;
 
     border:
         1px solid #efb54b;
@@ -119,7 +126,7 @@ a {
     border-radius: 22px;
 
     background:
-        rgba(4,31,55,0.30);
+        rgba(4,31,55,0.32);
 
     backdrop-filter: blur(7px);
 
@@ -134,6 +141,11 @@ a {
 }
 
 
+
+/* ==================================================
+   BRAND
+================================================== */
+
 .marca {
 
     font-size: 29px;
@@ -147,6 +159,11 @@ a {
     color: #efb54b;
 }
 
+
+
+/* ==================================================
+   HERO TEXT
+================================================== */
 
 .hero-texto {
     margin-top: auto;
@@ -175,9 +192,9 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: 61px;
+    font-size: 58px;
 
-    line-height: 0.94;
+    line-height: 0.93;
 
     font-weight: 500;
 
@@ -199,7 +216,7 @@ a {
 
 .hero-texto p {
 
-    max-width: 520px;
+    max-width: 500px;
 
     margin:
         11px auto 0;
@@ -213,11 +230,10 @@ a {
 
 
 /* ==================================================
-   SEPARADOR
+   SEPARATOR
 ================================================== */
 
-.separador,
-.linea-dorada {
+.separador {
 
     width: 145px;
 
@@ -230,13 +246,12 @@ a {
 
     gap: 7px;
 
-    color: #d99835;
+    color: #d99a30;
 
 }
 
 
-.separador span,
-.linea-dorada span {
+.separador span {
 
     flex: 1;
 
@@ -247,17 +262,14 @@ a {
 }
 
 
-.separador b,
-.linea-dorada b {
-
+.separador b {
     font-weight: normal;
-
 }
 
 
 
 /* ==================================================
-   DATOS
+   QUICK INFO
 ================================================== */
 
 .datos {
@@ -267,10 +279,10 @@ a {
     z-index: 5;
 
     width:
-        min(850px, calc(100% - 30px));
+        min(820px, calc(100% - 28px));
 
     margin:
-        -27px auto 0;
+        -25px auto 0;
 
     display: grid;
 
@@ -282,14 +294,10 @@ a {
     border-radius: 18px;
 
     background:
-        rgba(255,249,241,0.97);
-
-    border:
-        1px solid
-        rgba(194,134,67,0.20);
+        rgba(255,248,240,0.97);
 
     box-shadow:
-        0 10px 30px
+        0 10px 28px
         rgba(5,31,54,0.12);
 
 }
@@ -297,10 +305,12 @@ a {
 
 .dato {
 
-    min-height: 94px;
+    min-width: 0;
+
+    min-height: 90px;
 
     padding:
-        13px 6px;
+        12px 5px;
 
     display: flex;
 
@@ -311,7 +321,9 @@ a {
     justify-content: center;
 
     border-right:
-        1px solid #e4d9ca;
+        1px solid #e7d8ca;
+
+    text-align: center;
 
 }
 
@@ -321,20 +333,20 @@ a {
 }
 
 
-.dato-simbolo {
+.dato-icono {
 
-    color: #bd772d;
+    color: #c77838;
 
-    font-size: 20px;
+    font-size: 19px;
 
 }
 
 
-.dato-titulo {
+.dato span:not(.dato-icono) {
 
     margin-top: 4px;
 
-    color: #81766c;
+    color: #81756c;
 
     font-size: 8px;
 
@@ -356,7 +368,7 @@ a {
 
 
 /* ==================================================
-   FONDO PRINCIPAL
+   BACKGROUND
 ================================================== */
 
 .contenido-principal {
@@ -365,81 +377,37 @@ a {
 
     overflow: hidden;
 
+    padding-bottom: 10px;
+
     background:
         radial-gradient(
-            circle at 7% 16%,
-            rgba(210,145,64,0.13),
+            circle at 7% 18%,
+            rgba(224,145,77,0.14),
             transparent 25%
         ),
         radial-gradient(
-            circle at 93% 48%,
-            rgba(133,71,41,0.09),
+            circle at 94% 58%,
+            rgba(200,117,55,0.10),
             transparent 25%
         ),
         radial-gradient(
-            circle at 25% 87%,
-            rgba(8,45,80,0.07),
-            transparent 28%
+            circle at 50% 90%,
+            rgba(13,57,86,0.08),
+            transparent 27%
         ),
         linear-gradient(
             180deg,
-            #f6eee3 0%,
-            #eee2d2 50%,
-            #f7f1e9 100%
+            #f6ede2 0%,
+            #eee1d2 48%,
+            #f6efe7 100%
         );
-
-}
-
-
-.contenido-principal::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 520px;
-    left: -120px;
-
-    width: 260px;
-    height: 260px;
-
-    border:
-        1px solid
-        rgba(188,119,45,0.12);
-
-    border-radius: 50%;
-
-    pointer-events: none;
-
-}
-
-
-.contenido-principal::after {
-
-    content: "";
-
-    position: absolute;
-
-    right: -170px;
-    bottom: 200px;
-
-    width: 350px;
-    height: 350px;
-
-    border:
-        1px solid
-        rgba(8,45,80,0.07);
-
-    border-radius: 50%;
-
-    pointer-events: none;
 
 }
 
 
 
 /* ==================================================
-   TÍTULOS
+   TITLES
 ================================================== */
 
 .titulo-seccion {
@@ -455,7 +423,7 @@ a {
 
 .titulo-seccion > span {
 
-    color: #b97428;
+    color: #b96b2f;
 
     font-size: 8px;
 
@@ -475,7 +443,7 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: 37px;
+    font-size: 36px;
 
     font-weight: 500;
 
@@ -487,20 +455,54 @@ a {
     max-width: 620px;
 
     margin:
-        12px auto 0;
+        13px auto 0;
 
-    color: #606b73;
+    color: #626b72;
 
     font-size: 12px;
 
-    line-height: 1.6;
+    line-height: 1.65;
 
+}
+
+
+.linea-dorada {
+
+    width: 130px;
+
+    margin:
+        11px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #cf873d;
+
+}
+
+
+.linea-dorada span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: currentColor;
+
+}
+
+
+.linea-dorada b {
+    font-weight: normal;
 }
 
 
 
 /* ==================================================
-   EXPERIENCIA
+   EXPERIENCE
 ================================================== */
 
 .experiencia {
@@ -510,72 +512,150 @@ a {
     z-index: 2;
 
     padding:
-        58px 0 32px;
+        55px 20px 34px;
 
 }
 
 
 
 /* ==================================================
-   CARRUSEL
+   VIDEO + PHOTOS
 ================================================== */
 
-.carrusel-experiencia {
+.experiencia-media {
 
     width: 100%;
 
-    max-width: 900px;
+    max-width: 760px;
+
+    height: 430px;
 
     margin:
-        25px auto 0;
+        24px auto 0;
 
-    padding:
-        0 18px;
+    display: grid;
 
-    display: flex;
+    grid-template-columns:
+        43% 57%;
 
     gap: 10px;
 
-    overflow-x: auto;
-
-    scroll-snap-type:
-        x mandatory;
-
-    scroll-behavior: smooth;
-
-    scrollbar-width: none;
-
-    -webkit-overflow-scrolling: touch;
-
 }
 
 
-.carrusel-experiencia::-webkit-scrollbar {
-    display: none;
-}
+.video-marco {
 
-
-.slide-experiencia {
-
-    flex:
-        0 0 80%;
-
-    height: 340px;
+    position: relative;
 
     overflow: hidden;
 
-    border-radius: 20px;
+    border-radius: 21px;
 
-    scroll-snap-align: center;
+    background: #061f38;
 
     box-shadow:
-        0 10px 26px
-        rgba(8,43,77,0.08);
+        0 10px 28px
+        rgba(5,30,55,0.10);
 
 }
 
 
-.slide-experiencia img {
+.video-marco video {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.video-degrade {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5,26,45,0.83),
+            transparent 47%
+        );
+
+}
+
+
+.video-texto {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 17px;
+    right: 12px;
+    bottom: 17px;
+
+    color: white;
+
+}
+
+
+.video-texto span {
+
+    color: #efb54b;
+
+    font-size: 7px;
+
+    letter-spacing: 1.8px;
+
+}
+
+
+.video-texto h3 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+}
+
+
+.mini-galeria {
+
+    display: grid;
+
+    grid-template-rows:
+        1fr 1fr;
+
+    gap: 10px;
+
+}
+
+
+.mini-foto {
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(8,43,77,0.06);
+
+}
+
+
+.mini-foto img {
 
     width: 100%;
     height: 100%;
@@ -589,65 +669,7 @@ a {
 
 
 /* ==================================================
-   PUNTOS
-================================================== */
-
-.indicadores {
-
-    margin-top: 12px;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 6px;
-
-}
-
-
-.punto {
-
-    width: 7px;
-    height: 7px;
-
-    padding: 0;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: #bfb4a3;
-
-}
-
-
-.punto.activo {
-
-    width: 24px;
-
-    border-radius: 5px;
-
-    background: #c78531;
-
-}
-
-
-.deslizar {
-
-    margin-top: 6px;
-
-    color: #80796f;
-
-    font-size: 8px;
-
-    text-align: center;
-
-}
-
-
-
-/* ==================================================
-   INCLUYE
+   INCLUDED
 ================================================== */
 
 .incluye {
@@ -656,12 +678,12 @@ a {
 
     z-index: 2;
 
-    max-width: 950px;
+    max-width: 940px;
 
     margin: auto;
 
     padding:
-        30px 20px 38px;
+        32px 20px 38px;
 
 }
 
@@ -675,7 +697,7 @@ a {
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: 10px;
+    gap: 9px;
 
 }
 
@@ -683,35 +705,33 @@ a {
 .incluye-item {
 
     padding:
-        17px 15px;
+        16px 13px;
 
-    border-radius: 17px;
+    border-radius: 16px;
 
     background:
-        linear-gradient(
-            145deg,
-            rgba(255,251,245,0.82),
-            rgba(237,225,210,0.88)
-        );
+        rgba(255,250,244,0.78);
 
     border:
         1px solid
-        rgba(186,119,45,0.17);
+        rgba(194,119,55,0.18);
 
     box-shadow:
-        0 7px 20px
+        0 6px 18px
         rgba(8,43,77,0.04);
+
+    text-align: center;
 
 }
 
 
-.incluye-numero {
+.incluye-icono {
 
-    color: #bd772d;
+    margin-bottom: 7px;
 
-    font-size: 9px;
+    font-size: 28px;
 
-    font-weight: 700;
+    line-height: 1;
 
 }
 
@@ -720,21 +740,19 @@ a {
 
     display: block;
 
-    margin-top: 6px;
-
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: 18px;
+    font-size: 17px;
 
 }
 
 
 .incluye-item p {
 
-    margin-top: 5px;
+    margin-top: 4px;
 
     color: #68727a;
 
@@ -747,7 +765,7 @@ a {
 
 
 /* ==================================================
-   RECORRIDO
+   ROUTE
 ================================================== */
 
 .recorrido {
@@ -756,35 +774,31 @@ a {
 
     z-index: 2;
 
-    max-width: 950px;
+    max-width: 930px;
 
     margin: auto;
 
     padding:
-        38px 20px 34px;
+        34px 20px 37px;
 
 }
 
 
-.recorrido-lista {
+.recorrido-grid {
 
-    margin-top: 23px;
+    margin-top: 19px;
 
-    display: flex;
+    display: grid;
 
-    flex-direction: column;
+    grid-template-columns:
+        1fr 1fr;
 
-    gap: 11px;
+    gap: 12px;
 
 }
 
 
-
-/* ==================================================
-   PARADAS
-================================================== */
-
-.parada {
+.recorrido-card {
 
     min-height: 210px;
 
@@ -793,73 +807,37 @@ a {
     display: grid;
 
     grid-template-columns:
-        45% 55%;
+        47% 53%;
 
-    border-radius: 19px;
+    border-radius: 18px;
+
+    background:
+        rgba(255,250,244,0.82);
 
     border:
         1px solid
-        rgba(185,116,40,0.17);
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,251,245,0.82),
-            rgba(235,221,204,0.90)
-        );
+        rgba(194,119,55,0.18);
 
     box-shadow:
-        0 8px 23px
+        0 8px 22px
         rgba(8,43,77,0.05);
 
 }
 
 
-.parada-invertida {
+.recorrido-foto {
 
-    grid-template-columns:
-        55% 45%;
-
-}
-
-
-.parada-invertida .parada-galeria {
-    order: 2;
-}
-
-
-.parada-invertida .parada-info {
-    order: 1;
-}
-
-
-
-/* ==================================================
-   FOTOS PARADAS
-================================================== */
-
-.parada-galeria {
-
-    min-height: 210px;
-
-    display: grid;
-
-    grid-template-rows:
-        1fr 1fr;
-
-    gap: 3px;
+    position: relative;
 
     overflow: hidden;
 
 }
 
 
-.parada-galeria img {
+.recorrido-foto img {
 
     width: 100%;
     height: 100%;
-
-    min-height: 0;
 
     object-fit: cover;
 
@@ -868,14 +846,31 @@ a {
 }
 
 
+.numero {
 
-/* ==================================================
-   INFO PARADAS
-================================================== */
+    position: absolute;
 
-.parada-info {
+    left: 10px;
+    bottom: 9px;
 
-    padding: 24px;
+    padding:
+        4px 7px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(5,31,54,0.72);
+
+    color: #efb54b;
+
+    font-size: 8px;
+
+}
+
+
+.recorrido-info {
+
+    padding: 17px;
 
     display: flex;
 
@@ -886,115 +881,142 @@ a {
 }
 
 
-.numero {
+.recorrido-info > span {
 
-    width: fit-content;
+    color: #b96b2f;
 
-    padding:
-        4px 7px;
+    font-size: 6.5px;
 
-    border-radius: 12px;
-
-    background: #082d50;
-
-    color: #efb54b;
-
-    font-size: 7px;
-
-}
-
-
-.parada-mini {
-
-    margin-top: 8px;
-
-    color: #b97428;
-
-    font-size: 7px;
-
-    letter-spacing: 1.8px;
+    letter-spacing: 1.5px;
 
     font-weight: 700;
 
 }
 
 
-.parada-info h3 {
+.recorrido-info h3 {
 
-    margin-top: 4px;
+    margin-top: 5px;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: 27px;
+    font-size: 23px;
 
     font-weight: 500;
 
 }
 
 
-.parada-info p {
+.recorrido-info p {
 
-    margin-top: 8px;
+    margin-top: 7px;
 
-    color: #606c75;
+    color: #626d75;
 
-    font-size: 10.5px;
+    font-size: 9.5px;
 
-    line-height: 1.55;
+    line-height: 1.5;
+
+}
+
+
+.altura {
+
+    margin-top: 5px;
+
+    color: #c77838;
+
+    font-size: 15px;
 
 }
 
 
 
 /* ==================================================
-   HORNOCAL
+   SUNSET MOMENT
 ================================================== */
 
-.hornocal {
+.momento {
 
     position: relative;
 
     z-index: 2;
 
-    max-width: 930px;
+    width:
+        min(850px, calc(100% - 40px));
+
+    height: 380px;
 
     margin:
-        15px auto 30px;
+        7px auto 20px;
 
-    padding:
-        28px;
+    overflow: hidden;
 
     border-radius: 23px;
 
+    box-shadow:
+        0 12px 30px
+        rgba(8,43,77,0.12);
+
+}
+
+
+.momento-imagen {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.momento-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
     background:
         linear-gradient(
-            135deg,
-            #763e2c,
-            #a85c36
+            to top,
+            rgba(5,25,43,0.90) 0%,
+            rgba(5,25,43,0.50) 45%,
+            rgba(5,25,43,0.04) 100%
         );
+
+}
+
+
+.momento-contenido {
+
+    position: absolute;
+
+    z-index: 3;
+
+    left: 30px;
+    right: 30px;
+    bottom: 28px;
+
+    max-width: 560px;
 
     color: white;
 
-    box-shadow:
-        0 12px 30px
-        rgba(83,43,28,0.12);
-
 }
 
 
-.hornocal-cabecera {
+.momento-mini {
 
-    max-width: 580px;
-
-}
-
-
-.hornocal-cabecera > span {
-
-    color: #ffd28a;
+    color: #f3bd61;
 
     font-size: 7px;
 
@@ -1005,9 +1027,9 @@ a {
 }
 
 
-.hornocal-cabecera h2 {
+.momento h2 {
 
-    margin-top: 6px;
+    margin-top: 8px;
 
     font-family:
         Georgia,
@@ -1023,112 +1045,180 @@ a {
 }
 
 
-.hornocal-cabecera h2 strong {
+.momento h2 span {
 
     display: block;
 
-    color: #ffd28a;
+    color: #f3bd61;
+
+}
+
+
+.momento-linea {
+
+    width: 46px;
+
+    height: 1px;
+
+    margin-top: 14px;
+
+    background: #f3bd61;
+
+}
+
+
+.momento p {
+
+    margin-top: 12px;
+
+    color:
+        rgba(255,255,255,0.88);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==================================================
+   ENGLISH GUIDE
+================================================== */
+
+.guia-ingles {
+
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(850px, calc(100% - 36px));
+
+    margin:
+        10px auto 12px;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        54px 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #79512c,
+            #b17839
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 26px
+        rgba(87,55,25,0.12);
+
+}
+
+
+.guia-icono {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.12);
+
+}
+
+
+.guia-icono svg {
+
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: #ffe0a4;
+
+    stroke-width: 1.7;
+
+}
+
+
+.guia-texto > span {
+
+    color: #ffe0a4;
+
+    font-size: 7px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: 700;
+
+}
+
+
+.guia-texto h2 {
+
+    margin-top: 4px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
 
     font-weight: 500;
 
 }
 
 
-.hornocal-cabecera p {
+.guia-texto p {
 
-    margin-top: 10px;
+    margin-top: 5px;
 
     color:
-        rgba(255,255,255,0.82);
+        rgba(255,255,255,0.87);
 
-    font-size: 11px;
+    font-size: 10px;
 
-    line-height: 1.55;
+    line-height: 1.45;
+
+}
+
+
+.guia-texto small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #ffe0a4;
+
+    font-size: 8px;
 
 }
 
 
 
 /* ==================================================
-   MOSAICO HORNOCAL
-================================================== */
-
-.hornocal-mosaico {
-
-    height: 330px;
-
-    margin-top: 21px;
-
-    display: grid;
-
-    grid-template-columns:
-        62% 38%;
-
-    gap: 7px;
-
-}
-
-
-.hornocal-principal,
-.hornocal-secundarias {
-
-    min-width: 0;
-
-}
-
-
-.hornocal-principal {
-
-    overflow: hidden;
-
-    border-radius: 17px;
-
-}
-
-
-.hornocal-principal img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-}
-
-
-.hornocal-secundarias {
-
-    display: grid;
-
-    grid-template-rows:
-        1fr 1fr;
-
-    gap: 7px;
-
-}
-
-
-.hornocal-secundarias img {
-
-    width: 100%;
-    height: 100%;
-
-    min-height: 0;
-
-    object-fit: cover;
-
-    display: block;
-
-    border-radius: 14px;
-
-}
-
-
-
-/* ==================================================
-   MODALIDAD
+   TRIP TYPE
 ================================================== */
 
 .modalidad {
@@ -1138,19 +1228,19 @@ a {
     z-index: 2;
 
     width:
-        min(800px, calc(100% - 40px));
+        min(800px, calc(100% - 36px));
 
     margin:
-        0 auto 38px;
+        0 auto 33px;
 
-    padding: 18px;
+    padding: 17px;
 
     display: grid;
 
     grid-template-columns:
-        48px 1fr;
+        46px 1fr;
 
-    gap: 13px;
+    gap: 12px;
 
     align-items: center;
 
@@ -1168,10 +1258,10 @@ a {
 }
 
 
-.modalidad-numero {
+.modalidad-icono {
 
-    width: 44px;
-    height: 44px;
+    width: 43px;
+    height: 43px;
 
     display: flex;
 
@@ -1187,7 +1277,7 @@ a {
 
     color: #efb54b;
 
-    font-size: 10px;
+    font-size: 15px;
 
 }
 
@@ -1198,7 +1288,7 @@ a {
 
     font-size: 7px;
 
-    letter-spacing: 1.7px;
+    letter-spacing: 1.6px;
 
 }
 
@@ -1212,7 +1302,7 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: 22px;
+    font-size: 21px;
 
     font-weight: 500;
 
@@ -1233,13 +1323,13 @@ a {
 
 
 /* ==================================================
-   RESERVA
+   RESERVATION
 ================================================== */
 
 .reserva {
 
     padding:
-        52px 20px;
+        50px 20px;
 
     background:
         linear-gradient(
@@ -1275,7 +1365,7 @@ a {
         "Times New Roman",
         serif;
 
-    font-size: 35px;
+    font-size: 34px;
 
     font-weight: 500;
 
@@ -1284,7 +1374,7 @@ a {
 
 .reserva p {
 
-    max-width: 470px;
+    max-width: 450px;
 
     margin:
         9px auto 0;
@@ -1294,28 +1384,23 @@ a {
 
     font-size: 11px;
 
-    line-height: 1.55;
+    line-height: 1.5;
 
 }
 
 
-
-/* ==================================================
-   WHATSAPP
-================================================== */
-
 .boton-whatsapp {
 
     width:
-        min(330px, 100%);
+        min(340px, 100%);
 
-    min-height: 52px;
+    min-height: 51px;
 
     margin:
-        20px auto 0;
+        19px auto 0;
 
     padding:
-        11px 17px;
+        10px 17px;
 
     display: flex;
 
@@ -1323,36 +1408,25 @@ a {
 
     justify-content: center;
 
-    gap: 10px;
+    gap: 9px;
 
-    border-radius: 28px;
+    border-radius: 27px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #20b85a,
-            #31ca6b
-        );
+    background: #25bf61;
 
     color: white;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 700;
-
-    box-shadow:
-        0 8px 20px
-        rgba(0,0,0,0.16);
 
 }
 
 
 .whatsapp-icono {
 
-    width: 25px;
-    height: 25px;
-
-    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
 
 }
 
@@ -1414,7 +1488,7 @@ footer p {
 
 
 /* ==================================================
-   CELULAR
+   MOBILE
 ================================================== */
 
 @media (max-width: 600px) {
@@ -1424,14 +1498,14 @@ footer p {
 
     .hero {
 
-        min-height: 445px;
+        min-height: 440px;
 
     }
 
 
     .hero-contenido {
 
-        min-height: 445px;
+        min-height: 440px;
 
         padding:
             calc(
@@ -1473,19 +1547,23 @@ footer p {
 
         font-size: 7px;
 
+        letter-spacing: 2px;
+
     }
 
 
     .hero h1 {
 
-        font-size: 43px;
+        font-size: 41px;
+
+        line-height: 0.96;
 
     }
 
 
     .hero-texto p {
 
-        max-width: 320px;
+        max-width: 315px;
 
         font-size: 11px;
 
@@ -1493,12 +1571,12 @@ footer p {
 
 
 
-    /* DATOS */
+    /* DATA */
 
     .datos {
 
         width:
-            calc(100% - 24px);
+            calc(100% - 22px);
 
         margin-top: -20px;
 
@@ -1509,7 +1587,7 @@ footer p {
 
     .dato {
 
-        min-height: 74px;
+        min-height: 73px;
 
         padding:
             8px 3px;
@@ -1517,16 +1595,16 @@ footer p {
     }
 
 
-    .dato-simbolo {
+    .dato-icono {
 
-        font-size: 16px;
+        font-size: 15px;
 
     }
 
 
-    .dato-titulo {
+    .dato span:not(.dato-icono) {
 
-        font-size: 6.5px;
+        font-size: 7px;
 
     }
 
@@ -1539,7 +1617,14 @@ footer p {
 
 
 
-    /* TITULOS */
+    /* TITLES */
+
+    .titulo-seccion > span {
+
+        font-size: 7px;
+
+    }
+
 
     .titulo-seccion h2 {
 
@@ -1550,13 +1635,12 @@ footer p {
 
     .titulo-seccion > p {
 
-        max-width: 330px;
+        padding:
+            0 11px;
 
         margin-top: 8px;
 
-        padding: 0 10px;
-
-        font-size: 9.5px;
+        font-size: 10px;
 
         line-height: 1.5;
 
@@ -1564,61 +1648,83 @@ footer p {
 
 
 
-    /* EXPERIENCIA */
+    /* EXPERIENCE */
 
     .experiencia {
 
         padding:
-            41px 0 24px;
+            42px 10px 25px;
 
     }
 
 
-    .carrusel-experiencia {
+    .experiencia-media {
+
+        height: 300px;
 
         margin-top: 17px;
 
-        padding:
-            0 10px;
+        grid-template-columns:
+            43% 57%;
 
         gap: 7px;
 
     }
 
 
-    .slide-experiencia {
-
-        flex:
-            0 0 77%;
-
-        height: 205px;
+    .video-marco {
 
         border-radius: 15px;
 
     }
 
 
-    .indicadores {
+    .video-texto {
 
-        margin-top: 9px;
-
-    }
-
-
-    .deslizar {
-
-        font-size: 7px;
+        left: 9px;
+        right: 7px;
+        bottom: 10px;
 
     }
 
 
+    .video-texto span {
 
-    /* INCLUYE */
+        font-size: 6px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .video-texto h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .mini-galeria {
+
+        gap: 7px;
+
+    }
+
+
+    .mini-foto {
+
+        border-radius: 13px;
+
+    }
+
+
+
+    /* INCLUDED */
 
     .incluye {
 
         padding:
-            25px 10px 28px;
+            25px 10px 27px;
 
     }
 
@@ -1635,139 +1741,176 @@ footer p {
     .incluye-item {
 
         padding:
-            10px 7px;
+            10px 5px;
 
         border-radius: 13px;
 
     }
 
 
-    .incluye-numero {
+    .incluye-icono {
 
-        font-size: 6px;
+        margin-bottom: 4px;
+
+        font-size: 22px;
 
     }
 
 
     .incluye-item strong {
 
-        margin-top: 4px;
-
-        font-size: 13px;
+        font-size: 12px;
 
     }
 
 
     .incluye-item p {
 
-        font-size: 7px;
+        margin-top: 3px;
 
-        line-height: 1.35;
+        font-size: 7.5px;
+
+        line-height: 1.3;
 
     }
 
 
 
-    /* RECORRIDO */
+    /* ROUTE */
 
     .recorrido {
 
         padding:
-            27px 10px 25px;
+            27px 10px 28px;
 
     }
 
 
-    .recorrido-lista {
+    .recorrido-grid {
 
-        margin-top: 16px;
+        margin-top: 15px;
 
-        gap: 7px;
+        grid-template-columns: 1fr;
+
+        gap: 8px;
 
     }
 
 
-    .parada,
-    .parada-invertida {
-
-        min-height: 140px;
+    .recorrido-card {
 
         grid-template-columns:
-            43% 57%;
+            42% 58%;
+
+        min-height: 125px;
 
         border-radius: 14px;
 
     }
 
 
-    .parada-invertida .parada-galeria {
+    .recorrido-info {
 
-        order: 1;
-
-    }
-
-
-    .parada-invertida .parada-info {
-
-        order: 2;
+        padding: 10px;
 
     }
 
 
-    .parada-galeria {
+    .recorrido-info > span {
 
-        min-height: 140px;
-
-        gap: 2px;
+        font-size: 6px;
 
     }
 
 
-    .parada-info {
+    .recorrido-info h3 {
 
-        padding:
-            10px 9px;
-
-    }
-
-
-    .numero {
-
-        padding:
-            3px 5px;
-
-        font-size: 5.5px;
-
-    }
-
-
-    .parada-mini {
-
-        margin-top: 5px;
-
-        font-size: 5.5px;
-
-        letter-spacing: 1.2px;
-
-    }
-
-
-    .parada-info h3 {
-
-        margin-top: 2px;
+        margin-top: 3px;
 
         font-size: 18px;
 
-        line-height: 1.05;
+    }
+
+
+    .recorrido-info p {
+
+        margin-top: 4px;
+
+        font-size: 8px;
+
+        line-height: 1.35;
 
     }
 
 
-    .parada-info p {
+    .altura {
+
+        margin-top: 3px;
+
+        font-size: 13px;
+
+    }
+
+
+
+    /* SUNSET MOMENT */
+
+    .momento {
+
+        width:
+            calc(100% - 20px);
+
+        height: 270px;
+
+        margin:
+            3px auto 11px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .momento-contenido {
+
+        left: 17px;
+        right: 17px;
+        bottom: 17px;
+
+    }
+
+
+    .momento-mini {
+
+        font-size: 6px;
+
+        letter-spacing: 1.4px;
+
+    }
+
+
+    .momento h2 {
 
         margin-top: 5px;
 
-        font-size: 7.8px;
+        font-size: 27px;
+
+    }
+
+
+    .momento-linea {
+
+        margin-top: 8px;
+
+    }
+
+
+    .momento p {
+
+        max-width: 290px;
+
+        margin-top: 7px;
+
+        font-size: 8.5px;
 
         line-height: 1.4;
 
@@ -1775,88 +1918,82 @@ footer p {
 
 
 
-    /* HORNOCAL */
+    /* ENGLISH GUIDE */
 
-    .hornocal {
+    .guia-ingles {
 
         width:
             calc(100% - 20px);
 
         margin:
-            5px auto 15px;
+            5px auto 10px;
 
-        padding:
-            18px 14px;
+        padding: 13px;
 
-        border-radius: 17px;
+        grid-template-columns:
+            42px 1fr;
+
+        gap: 10px;
+
+        border-radius: 15px;
 
     }
 
 
-    .hornocal-cabecera > span {
+    .guia-icono {
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .guia-icono svg {
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+
+    .guia-texto > span {
 
         font-size: 6px;
 
     }
 
 
-    .hornocal-cabecera h2 {
+    .guia-texto h2 {
 
-        font-size: 28px;
+        margin-top: 3px;
+
+        font-size: 18px;
 
     }
 
 
-    .hornocal-cabecera p {
+    .guia-texto p {
 
-        max-width: 310px;
-
-        margin-top: 7px;
+        margin-top: 4px;
 
         font-size: 8.5px;
 
-        line-height: 1.45;
+        line-height: 1.35;
 
     }
 
 
-    .hornocal-mosaico {
+    .guia-texto small {
 
-        height: 220px;
+        margin-top: 4px;
 
-        margin-top: 14px;
-
-        grid-template-columns:
-            61% 39%;
-
-        gap: 5px;
-
-    }
-
-
-    .hornocal-principal {
-
-        border-radius: 13px;
-
-    }
-
-
-    .hornocal-secundarias {
-
-        gap: 5px;
-
-    }
-
-
-    .hornocal-secundarias img {
-
-        border-radius: 10px;
+        font-size: 7px;
 
     }
 
 
 
-    /* MODALIDAD */
+    /* TRIP TYPE */
 
     .modalidad {
 
@@ -1878,19 +2015,19 @@ footer p {
     }
 
 
-    .modalidad-numero {
+    .modalidad-icono {
 
         width: 35px;
         height: 35px;
 
-        font-size: 8px;
+        font-size: 12px;
 
     }
 
 
     .modalidad-texto > span {
 
-        font-size: 5.5px;
+        font-size: 6px;
 
     }
 
@@ -1904,18 +2041,18 @@ footer p {
 
     .modalidad p {
 
-        font-size: 7px;
+        font-size: 7.5px;
 
     }
 
 
 
-    /* RESERVA */
+    /* RESERVATION */
 
     .reserva {
 
         padding:
-            42px 15px;
+            41px 15px;
 
     }
 

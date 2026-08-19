@@ -10,16 +10,16 @@
         content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     >
 
-    <title>Quebrada de Humahuaca | Sofiturismo</title>
+    <title>Atardecer en Salinas Grandes | Sofiturismo</title>
 
     <meta
         name="description"
-        content="Excursión por la Quebrada de Humahuaca desde Purmamarca con Sofiturismo."
+        content="Excursión al atardecer en Salinas Grandes desde Purmamarca con Sofiturismo."
     >
 
     <link
         rel="stylesheet"
-        href="{{ url_for('static', filename='css/humahuaca_es.css') }}"
+        href="{{ url_for('static', filename='css/atardecer_es.css') }}"
     >
 
 </head>
@@ -55,22 +55,30 @@
         <div class="hero-texto">
 
             <span class="tipo">
-                EXCURSIÓN DÍA COMPLETO
+                EXPERIENCIA AL ATARDECER
             </span>
 
 
             <h1>
-                Quebrada de
-                <span>Humahuaca</span>
+                Atardecer en
+                <span>Salinas Grandes</span>
             </h1>
 
 
-            <div class="separador"></div>
+            <div class="separador">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
 
 
             <p>
-                Pueblos, paisajes y colores hasta llegar
-                a las imponentes Serranías del Hornocal.
+                Descubrí Salinas Grandes bajo una luz diferente,
+                cuando el atardecer transforma por completo el paisaje.
             </p>
 
         </div>
@@ -82,31 +90,70 @@
 
 
 <!-- ==================================================
-     DATOS
+     DATOS RÁPIDOS
 ================================================== -->
 
 <section class="datos">
 
+
     <div class="dato">
-        <span>Salida</span>
-        <strong>9:30 hs</strong>
+
+        <span class="dato-icono">
+            ◷
+        </span>
+
+        <span>
+            Salida
+        </span>
+
+        <strong>
+            17:00 hs
+        </strong>
+
     </div>
 
 
     <div class="dato">
-        <span>Regreso</span>
-        <strong>19:00 hs</strong>
+
+        <span class="dato-icono">
+            ⌛
+        </span>
+
+        <span>
+            Duración
+        </span>
+
+        <strong>
+            4–5 horas
+        </strong>
+
     </div>
 
 
     <div class="dato">
-        <span>Desde</span>
-        <strong>Purmamarca</strong>
+
+        <span class="dato-icono">
+            ◉
+        </span>
+
+        <span>
+            Desde
+        </span>
+
+        <strong>
+            Purmamarca
+        </strong>
+
     </div>
+
 
 </section>
 
 
+
+<!-- ==================================================
+     CONTENIDO
+================================================== -->
 
 <main class="contenido-principal">
 
@@ -115,7 +162,7 @@
          EXPERIENCIA
     ================================================== -->
 
-    <section class="experiencia bloque">
+    <section class="experiencia">
 
         <div class="titulo-seccion">
 
@@ -123,69 +170,105 @@
                 LA EXPERIENCIA
             </span>
 
+
             <h2>
-                Un día recorriendo la Quebrada
+                El salar bajo otra luz
             </h2>
 
+
+            <div class="linea-dorada">
+
+                <span></span>
+
+                <b>◇</b>
+
+                <span></span>
+
+            </div>
+
+
             <p>
-                Partimos desde Purmamarca para descubrir
-                algunos de los lugares más emblemáticos
-                de la Quebrada de Humahuaca.
+                Salimos de Purmamarca por la tarde y recorremos
+                los paisajes de la Puna para llegar a Salinas Grandes
+                en uno de los momentos más lindos del día.
             </p>
 
         </div>
 
 
 
-        <div
-            class="carrusel"
-            id="carruselExperiencia"
-        >
+        <!-- VIDEO + FOTOS -->
 
-            <div class="slide">
+        <div class="experiencia-media">
 
-                <img
-                    src="{{ url_for('static', filename='img/humahuaca/experiencia1.jpg') }}"
-                    alt="Quebrada de Humahuaca"
+
+            <div class="video-marco">
+
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="{{ url_for('static', filename='img/atardecer/experiencia1.jpg') }}"
                 >
+
+                    <source
+                        src="{{ url_for('static', filename='img/atardecer/experiencia.mp4') }}"
+                        type="video/mp4"
+                    >
+
+                    Tu navegador no puede reproducir este video.
+
+                </video>
+
+
+                <div class="video-degrade"></div>
+
+
+                <div class="video-texto">
+
+                    <span>
+                        VIVÍ EL MOMENTO
+                    </span>
+
+                    <h3>
+                        Atardecer en el salar
+                    </h3>
+
+                </div>
 
             </div>
 
 
-            <div class="slide">
 
-                <img
-                    src="{{ url_for('static', filename='img/humahuaca/experiencia2.jpg') }}"
-                    alt="Paisajes de Humahuaca"
-                >
+            <div class="mini-galeria">
+
+
+                <div class="mini-foto">
+
+                    <img
+                        src="{{ url_for('static', filename='img/atardecer/experiencia1.jpg') }}"
+                        alt="Atardecer en Salinas Grandes"
+                    >
+
+                </div>
+
+
+                <div class="mini-foto">
+
+                    <img
+                        src="{{ url_for('static', filename='img/atardecer/experiencia2.jpg') }}"
+                        alt="Salinas Grandes al atardecer"
+                    >
+
+                </div>
+
 
             </div>
 
-
-            <div class="slide">
-
-                <img
-                    src="{{ url_for('static', filename='img/humahuaca/experiencia3.png') }}"
-                    alt="Experiencia por la Quebrada"
-                >
-
-            </div>
 
         </div>
-
-
-        <div class="indicadores">
-
-            <button class="punto activo" data-slide="0"></button>
-            <button class="punto" data-slide="1"></button>
-            <button class="punto" data-slide="2"></button>
-
-        </div>
-
-
-        <p class="ayuda">
-            Deslizá para ver más
-        </p>
 
     </section>
 
@@ -195,7 +278,7 @@
          INCLUYE
     ================================================== -->
 
-    <section class="incluye bloque">
+    <section class="incluye">
 
         <div class="titulo-seccion">
 
@@ -203,22 +286,29 @@
                 INCLUIDO
             </span>
 
+
             <h2>
-                Todo preparado para el recorrido
+                Todo preparado para tu viaje
             </h2>
 
         </div>
 
 
+
         <div class="incluye-grid">
+
 
             <div class="incluye-item">
 
-                <b>01</b>
+                <div class="incluye-icono">
+                    🚖
+                </div>
+
 
                 <strong>
                     Traslado
                 </strong>
+
 
                 <p>
                     Ida y vuelta desde Purmamarca
@@ -227,13 +317,18 @@
             </div>
 
 
+
             <div class="incluye-item">
 
-                <b>02</b>
+                <div class="incluye-icono">
+                    🧭
+                </div>
+
 
                 <strong>
                     Guiado
                 </strong>
+
 
                 <p>
                     Acompañamiento durante el recorrido
@@ -242,19 +337,25 @@
             </div>
 
 
+
             <div class="incluye-item">
 
-                <b>03</b>
+                <div class="incluye-icono">
+                    📸
+                </div>
+
 
                 <strong>
-                    Fotos
+                    Paradas para fotos
                 </strong>
+
 
                 <p>
                     Tiempo para disfrutar y fotografiar
                 </p>
 
             </div>
+
 
         </div>
 
@@ -266,58 +367,59 @@
          RECORRIDO
     ================================================== -->
 
-    <section class="recorrido bloque">
+    <section class="recorrido">
 
         <div class="titulo-seccion">
 
             <span>
-                NUESTRO RECORRIDO
+                EN EL CAMINO
             </span>
 
-            <h2>
-                De pueblo en pueblo
-            </h2>
 
-            <p>
-                Cuatro paradas antes de llegar
-                al gran destino final: Hornocal.
-            </p>
+            <h2>
+                Paradas panorámicas
+            </h2>
 
         </div>
 
 
-        <div class="recorrido-lista">
+
+        <div class="recorrido-grid">
 
 
-            <!-- MAIMARÁ -->
+            <!-- CUESTA DE LIPÁN -->
 
-            <article class="parada">
+            <article class="recorrido-card">
 
-                <div class="parada-foto">
+                <div class="recorrido-foto">
 
                     <img
-                        src="{{ url_for('static', filename='img/humahuaca/maimara1.jpg') }}"
-                        alt="Paleta del Pintor"
+                        src="{{ url_for('static', filename='img/atardecer/lipan1.jpg') }}"
+                        alt="Cuesta de Lipán"
                     >
 
-                    <span>01</span>
+                    <span class="numero">
+                        01
+                    </span>
 
                 </div>
 
 
-                <div class="parada-info">
+                <div class="recorrido-info">
 
-                    <small>
-                        MAIMARÁ
-                    </small>
+                    <span>
+                        PARADA PANORÁMICA
+                    </span>
+
 
                     <h3>
-                        Paleta del Pintor
+                        Cuesta de Lipán
                     </h3>
 
+
                     <p>
-                        Una parada para contemplar los colores
-                        característicos de los cerros de Maimará.
+                        El espectacular camino de montaña
+                        que conecta la Quebrada con la Puna jujeña.
                     </p>
 
                 </div>
@@ -326,109 +428,44 @@
 
 
 
-            <!-- HUACALERA -->
+            <!-- ALTURA MÁXIMA -->
 
-            <article class="parada">
+            <article class="recorrido-card">
 
-                <div class="parada-foto">
-
-                    <img
-                        src="{{ url_for('static', filename='img/humahuaca/tropico1.jpg') }}"
-                        alt="Trópico de Capricornio"
-                    >
-
-                    <span>02</span>
-
-                </div>
-
-
-                <div class="parada-info">
-
-                    <small>
-                        HUACALERA
-                    </small>
-
-                    <h3>
-                        Trópico de Capricornio
-                    </h3>
-
-                    <p>
-                        Una de las paradas geográficas
-                        más conocidas de la Quebrada.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- UQUÍA -->
-
-            <article class="parada">
-
-                <div class="parada-foto">
+                <div class="recorrido-foto">
 
                     <img
-                        src="{{ url_for('static', filename='img/humahuaca/uquia1.jpg') }}"
-                        alt="Quebrada de la Señorita"
+                        src="{{ url_for('static', filename='img/atardecer/altura1.jpg') }}"
+                        alt="Altura máxima 4170 metros"
                     >
 
-                    <span>03</span>
+                    <span class="numero">
+                        02
+                    </span>
 
                 </div>
 
 
-                <div class="parada-info">
+                <div class="recorrido-info">
 
-                    <small>
-                        UQUÍA
-                    </small>
+                    <span>
+                        PUNTO MÁS ALTO
+                    </span>
+
 
                     <h3>
-                        Quebrada de la Señorita
+                        Altura máxima
                     </h3>
 
-                    <p>
-                        Un paisaje de tonos rojizos
-                        y formaciones naturales únicas.
-                    </p>
 
-                </div>
+                    <strong class="altura">
+                        4.170 msnm
+                    </strong>
 
-            </article>
-
-
-
-            <!-- HUMAHUACA -->
-
-            <article class="parada">
-
-                <div class="parada-foto">
-
-                    <img
-                        src="{{ url_for('static', filename='img/humahuaca/humahuaca1.png') }}"
-                        alt="Pueblo de Humahuaca"
-                    >
-
-                    <span>04</span>
-
-                </div>
-
-
-                <div class="parada-info">
-
-                    <small>
-                        HUMAHUACA
-                    </small>
-
-                    <h3>
-                        Pueblo de Humahuaca
-                    </h3>
 
                     <p>
-                        Tiempo para conocer uno de los pueblos
-                        más representativos de la Quebrada.
+                        Una parada panorámica antes de continuar
+                        nuestro recorrido hacia Salinas Grandes.
                     </p>
 
                 </div>
@@ -443,52 +480,42 @@
 
 
     <!-- ==================================================
-         HORNOCAL
+         MOMENTO ESPECIAL
     ================================================== -->
 
-    <section class="hornocal bloque">
+    <section class="momento">
 
-        <div class="hornocal-texto">
+        <img
+            src="{{ url_for('static', filename='img/atardecer/momento.jpg') }}"
+            alt="Colores del atardecer en Salinas Grandes"
+            class="momento-imagen"
+        >
 
-            <span>
-                DESTINO FINAL
+
+        <div class="momento-overlay"></div>
+
+
+        <div class="momento-contenido">
+
+            <span class="momento-mini">
+                EL MOMENTO ESPECIAL
             </span>
 
+
             <h2>
-                Serranías del
-                <strong>Hornocal</strong>
+                Cuando el salar
+                <span>cambia de color</span>
             </h2>
 
+
+            <div class="momento-linea"></div>
+
+
             <p>
-                El gran cierre del recorrido:
-                uno de los paisajes más impresionantes
-                del norte argentino.
+                Cuando el sol comienza a bajar, el blanco del salar
+                refleja tonos cálidos y el paisaje se transforma
+                por completo.
             </p>
-
-        </div>
-
-
-        <div class="hornocal-principal">
-
-            <img
-                src="{{ url_for('static', filename='img/humahuaca/hornocal1.png') }}"
-                alt="Serranías del Hornocal"
-            >
-
-        </div>
-
-
-        <div class="hornocal-miniaturas">
-
-            <img
-                src="{{ url_for('static', filename='img/humahuaca/hornocal2.png') }}"
-                alt="Hornocal"
-            >
-
-            <img
-                src="{{ url_for('static', filename='img/humahuaca/hornocal3.jpg') }}"
-                alt="Paisaje del Hornocal"
-            >
 
         </div>
 
@@ -500,22 +527,24 @@
          MODALIDAD
     ================================================== -->
 
-    <section class="modalidad bloque">
+    <section class="modalidad">
 
-        <div class="modalidad-numero">
-            05
+        <div class="modalidad-icono">
+            ◇
         </div>
 
 
-        <div>
+        <div class="modalidad-texto">
 
             <span>
                 MODALIDAD
             </span>
 
+
             <h2>
                 Privada o grupal
             </h2>
+
 
             <p>
                 Elegí la opción que mejor se adapte a tu viaje.
@@ -537,12 +566,14 @@
 <section class="reserva">
 
     <span>
-        ¿QUERÉS RECORRER LA QUEBRADA?
+        ¿LISTO PARA VIVIR EL ATARDECER?
     </span>
+
 
     <h2>
         Consultá tu excursión
     </h2>
+
 
     <p>
         Escribinos para conocer precio,
@@ -550,38 +581,50 @@
     </p>
 
 
+
     <a
-        href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20el%20precio%20y%20la%20disponibilidad%20para%20la%20excursión%20Quebrada%20de%20Humahuaca."
+        href="https://wa.me/5493884694300?text=Hola%2C%20quisiera%20consultar%20el%20precio%20y%20la%20disponibilidad%20para%20la%20excursión%20Atardecer%20en%20Salinas%20Grandes."
         target="_blank"
         rel="noopener noreferrer"
         class="boton-whatsapp"
     >
 
+
         <span class="whatsapp-icono">
 
-            <svg viewBox="0 0 24 24">
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
 
                 <path
                     d="M12 2.5a9.3 9.3 0 0 0-8 14.1L2.7 21.5l5-1.3A9.4 9.4 0 1 0 12 2.5z"
-                />
+                ></path>
 
                 <path
                     class="telefono"
                     d="M9 7.5c.3-.7.6-.7.9-.7h.5c.2 0 .4.1.5.5l.8 2c.1.3.1.5-.1.7l-.7.9c-.2.2-.2.4-.1.6.5 1 1.2 1.8 2.1 2.4.8.6 1.5.9 1.8 1 .3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.3.8-.2l1.9.9c.3.1.5.3.5.5 0 .2-.1 1.3-.8 2-.7.8-1.8 1.1-2.8.8-1-.3-3.2-1.1-5.4-3.1-1.8-1.6-3-3.6-3.3-4.6-.3-1 .1-1.9.6-2.4z"
-                />
+                ></path>
 
             </svg>
 
         </span>
 
 
-        Consultar precio y disponibilidad
+        <span>
+            Consultar precio y disponibilidad
+        </span>
 
     </a>
+
 
 </section>
 
 
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
 
 <footer>
 
@@ -594,115 +637,6 @@
     </p>
 
 </footer>
-
-
-
-<script>
-
-    const carrusel =
-        document.getElementById("carruselExperiencia");
-
-    const slides =
-        document.querySelectorAll(".slide");
-
-    const puntos =
-        document.querySelectorAll(".punto");
-
-
-    let indice = 0;
-    let intervalo;
-
-
-    function actualizarPuntos() {
-
-        puntos.forEach((punto, i) => {
-
-            punto.classList.toggle(
-                "activo",
-                i === indice
-            );
-
-        });
-
-    }
-
-
-    function moverA(i) {
-
-        indice = i;
-
-
-        const posicion =
-            slides[i].offsetLeft -
-            carrusel.offsetLeft;
-
-
-        carrusel.scrollTo({
-
-            left: posicion,
-
-            behavior: "smooth"
-
-        });
-
-
-        actualizarPuntos();
-
-    }
-
-
-    function iniciar() {
-
-        clearInterval(intervalo);
-
-
-        intervalo = setInterval(() => {
-
-            indice++;
-
-
-            if (indice >= slides.length) {
-                indice = 0;
-            }
-
-
-            moverA(indice);
-
-        }, 3500);
-
-    }
-
-
-    puntos.forEach((punto, i) => {
-
-        punto.addEventListener(
-            "click",
-            () => {
-
-                moverA(i);
-                iniciar();
-
-            }
-        );
-
-    });
-
-
-    carrusel.addEventListener(
-        "touchstart",
-        () => clearInterval(intervalo)
-    );
-
-
-    carrusel.addEventListener(
-        "touchend",
-        iniciar
-    );
-
-
-    iniciar();
-
-</script>
 
 
 </body>
