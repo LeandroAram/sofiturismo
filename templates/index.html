@@ -10,17 +10,87 @@
         content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     >
 
-    <title>Sofiturismo | Purmamarca - Jujuy</title>
+    <title>Sofiturismo con Nelson | Purmamarca - Jujuy</title>
 
     <meta
         name="description"
-        content="Excursiones y traslados desde Purmamarca para descubrir Jujuy."
+        content="Excursiones y traslados desde Purmamarca para descubrir Jujuy con Sofiturismo."
     >
 
     <link
         rel="stylesheet"
         href="{{ url_for('static', filename='css/style.css') }}"
     >
+
+    <style>
+
+        /* ==================================================
+           CON NELSON
+        ================================================== */
+
+        .con-nelson {
+
+            display: block;
+
+            width: 100%;
+
+            margin-top: 2px;
+
+            color:
+                rgba(255,255,255,0.82);
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            font-size: 10px;
+
+            font-weight: 400;
+
+            letter-spacing: 2.4px;
+
+            text-align: center;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* ==================================================
+           ICONO MAPS
+        ================================================== */
+
+        .maps-icono svg {
+
+            fill: none;
+
+            stroke: currentColor;
+
+            stroke-width: 1.8;
+
+            stroke-linecap: round;
+
+            stroke-linejoin: round;
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .con-nelson {
+
+                margin-top: 1px;
+
+                font-size: 8px;
+
+                letter-spacing: 1.8px;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -68,6 +138,10 @@
                     turismo
                 </span>
 
+                <span class="con-nelson">
+                    con Nelson
+                </span>
+
             </div>
 
 
@@ -84,7 +158,6 @@
 
         <!-- ==================================================
              IDIOMAS
-             AHORA VA DEBAJO DEL TEXTO PRINCIPAL
         ================================================== -->
 
         <section class="idiomas">
@@ -134,7 +207,7 @@
 
 
         <!-- ==================================================
-             ESPACIO LIBRE PARA LA FOTO
+             ESPACIO PARA LA FOTO
         ================================================== -->
 
         <div class="espacio-foto"></div>
@@ -162,6 +235,52 @@
         ================================================== -->
 
         <section class="redes">
+
+
+            <!-- ==================================================
+                 GOOGLE MAPS
+            ================================================== -->
+
+            <a
+                href="https://maps.app.goo.gl/81SrDR2RzX3wFG1A8?g_st=awb"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="red-boton"
+            >
+
+                <span class="red-icono maps-icono">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11z"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="10"
+                            r="2.2"
+                        />
+
+                    </svg>
+
+                </span>
+
+
+                <span class="red-nombre">
+                    Ver ubicación
+                </span>
+
+
+                <span class="flecha">
+                    →
+                </span>
+
+            </a>
+
 
 
             <!-- ==================================================
