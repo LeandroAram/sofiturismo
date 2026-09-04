@@ -395,6 +395,55 @@ def agregar_configuracion_global(response):
         )
 
 
+    # =====================================================
+    # GOOGLE ANALYTICS 4
+    # =====================================================
+    # Se agrega automáticamente a TODAS las páginas.
+    # ID de medición:
+    # G-MKNB5DKQ8F
+    # =====================================================
+
+    if "G-MKNB5DKQ8F" not in html:
+
+        google_analytics = """
+
+    <!-- ================================================
+         GOOGLE ANALYTICS 4 - SOFITURISMO
+    ================================================= -->
+
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-MKNB5DKQ8F"
+    ></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag(
+            'js',
+            new Date()
+        );
+
+        gtag(
+            'config',
+            'G-MKNB5DKQ8F'
+        );
+
+    </script>
+
+"""
+
+        html = html.replace(
+            "</head>",
+            google_analytics + "\n</head>"
+        )
+
+
     response.set_data(html)
 
     return response
