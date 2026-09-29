@@ -8,8 +8,8 @@ app = Flask(__name__)
 # =========================================================
 # CONFIGURACIÓN PARA PRODUCCIÓN
 # =========================================================
-# Ayuda a Flask a detectar correctamente HTTPS y el dominio
-# cuando la página esté publicada detrás de un hosting/proxy.
+# Permite que Flask detecte correctamente HTTPS y el dominio
+# cuando la web está detrás de Easypanel / Traefik.
 # =========================================================
 
 app.wsgi_app = ProxyFix(
@@ -22,10 +22,13 @@ app.wsgi_app = ProxyFix(
 # =========================================================
 # PÁGINA PRINCIPAL
 # =========================================================
+# Ya NO mostramos la pantalla para elegir idioma.
+# La web entra directamente al inicio en español.
+# =========================================================
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("inicio_es.html")
 
 
 # =========================================================
@@ -195,8 +198,10 @@ IDIOMAS = {
 # =========================================================
 # CONFIGURACIÓN GLOBAL AUTOMÁTICA
 # =========================================================
-# Se agrega automáticamente a todos los HTML.
-# NO hace falta modificar cada archivo.
+# Todo lo de esta sección se agrega automáticamente
+# a TODOS los HTML.
+#
+# No hace falta modificar cada página.
 # =========================================================
 
 @app.after_request
@@ -371,7 +376,7 @@ def agregar_configuracion_global(response):
 
 """
 
-    elif request.path.startswith("/es"):
+    else:
 
         idioma_og = """
 
@@ -381,10 +386,6 @@ def agregar_configuracion_global(response):
     >
 
 """
-
-    else:
-
-        idioma_og = ""
 
 
     if idioma_og and 'property="og:locale"' not in html:
@@ -398,8 +399,9 @@ def agregar_configuracion_global(response):
     # =====================================================
     # GOOGLE ANALYTICS 4
     # =====================================================
-    # Se agrega automáticamente a TODAS las páginas.
-    # ID de medición:
+    # Se instala automáticamente en todas las páginas.
+    #
+    # ID de medición Sofiturismo:
     # G-MKNB5DKQ8F
     # =====================================================
 
@@ -484,7 +486,9 @@ def sitemap():
 
     paginas = [
 
+        # =================================================
         # PRINCIPAL
+        # =================================================
 
         url_for(
             "index",
