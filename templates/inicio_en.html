@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,16 +10,16 @@
         content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     >
 
-    <title>Sofiturismo | Tours in Jujuy</title>
+    <title>Sofiturismo | Private Tours in Jujuy</title>
 
     <meta
         name="description"
-        content="Tours from Purmamarca to discover Salinas Grandes, Ojos del Salar, Sunset at Salinas Grandes and Quebrada de Humahuaca."
+        content="Private tours from Purmamarca to Salinas Grandes, Ojos del Salar, sunset at the salt flats and Quebrada de Humahuaca."
     >
 
     <link
         rel="stylesheet"
-        href="{{ url_for('static', filename='css/inicio_en.css') }}"
+        href="{{ url_for('static', filename='css/inicio_es.css') }}"
     >
 
 </head>
@@ -28,71 +28,331 @@
 <body>
 
 
-<!-- ==================================================
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header
+    class="header"
+    id="header"
+>
+
+    <a
+        href="/en"
+        class="marca"
+        aria-label="Sofiturismo"
+    >
+
+        <span class="marca-principal">
+            Sofi<span>turismo</span>
+        </span>
+
+        <small>
+            with Nelson
+        </small>
+
+    </a>
+
+
+    <nav
+        class="nav"
+        aria-label="Main navigation"
+    >
+
+        <a href="#experiencias">
+            Experiences
+        </a>
+
+        <a href="#ruta">
+            Journey
+        </a>
+
+        <a href="#nelson">
+            Nelson
+        </a>
+
+        <a href="#contacto">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="idioma">
+
+        <a href="/es">
+            ES
+        </a>
+
+        <span>/</span>
+
+        <a
+            href="/en"
+            class="activo"
+            aria-current="page"
+        >
+            EN
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     SIDE PROGRESS
+========================================================= -->
+
+<aside
+    class="travel-progress"
+    aria-label="Experiences"
+>
+
+    <div class="progress-line">
+
+        <span
+            class="progress-fill"
+            id="progressFill"
+        ></span>
+
+    </div>
+
+
+    <a
+        href="#salinas"
+        class="progress-step activo"
+        data-progress="1"
+    >
+
+        <span class="progress-dot"></span>
+
+        <span class="progress-name">
+            Salinas
+        </span>
+
+    </a>
+
+
+    <a
+        href="#ojos"
+        class="progress-step"
+        data-progress="2"
+    >
+
+        <span class="progress-dot"></span>
+
+        <span class="progress-name">
+            Ojos
+        </span>
+
+    </a>
+
+
+    <a
+        href="#atardecer"
+        class="progress-step"
+        data-progress="3"
+    >
+
+        <span class="progress-dot"></span>
+
+        <span class="progress-name">
+            Sunset
+        </span>
+
+    </a>
+
+
+    <a
+        href="#humahuaca"
+        class="progress-step"
+        data-progress="4"
+    >
+
+        <span class="progress-dot"></span>
+
+        <span class="progress-name">
+            Humahuaca
+        </span>
+
+    </a>
+
+</aside>
+
+
+
+<!-- =========================================================
+     MOBILE PROGRESS
+========================================================= -->
+
+<div
+    class="mobile-progress"
+    id="mobileProgress"
+>
+
+    <span id="mobileProgressNumber">
+        01
+    </span>
+
+    <span class="mobile-progress-line"></span>
+
+    <span>
+        04
+    </span>
+
+</div>
+
+
+
+<!-- =========================================================
      HERO
-================================================== -->
+========================================================= -->
 
 <section class="hero">
+
+    <div class="hero-fondo"></div>
 
     <div class="hero-overlay"></div>
 
 
-    <a
-        href="/"
-        class="volver-index"
-        aria-label="Back to home"
-    >
-        ←
-    </a>
-
-
     <div class="hero-contenido">
 
-        <div class="marca">
-            Sofi<span>turismo</span>
+
+        <div class="hero-arriba">
+
+            <span>
+                PURMAMARCA · JUJUY · ARGENTINA
+            </span>
+
         </div>
 
 
-        <div class="hero-texto">
+        <div class="hero-central">
 
-            <span class="hero-mini">
+            <p class="hero-mini">
                 TOURS FROM PURMAMARCA
-            </span>
-
-
-            <h1>
-                Discover Jujuy
-                <span>with Sofiturismo</span>
-            </h1>
-
-
-            <p>
-                Experience the Quebrada and the Puna
-                with tours departing from Purmamarca.
             </p>
 
 
-            <div class="hero-botones">
+            <h1>
 
-                <a
-                    href="#tour-zone"
-                    id="botonExplorar"
-                    class="boton boton-principal"
-                >
-                    Explore tours
-                </a>
+                JUJUY
+
+                <span>
+                    where the road
+                </span>
+
+                <em>
+                    is part of the journey.
+                </em>
+
+            </h1>
 
 
-                <a
-                    href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Sofiturismo%20tours."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="boton boton-secundario"
-                >
-                    Contact us on WhatsApp
-                </a>
+            <p class="hero-descripcion">
 
-            </div>
+                Discover the Quebrada and the Puna through relaxed,
+                personal journeys with Nelson.
+
+            </p>
+
+        </div>
+
+
+        <a
+            href="#introduccion"
+            class="hero-scroll"
+        >
+
+            <span>
+                START THE JOURNEY
+            </span>
+
+            <span class="hero-scroll-circulo">
+                ↓
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section
+    class="introduccion"
+    id="introduccion"
+>
+
+    <div class="intro-decoracion">
+
+        <span class="intro-palabra">
+            JUJUY
+        </span>
+
+        <span class="intro-orbita intro-orbita-1"></span>
+
+        <span class="intro-orbita intro-orbita-2"></span>
+
+    </div>
+
+
+    <div class="introduccion-interior reveal">
+
+        <p class="etiqueta">
+            SOFITURISMO
+        </p>
+
+
+        <h2>
+
+            It's not only about
+
+            <span>
+                the destination.
+            </span>
+
+        </h2>
+
+
+        <p class="introduccion-texto">
+
+            From Purmamarca, every journey passes through
+            landscapes, villages and roads that become
+            part of the experience.
+
+        </p>
+
+
+        <div class="territorio">
+
+            <span>
+                PURMAMARCA
+            </span>
+
+            <i></i>
+
+            <span>
+                QUEBRADA
+            </span>
+
+            <i></i>
+
+            <span>
+                PUNA
+            </span>
+
+            <i></i>
+
+            <span>
+                SALINAS
+            </span>
 
         </div>
 
@@ -102,345 +362,731 @@
 
 
 
-<!-- ==================================================
-     MAIN CONTENT
-================================================== -->
+<!-- =========================================================
+     TRANSITION
+========================================================= -->
 
-<main class="contenido-principal">
+<section class="transicion-territorio">
+
+    <div class="transicion-linea"></div>
 
 
-    <!-- ==================================================
-         TOURS
-    ================================================== -->
+    <div class="transicion-contenido reveal">
 
-    <section
-        class="destacadas"
-        id="tours"
+        <span>
+            THE ROAD IS PART OF THE STORY
+        </span>
+
+
+        <p>
+            Every turn changes the landscape.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ANIMATED ROUTE
+========================================================= -->
+
+<section
+    class="ruta"
+    id="ruta"
+>
+
+    <div
+        class="ruta-interior"
+        id="rutaInterior"
     >
 
-        <div class="titulo-seccion">
 
-            <span>
-                EXPLORE JUJUY
+        <div class="ruta-intro reveal">
+
+            <span class="etiqueta etiqueta-dorada">
+                ROAD TO SALINAS GRANDES
             </span>
 
+
             <h2>
-                Our tours
+
+                The journey begins
+
+                <em>
+                    in Purmamarca.
+                </em>
+
             </h2>
 
+
             <p>
-                Swipe and tap a tour to discover all the details.
+
+                The landscape changes with every kilometre
+                as we climb towards the Puna.
+
             </p>
 
         </div>
 
 
 
-        <!-- ==================================================
-             REAL ANCHOR FOR EXPLORE BUTTON
-        ================================================== -->
-
-        <div
-            class="ancla-excursiones"
-            id="tour-zone"
-        ></div>
+        <div class="ruta-recorrido">
 
 
+            <div class="ruta-linea">
 
-        <!-- ==================================================
-             CAROUSEL
-        ================================================== -->
+                <span
+                    class="ruta-linea-activa"
+                    id="rutaLineaActiva"
+                ></span>
 
-        <div
-            class="carrusel"
-            id="carruselExcursiones"
-        >
-
-
-            <!-- SALINAS GRANDES -->
-
-            <a
-                href="/en/salinas"
-                class="tarjeta"
-            >
-
-                <img
-                    src="{{ url_for('static', filename='img/salinas.png') }}"
-                    alt="Salinas Grandes"
-                >
-
-                <div class="tarjeta-sombra"></div>
+            </div>
 
 
-                <div class="tarjeta-info">
 
-                    <span class="numero">
-                        01
-                    </span>
+            <div class="ruta-parada reveal">
+
+                <span class="ruta-punto"></span>
+
+                <span class="ruta-numero">
+                    01
+                </span>
+
+
+                <div>
+
+                    <small>
+                        STARTING POINT
+                    </small>
+
+                    <h3>
+                        Purmamarca
+                    </h3>
+
+                    <p>
+                        The journey begins.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="ruta-parada reveal">
+
+                <span class="ruta-punto"></span>
+
+                <span class="ruta-numero">
+                    02
+                </span>
+
+
+                <div>
+
+                    <small>
+                        ASCENT
+                    </small>
+
+                    <h3>
+                        Cuesta de Lipán
+                    </h3>
+
+                    <p>
+                        One of the most spectacular roads in Jujuy.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="ruta-parada reveal">
+
+                <span class="ruta-punto"></span>
+
+                <span class="ruta-numero">
+                    03
+                </span>
+
+
+                <div>
+
+                    <small>
+                        HIGHEST POINT
+                    </small>
+
+                    <h3>
+                        4,170 m
+                    </h3>
+
+                    <p>
+                        A stop before entering the Puna.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="ruta-parada reveal">
+
+                <span class="ruta-punto"></span>
+
+                <span class="ruta-numero">
+                    04
+                </span>
+
+
+                <div>
+
+                    <small>
+                        DESTINATION
+                    </small>
 
                     <h3>
                         Salinas Grandes
                     </h3>
 
                     <p>
-                        9:30 AM · 1:30 PM
+                        The horizon seems endless.
                     </p>
-
-                    <div class="tarjeta-pie">
-
-                        <span class="duracion">
-                            4 hours
-                        </span>
-
-                        <span class="ver-detalles">
-                            View details →
-                        </span>
-
-                    </div>
 
                 </div>
 
-            </a>
-
-
-
-            <!-- OJOS DEL SALAR -->
-
-            <a
-                href="/en/ojos-del-salar"
-                class="tarjeta"
-            >
-
-                <img
-                    src="{{ url_for('static', filename='img/ojos/portada.jpg') }}"
-                    alt="Ojos del Salar"
-                >
-
-                <div class="tarjeta-sombra"></div>
-
-
-                <div class="tarjeta-info">
-
-                    <span class="numero">
-                        02
-                    </span>
-
-                    <h3>
-                        Ojos del Salar
-                    </h3>
-
-                    <p>
-                        Complete experience
-                    </p>
-
-                    <div class="tarjeta-pie">
-
-                        <span class="duracion">
-                            4 h 30 min
-                        </span>
-
-                        <span class="ver-detalles">
-                            View details →
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- SUNSET -->
-
-            <a
-                href="/en/sunset"
-                class="tarjeta"
-            >
-
-                <img
-                    src="{{ url_for('static', filename='img/atardecer/portada.jpg') }}"
-                    alt="Sunset at Salinas Grandes"
-                >
-
-                <div class="tarjeta-sombra"></div>
-
-
-                <div class="tarjeta-info">
-
-                    <span class="numero">
-                        03
-                    </span>
-
-                    <h3>
-                        Sunset at Salinas
-                    </h3>
-
-                    <p>
-                        Departure 5:00 PM
-                    </p>
-
-                    <div class="tarjeta-pie">
-
-                        <span class="duracion">
-                            4–5 hours
-                        </span>
-
-                        <span class="ver-detalles">
-                            View details →
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- HUMAHUACA -->
-
-            <a
-                href="/en/humahuaca"
-                class="tarjeta"
-            >
-
-                <img
-                    src="{{ url_for('static', filename='img/humahuaca/portada.jpg') }}"
-                    alt="Quebrada de Humahuaca"
-                >
-
-                <div class="tarjeta-sombra"></div>
-
-
-                <div class="tarjeta-info">
-
-                    <span class="numero">
-                        04
-                    </span>
-
-                    <h3>
-                        Quebrada de Humahuaca
-                    </h3>
-
-                    <p>
-                        9:30 AM · 7:00 PM
-                    </p>
-
-                    <div class="tarjeta-pie">
-
-                        <span class="duracion">
-                            Full day
-                        </span>
-
-                        <span class="ver-detalles">
-                            View details →
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </a>
+            </div>
 
 
         </div>
-
-
-
-        <!-- ==================================================
-             INDICATORS
-        ================================================== -->
-
-        <div class="indicadores">
-
-            <button
-                class="punto activo"
-                data-slide="0"
-                aria-label="Salinas Grandes"
-            ></button>
-
-            <button
-                class="punto"
-                data-slide="1"
-                aria-label="Ojos del Salar"
-            ></button>
-
-            <button
-                class="punto"
-                data-slide="2"
-                aria-label="Sunset at Salinas Grandes"
-            ></button>
-
-            <button
-                class="punto"
-                data-slide="3"
-                aria-label="Quebrada de Humahuaca"
-            ></button>
-
-        </div>
-
-
-        <p class="ayuda-carrusel">
-            Swipe to explore · tap to learn more
-        </p>
-
-    </section>
-
-
-
-    <!-- ==================================================
-     MEET SOFITURISMO
-================================================== -->
-
-<section class="conoce">
-
-
-    <div class="conoce-imagen">
-
-        <img
-            src="{{ url_for('static', filename='img/conoce2.jpg') }}"
-            alt="Nelson - Sofiturismo"
-        >
 
     </div>
 
+</section>
 
-    <div class="conoce-texto">
 
-        <span class="conoce-mini">
-            MEET SOFITURISMO
+
+<!-- =========================================================
+     EXPERIENCES
+========================================================= -->
+
+<section
+    class="experiencias"
+    id="experiencias"
+>
+
+
+<!-- SALINAS -->
+
+<a
+    href="/en/salinas"
+    class="experiencia"
+    id="salinas"
+    data-experiencia="1"
+>
+
+    <img
+        src="{{ url_for('static', filename='img/salinas.png') }}"
+        alt="Salinas Grandes"
+    >
+
+    <div class="experiencia-overlay"></div>
+
+
+    <span class="experiencia-numero">
+        01
+    </span>
+
+
+    <div class="experiencia-contenido reveal">
+
+        <span class="experiencia-categoria">
+            PUNA · SALT FLATS
         </span>
 
 
         <h2>
-            Jujuy
-            <span>at your own pace</span>
+            Salinas Grandes
         </h2>
 
 
         <p>
-            Hi! I'm <strong>Nelson</strong> and I live in Purmamarca.
-            My goal is to take you to discover Salinas Grandes
-            and some of the most beautiful places in Jujuy,
-            always at a relaxed and enjoyable pace.
+
+            Cuesta de Lipán, the highest viewpoint
+            and one of the most impressive landscapes
+            in northern Argentina.
+
         </p>
 
 
-        <p class="conoce-secundario">
-            I also provide transfers to Jujuy Airport.
-            If you're in the area and would like to plan something together,
-            feel free to contact me. I'll be happy to welcome you!
+        <div class="experiencia-meta">
+
+            <span>
+                9:30 AM — 1:30 PM
+            </span>
+
+            <span>
+                4 hours
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <span class="experiencia-flecha">
+        ↗
+    </span>
+
+</a>
+
+
+
+<!-- PAUSE -->
+
+<section class="pausa">
+
+    <div class="pausa-interior reveal">
+
+        <span>
+            “
+        </span>
+
+        <p>
+
+            There are places where
+            silence becomes part
+            of the landscape.
+
         </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- OJOS DEL SALAR -->
+
+<a
+    href="/en/ojos-del-salar"
+    class="experiencia experiencia-video"
+    id="ojos"
+    data-experiencia="2"
+>
+
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="{{ url_for('static', filename='img/ojos/portada.jpg') }}"
+    >
+
+        <source
+            src="{{ url_for('static', filename='img/ojos/experiencia.mp4') }}"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="experiencia-overlay"></div>
+
+
+    <span class="video-badge">
+
+        <span class="video-punto"></span>
+
+        EXPERIENCE IN MOTION
+
+    </span>
+
+
+    <span class="experiencia-numero">
+        02
+    </span>
+
+
+    <div class="experiencia-contenido reveal">
+
+        <span class="experiencia-categoria">
+            NATURE · PUNA
+        </span>
+
+
+        <h2>
+            Ojos del Salar
+        </h2>
+
+
+        <p>
+
+            Natural formations, endless horizons
+            and another way to discover
+            the salt flats.
+
+        </p>
+
+
+        <div class="experiencia-meta">
+
+            <span>
+                From Purmamarca
+            </span>
+
+            <span>
+                4 h 30 min
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <span class="experiencia-flecha">
+        ↗
+    </span>
+
+</a>
+
+
+
+<!-- SUNSET -->
+
+<a
+    href="/en/sunset"
+    class="experiencia experiencia-video"
+    id="atardecer"
+    data-experiencia="3"
+>
+
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="{{ url_for('static', filename='img/atardecer/portada.jpg') }}"
+    >
+
+        <source
+            src="{{ url_for('static', filename='img/atardecer/experiencia.mp4') }}"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="experiencia-overlay"></div>
+
+
+    <span class="video-badge">
+
+        <span class="video-punto"></span>
+
+        EXPERIENCE IN MOTION
+
+    </span>
+
+
+    <span class="experiencia-numero">
+        03
+    </span>
+
+
+    <div class="experiencia-contenido reveal">
+
+        <span class="experiencia-categoria">
+            SUNSET · SALT FLATS
+        </span>
+
+
+        <h2>
+
+            Sunset
+
+            <em>
+                at Salinas
+            </em>
+
+        </h2>
+
+
+        <p>
+
+            As the sun goes down,
+            the salt flats completely transform.
+
+        </p>
+
+
+        <div class="experiencia-meta">
+
+            <span>
+                Departure 5:00 PM
+            </span>
+
+            <span>
+                4 to 5 hours
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <span class="experiencia-flecha">
+        ↗
+    </span>
+
+</a>
+
+
+
+<!-- PAUSE -->
+
+<section class="pausa pausa-oscura">
+
+    <div class="pausa-interior reveal">
+
+        <span>
+            “
+        </span>
+
+        <p>
+
+            Sometimes the best plan
+            is simply to stop
+            and look around.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- HUMAHUACA -->
+
+<a
+    href="/en/humahuaca"
+    class="experiencia"
+    id="humahuaca"
+    data-experiencia="4"
+>
+
+    <img
+        src="{{ url_for('static', filename='img/humahuaca/portada.jpg') }}"
+        alt="Quebrada de Humahuaca"
+    >
+
+    <div class="experiencia-overlay"></div>
+
+
+    <span class="experiencia-numero">
+        04
+    </span>
+
+
+    <div class="experiencia-contenido reveal">
+
+        <span class="experiencia-categoria">
+            QUEBRADA · FULL DAY
+        </span>
+
+
+        <h2>
+
+            Quebrada
+
+            <em>
+                de Humahuaca
+            </em>
+
+        </h2>
+
+
+        <p>
+
+            Maimará, Huacalera, Uquía,
+            Humahuaca and Hornocal on a complete
+            journey through the Quebrada.
+
+        </p>
+
+
+        <div class="experiencia-meta">
+
+            <span>
+                9:30 AM — 7:00 PM
+            </span>
+
+            <span>
+                Full day
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <span class="experiencia-flecha">
+        ↗
+    </span>
+
+</a>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     NELSON
+========================================================= -->
+
+<section
+    class="nelson"
+    id="nelson"
+>
+
+    <div class="nelson-contenido">
+
+
+        <div class="nelson-foto reveal">
+
+            <img
+                src="{{ url_for('static', filename='img/conoce.jpg') }}"
+                alt="Nelson from Sofiturismo"
+            >
+
+
+            <div class="nelson-foto-etiqueta">
+
+                <span>
+                    MORE THAN 6 YEARS
+                </span>
+
+                <small>
+                    exploring Jujuy
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="nelson-texto reveal">
+
+            <span class="etiqueta etiqueta-dorada">
+                BEHIND SOFITURISMO
+            </span>
+
+
+            <h2>
+
+                Jujuy
+
+                <em>
+                    with Nelson.
+                </em>
+
+            </h2>
+
+
+            <p class="nelson-destacado">
+
+                Hi, I'm Nelson.
+                I live in Purmamarca.
+
+            </p>
+
+
+            <p>
+
+                My goal is to take you to Salinas Grandes
+                and some of the most beautiful places in Jujuy,
+                always at a relaxed and enjoyable pace.
+
+            </p>
+
+
+            <p>
+
+                The idea is for you to enjoy the road,
+                discover the region and experience
+                every journey without rushing.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AIRPORT TRANSFERS
+========================================================= -->
+
+<section class="traslados">
+
+    <div class="traslados-interior reveal">
+
+
+        <div class="traslado-icono">
+
+            <svg viewBox="0 0 24 24">
+
+                <path
+                    d="M2 16l8-4V5.5a2 2 0 0 1 4 0V12l8 4v2l-8-2v3l2 1v1l-4-1-4 1v-1l2-1v-3l-8 2z"
+                />
+
+            </svg>
+
+        </div>
+
+
+        <div>
+
+            <span class="etiqueta">
+                ADDITIONAL SERVICE
+            </span>
+
+
+            <h2>
+                Airport transfers
+            </h2>
+
+
+            <p>
+
+                Jujuy and Salta airports
+                · subject to availability.
+
+            </p>
+
+        </div>
 
 
         <a
-            href="https://wa.me/5493884694300?text=Hello%2C%20Nelson.%20I%20would%20like%20to%20ask%20about%20a%20tour%20or%20transfer%20with%20Sofiturismo."
+            href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20an%20airport%20transfer."
             target="_blank"
             rel="noopener noreferrer"
-            class="conoce-link"
+            class="traslado-flecha"
+            aria-label="Ask about airport transfers"
         >
-            Contact me →
+            ↗
         </a>
 
     </div>
@@ -449,379 +1095,698 @@
 
 
 
-    <!-- ==================================================
-         AIRPORT TRANSFERS
-    ================================================== -->
+<!-- =========================================================
+     FINAL POSTCARD
+========================================================= -->
 
-    <a
-        href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20an%20airport%20transfer%20to%20or%20from%20Jujuy%20or%20Salta."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="servicio-extra"
-    >
+<section class="postal">
 
-        <div class="servicio-icono">
-            ✈
-        </div>
+    <div class="postal-fondo"></div>
+
+    <div class="postal-overlay"></div>
 
 
-        <div class="servicio-info">
+    <div class="postal-contenido reveal">
 
-            <span>
-                ADDITIONAL SERVICE
-            </span>
+        <span>
+            PURMAMARCA · JUJUY
+        </span>
 
-            <h2>
-                Airport transfers
-            </h2>
+
+        <h2>
+
+            Your journey can
+
+            <em>
+                start here.
+            </em>
+
+        </h2>
+
+
+        <p>
+
+            Tell me which places you'd like to discover
+            and we'll plan your experience.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Sofiturismo%20tours."
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            Message Nelson
+
+            <strong>
+                ↗
+            </strong>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer
+    class="contacto"
+    id="contacto"
+>
+
+    <div class="contacto-interior">
+
+
+        <div class="footer-marca">
+
+            <strong>
+                Sofiturismo
+            </strong>
 
             <p>
-                Jujuy and Salta · subject to availability
+                Purmamarca · Jujuy · Argentina
             </p>
 
         </div>
 
 
-        <div class="servicio-flecha">
-            →
+        <div class="contacto-redes">
+
+            <a
+                href="https://www.instagram.com/sofiturismo_salinasgrandes/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram ↗
+            </a>
+
+
+            <a
+                href="https://www.tiktok.com/@sofiturismo?_t=8gvvH3OTEv8&amp;_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TikTok ↗
+            </a>
+
+
+            <a
+                href="https://maps.app.goo.gl/81SrDR2RzX3wFG1A8?g_st=awb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Directions ↗
+            </a>
+
         </div>
 
-    </a>
-
-
-</main>
+    </div>
 
 
 
-<!-- ==================================================
-     CONTACT
-================================================== -->
+    <!-- WEB DEVELOPER -->
 
-<section
-    class="contacto"
-    id="contact"
+    <div class="developer-credit">
+
+        <span>
+            Web design &amp; development
+        </span>
+
+
+        <strong>
+            Leandro Aramayo
+        </strong>
+
+
+        <div class="developer-links">
+
+            <a
+                href="https://www.instagram.com/leandro_aramayo1/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <svg viewBox="0 0 24 24">
+
+                    <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5"
+                    ></rect>
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                    ></circle>
+
+                    <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1"
+                        class="developer-fill"
+                    ></circle>
+
+                </svg>
+
+                Instagram
+
+            </a>
+
+
+            <a
+                href="https://wa.me/5493886865324"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M12 2a9.6 9.6 0 0 0-8.2 14.6L2.6 21l4.5-1.2A9.7 9.7 0 1 0 12 2Zm0 17.4a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A7.8 7.8 0 1 1 12 19.4Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.9-.2-.3.2-.3.7-1 .1-.2.1-.3 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.2-.3-.3-.5-.4Z"
+                    ></path>
+
+                </svg>
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     FLOATING MENU
+========================================================= -->
+
+<div
+    class="floating"
+    id="floating"
 >
 
-    <span>
-        PLANNING YOUR TRIP?
-    </span>
+    <div class="floating-opciones">
 
-
-    <h2>
-        Let's talk
-    </h2>
-
-
-    <p>
-        Contact us about tours,
-        availability and transfers.
-    </p>
-
-
-    <div class="contacto-botones">
 
         <a
             href="https://www.instagram.com/sofiturismo_salinasgrandes/"
             target="_blank"
             rel="noopener noreferrer"
-            class="contacto-boton instagram"
+            class="floating-item"
         >
-            Instagram
+
+            <span class="floating-label">
+                Instagram
+            </span>
+
+
+            <span class="floating-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5"
+                    ></rect>
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                    ></circle>
+
+                    <circle
+                        cx="17.4"
+                        cy="6.7"
+                        r="1"
+                        class="relleno"
+                    ></circle>
+
+                </svg>
+
+            </span>
+
         </a>
+
+
+
+        <a
+            href="https://www.tiktok.com/@sofiturismo?_t=8gvvH3OTEv8&amp;_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="floating-item"
+        >
+
+            <span class="floating-label">
+                TikTok
+            </span>
+
+
+            <span class="floating-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M14.5 3v11.1a4.6 4.6 0 1 1-3.7-4.5v2.8a1.9 1.9 0 1 0 1.1 1.7V3h2.6c.4 2 1.7 3.5 3.8 4.1v2.8c-1.5-.2-2.8-.8-3.8-1.7"
+                    ></path>
+
+                </svg>
+
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="https://maps.app.goo.gl/81SrDR2RzX3wFG1A8?g_st=awb"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="floating-item"
+        >
+
+            <span class="floating-label">
+                Directions
+            </span>
+
+
+            <span class="floating-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11z"
+                    ></path>
+
+                    <circle
+                        cx="12"
+                        cy="10"
+                        r="2.2"
+                    ></circle>
+
+                </svg>
+
+            </span>
+
+        </a>
+
 
 
         <a
             href="https://wa.me/5493884694300?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20Sofiturismo."
             target="_blank"
             rel="noopener noreferrer"
-            class="contacto-boton whatsapp"
+            class="floating-item whatsapp"
         >
-            WhatsApp
+
+            <span class="floating-label">
+                WhatsApp
+            </span>
+
+
+            <span class="floating-icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path
+                        d="M12 2a9.6 9.6 0 0 0-8.2 14.6L2.6 21l4.5-1.2A9.7 9.7 0 1 0 12 2Zm0 17.4a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A7.8 7.8 0 1 1 12 19.4Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.9-.2-.3.2-.3.7-1 .1-.2.1-.3 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.2-.3-.3-.5-.4Z"
+                    ></path>
+
+                </svg>
+
+            </span>
+
         </a>
 
     </div>
 
-</section>
+
+
+    <button
+        type="button"
+        class="floating-trigger floating-profile"
+        id="floatingTrigger"
+        aria-label="Open Sofiturismo contact options"
+        aria-expanded="false"
+    >
+
+        <span class="floating-help">
+            Need help?
+        </span>
+
+
+        <span class="profile-image">
+
+            <img
+                src="{{ url_for('static', filename='img/conoce.jpg') }}"
+                alt=""
+            >
+
+            <span class="profile-online"></span>
+
+        </span>
+
+    </button>
+
+</div>
 
 
 
-<!-- ==================================================
-     FOOTER
-================================================== -->
-
-<footer>
-
-    <strong>
-        Sofiturismo
-    </strong>
-
-    <p>
-        Purmamarca · Jujuy · Argentina
-    </p>
-
-</footer>
-
-
-
-<!-- ==================================================
+<!-- =========================================================
      JAVASCRIPT
-================================================== -->
+========================================================= -->
 
 <script>
 
-    const carrusel =
-        document.getElementById("carruselExcursiones");
 
-    const tarjetas =
-        carrusel.querySelectorAll(".tarjeta");
-
-    const puntos =
-        document.querySelectorAll(".punto");
-
-    const botonExplorar =
-        document.getElementById("botonExplorar");
-
-    const zonaExcursiones =
-        document.getElementById("tour-zone");
+const header =
+    document.getElementById("header");
 
 
-    let indiceActual = 0;
-    let intervalo;
-    let temporizadorScroll;
+function controlarHeader() {
+
+    if (window.scrollY > 45) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+}
+
+
+controlarHeader();
+
+
+window.addEventListener(
+    "scroll",
+    controlarHeader,
+    {
+        passive: true
+    }
+);
 
 
 
-    /* ==================================================
-       EXPLORE BUTTON
-    ================================================== */
-
-    botonExplorar.addEventListener(
-        "click",
-        function (event) {
-
-            event.preventDefault();
+const reveals =
+    document.querySelectorAll(".reveal");
 
 
-            const destino =
-                zonaExcursiones.getBoundingClientRect().top
-                + window.scrollY
-                - 8;
+const revealObserver =
+    new IntersectionObserver(
 
+        function(entries) {
 
-            window.scrollTo({
+            entries.forEach(
 
-                top: destino,
+                function(entry) {
 
-                behavior: "smooth"
+                    if (entry.isIntersecting) {
 
-            });
+                        entry.target.classList.add(
+                            "visible"
+                        );
 
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold: 0.12
         }
+
     );
 
 
+reveals.forEach(
 
-    /* ==================================================
-       MOVE CAROUSEL
-    ================================================== */
+    function(elemento) {
 
-    function moverA(indice) {
-
-        if (!tarjetas[indice]) {
-            return;
-        }
-
-
-        indiceActual = indice;
-
-
-        const posicion =
-            tarjetas[indice].offsetLeft -
-            carrusel.offsetLeft;
-
-
-        carrusel.scrollTo({
-
-            left: posicion,
-
-            behavior: "smooth"
-
-        });
-
-
-        actualizarPuntos();
-
-    }
-
-
-
-    function actualizarPuntos() {
-
-        puntos.forEach((punto, indice) => {
-
-            punto.classList.toggle(
-                "activo",
-                indice === indiceActual
-            );
-
-        });
-
-    }
-
-
-
-    function detenerCarrusel() {
-
-        if (intervalo) {
-
-            clearInterval(intervalo);
-
-            intervalo = null;
-
-        }
-
-    }
-
-
-
-    function iniciarCarrusel() {
-
-        detenerCarrusel();
-
-
-        intervalo = setInterval(() => {
-
-            indiceActual++;
-
-
-            if (
-                indiceActual >= tarjetas.length
-            ) {
-
-                indiceActual = 0;
-
-            }
-
-
-            moverA(indiceActual);
-
-        }, 2000);
-
-    }
-
-
-
-    puntos.forEach((punto, indice) => {
-
-        punto.addEventListener(
-            "click",
-            () => {
-
-                moverA(indice);
-
-                iniciarCarrusel();
-
-            }
+        revealObserver.observe(
+            elemento
         );
 
-    });
+    }
+
+);
 
 
 
-    carrusel.addEventListener(
-        "scroll",
-        () => {
+const rutaInterior =
+    document.getElementById(
+        "rutaInterior"
+    );
 
-            clearTimeout(
-                temporizadorScroll
+
+const rutaObserver =
+    new IntersectionObserver(
+
+        function(entries) {
+
+            entries.forEach(
+
+                function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        rutaInterior.classList.add(
+                            "ruta-activa"
+                        );
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold: 0.22
+        }
+
+    );
+
+
+rutaObserver.observe(
+    rutaInterior
+);
+
+
+
+const experiencias =
+    document.querySelectorAll(
+        "[data-experiencia]"
+    );
+
+
+const progressSteps =
+    document.querySelectorAll(
+        ".progress-step"
+    );
+
+
+const progressFill =
+    document.getElementById(
+        "progressFill"
+    );
+
+
+const mobileProgressNumber =
+    document.getElementById(
+        "mobileProgressNumber"
+    );
+
+
+function actualizarProgreso(numero) {
+
+    progressSteps.forEach(
+
+        function(step) {
+
+            step.classList.remove(
+                "activo"
+            );
+
+        }
+
+    );
+
+
+    const stepActivo =
+        document.querySelector(
+            '[data-progress="' +
+            numero +
+            '"]'
+        );
+
+
+    if (stepActivo) {
+
+        stepActivo.classList.add(
+            "activo"
+        );
+
+    }
+
+
+    const porcentaje =
+        ((numero - 1) / 3) * 100;
+
+
+    progressFill.style.height =
+        porcentaje + "%";
+
+
+    mobileProgressNumber.textContent =
+        String(numero).padStart(
+            2,
+            "0"
+        );
+
+}
+
+
+const experienciaObserver =
+    new IntersectionObserver(
+
+        function(entries) {
+
+            entries.forEach(
+
+                function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        const numero =
+                            Number(
+                                entry.target.dataset.experiencia
+                            );
+
+
+                        actualizarProgreso(
+                            numero
+                        );
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold: 0.50
+        }
+
+    );
+
+
+experiencias.forEach(
+
+    function(experiencia) {
+
+        experienciaObserver.observe(
+            experiencia
+        );
+
+    }
+
+);
+
+
+
+const floating =
+    document.getElementById(
+        "floating"
+    );
+
+
+const floatingTrigger =
+    document.getElementById(
+        "floatingTrigger"
+    );
+
+
+floatingTrigger.addEventListener(
+
+    "click",
+
+    function() {
+
+        const abierto =
+            floating.classList.toggle(
+                "open"
             );
 
 
-            temporizadorScroll =
-                setTimeout(() => {
+        floatingTrigger.setAttribute(
+            "aria-expanded",
+            abierto
+        );
 
-                    let tarjetaMasCercana = 0;
+    }
 
-                    let menorDistancia =
-                        Infinity;
-
-
-                    tarjetas.forEach(
-                        (tarjeta, indice) => {
-
-                            const posicion =
-                                tarjeta.offsetLeft -
-                                carrusel.offsetLeft;
-
-
-                            const distancia =
-                                Math.abs(
-                                    posicion -
-                                    carrusel.scrollLeft
-                                );
-
-
-                            if (
-                                distancia <
-                                menorDistancia
-                            ) {
-
-                                menorDistancia =
-                                    distancia;
-
-                                tarjetaMasCercana =
-                                    indice;
-
-                            }
-
-                        }
-                    );
-
-
-                    indiceActual =
-                        tarjetaMasCercana;
-
-                    actualizarPuntos();
-
-                }, 100);
-
-        }
-    );
+);
 
 
 
-    carrusel.addEventListener(
-        "touchstart",
-        detenerCarrusel
-    );
+document.addEventListener(
+
+    "click",
+
+    function(event) {
+
+        if (
+            !floating.contains(
+                event.target
+            )
+        ) {
+
+            floating.classList.remove(
+                "open"
+            );
 
 
-    carrusel.addEventListener(
-        "touchend",
-        () => {
-
-            setTimeout(
-                iniciarCarrusel,
-                1200
+            floatingTrigger.setAttribute(
+                "aria-expanded",
+                "false"
             );
 
         }
-    );
 
+    }
 
-    carrusel.addEventListener(
-        "mouseenter",
-        detenerCarrusel
-    );
+);
 
-
-    carrusel.addEventListener(
-        "mouseleave",
-        iniciarCarrusel
-    );
-
-
-    iniciarCarrusel();
 
 </script>
 
