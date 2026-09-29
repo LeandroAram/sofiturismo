@@ -17,6 +17,7 @@
         content="Private tours from Purmamarca to Salinas Grandes, Ojos del Salar, sunset at the salt flats and Quebrada de Humahuaca."
     >
 
+    <!-- MISMO CSS QUE ESPAÑOL -->
     <link
         rel="stylesheet"
         href="{{ url_for('static', filename='css/inicio_es.css') }}"
@@ -252,8 +253,8 @@
 
             <p class="hero-descripcion">
 
-                Discover the Quebrada and the Puna through relaxed,
-                personal journeys with Nelson.
+                Discover the Quebrada and the Puna through
+                relaxed, personal journeys with Nelson.
 
             </p>
 
@@ -332,27 +333,19 @@
 
         <div class="territorio">
 
-            <span>
-                PURMAMARCA
-            </span>
+            <span>PURMAMARCA</span>
 
             <i></i>
 
-            <span>
-                QUEBRADA
-            </span>
+            <span>QUEBRADA</span>
 
             <i></i>
 
-            <span>
-                PUNA
-            </span>
+            <span>PUNA</span>
 
             <i></i>
 
-            <span>
-                SALINAS
-            </span>
+            <span>SALINAS</span>
 
         </div>
 
@@ -363,24 +356,227 @@
 
 
 <!-- =========================================================
-     TRANSITION
+     KINETIC SECTION
 ========================================================= -->
 
-<section class="transicion-territorio">
+<section
+    class="journey-band"
+    id="journeyBand"
+>
 
-    <div class="transicion-linea"></div>
+    <div class="journey-bg-word">
+        JUJUY
+    </div>
 
 
-    <div class="transicion-contenido reveal">
+    <div class="journey-decoration journey-decoration-1"></div>
 
-        <span>
+    <div class="journey-decoration journey-decoration-2"></div>
+
+
+    <div class="journey-header reveal">
+
+        <span class="etiqueta">
             THE ROAD IS PART OF THE STORY
         </span>
 
 
+        <h2>
+
+            Before you arrive,
+
+            <em>
+                the landscape has already begun.
+            </em>
+
+        </h2>
+
+
         <p>
-            Every turn changes the landscape.
+
+            Altitude, roads and horizons that change
+            as we travel towards the Puna.
+
         </p>
+
+    </div>
+
+
+
+    <!-- TICKER 1 -->
+
+    <div class="ticker ticker-left">
+
+        <div class="ticker-track">
+
+            <span>PURMAMARCA</span>
+            <i></i>
+
+            <span>QUEBRADA</span>
+            <i></i>
+
+            <span>PUNA</span>
+            <i></i>
+
+            <span>SALINAS</span>
+            <i></i>
+
+            <span>NATURE</span>
+            <i></i>
+
+            <span>ALTITUDE</span>
+            <i></i>
+
+            <span>CULTURE</span>
+            <i></i>
+
+            <span>JUJUY</span>
+            <i></i>
+
+            <span>PURMAMARCA</span>
+            <i></i>
+
+            <span>QUEBRADA</span>
+            <i></i>
+
+            <span>PUNA</span>
+            <i></i>
+
+            <span>SALINAS</span>
+            <i></i>
+
+            <span>NATURE</span>
+            <i></i>
+
+            <span>ALTITUDE</span>
+            <i></i>
+
+            <span>CULTURE</span>
+            <i></i>
+
+            <span>JUJUY</span>
+            <i></i>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ALTITUDE -->
+
+    <div class="altura-central reveal">
+
+        <div class="altura-top">
+            HIGHEST POINT
+        </div>
+
+
+        <div class="altura-numero">
+
+            <span
+                id="alturaNumero"
+                data-target="4170"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="altura-unidad">
+            METRES ABOVE SEA LEVEL
+        </div>
+
+
+        <div class="altura-divisor"></div>
+
+
+        <p>
+
+            A point where the air changes,
+            the horizon opens and the Puna begins.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- TICKER 2 -->
+
+    <div class="ticker ticker-right">
+
+        <div class="ticker-track">
+
+            <span>ROADS</span>
+            <i></i>
+
+            <span>LANDSCAPES</span>
+            <i></i>
+
+            <span>EXPERIENCES</span>
+            <i></i>
+
+            <span>ALTITUDE</span>
+            <i></i>
+
+            <span>JUJUY</span>
+            <i></i>
+
+            <span>PUNA</span>
+            <i></i>
+
+            <span>QUEBRADA</span>
+            <i></i>
+
+            <span>SALINAS</span>
+            <i></i>
+
+            <span>ROADS</span>
+            <i></i>
+
+            <span>LANDSCAPES</span>
+            <i></i>
+
+            <span>EXPERIENCES</span>
+            <i></i>
+
+            <span>ALTITUDE</span>
+            <i></i>
+
+            <span>JUJUY</span>
+            <i></i>
+
+            <span>PUNA</span>
+            <i></i>
+
+            <span>QUEBRADA</span>
+            <i></i>
+
+            <span>SALINAS</span>
+            <i></i>
+
+        </div>
+
+    </div>
+
+
+    <div class="journey-footer reveal">
+
+        <span>
+            PURMAMARCA
+        </span>
+
+        <div class="journey-footer-line">
+
+            <span></span>
+
+        </div>
+
+        <span>
+            PUNA
+        </span>
 
     </div>
 
@@ -437,10 +633,7 @@
 
             <div class="ruta-linea">
 
-                <span
-                    class="ruta-linea-activa"
-                    id="rutaLineaActiva"
-                ></span>
+                <span class="ruta-linea-activa"></span>
 
             </div>
 
@@ -453,7 +646,6 @@
                 <span class="ruta-numero">
                     01
                 </span>
-
 
                 <div>
 
@@ -483,7 +675,6 @@
                     02
                 </span>
 
-
                 <div>
 
                     <small>
@@ -495,7 +686,7 @@
                     </h3>
 
                     <p>
-                        One of the most spectacular roads in Jujuy.
+                        One of the most impressive roads in Jujuy.
                     </p>
 
                 </div>
@@ -511,7 +702,6 @@
                 <span class="ruta-numero">
                     03
                 </span>
-
 
                 <div>
 
@@ -540,7 +730,6 @@
                 <span class="ruta-numero">
                     04
                 </span>
-
 
                 <div>
 
@@ -727,8 +916,7 @@
         <p>
 
             Natural formations, endless horizons
-            and another way to discover
-            the salt flats.
+            and another way to discover the salt flats.
 
         </p>
 
@@ -962,7 +1150,7 @@
         <div class="nelson-foto reveal">
 
             <img
-                src="{{ url_for('static', filename='img/conoce.jpg') }}"
+                src="{{ url_for('static', filename='img/conoce2.jpg') }}"
                 alt="Nelson from Sofiturismo"
             >
 
@@ -1210,9 +1398,6 @@
     </div>
 
 
-
-    <!-- WEB DEVELOPER -->
-
     <div class="developer-credit">
 
         <span>
@@ -1226,6 +1411,7 @@
 
 
         <div class="developer-links">
+
 
             <a
                 href="https://www.instagram.com/leandro_aramayo1/"
@@ -1280,6 +1466,7 @@
                 WhatsApp
 
             </a>
+
 
         </div>
 
@@ -1442,7 +1629,7 @@
         type="button"
         class="floating-trigger floating-profile"
         id="floatingTrigger"
-        aria-label="Open Sofiturismo contact options"
+        aria-label="Open contact options"
         aria-expanded="false"
     >
 
@@ -1475,6 +1662,8 @@
 <script>
 
 
+/* HEADER */
+
 const header =
     document.getElementById("header");
 
@@ -1506,6 +1695,8 @@ window.addEventListener(
 );
 
 
+
+/* REVEAL */
 
 const reveals =
     document.querySelectorAll(".reveal");
@@ -1559,6 +1750,8 @@ reveals.forEach(
 
 
 
+/* ROUTE */
+
 const rutaInterior =
     document.getElementById(
         "rutaInterior"
@@ -1601,6 +1794,127 @@ rutaObserver.observe(
 
 
 
+/* ALTITUDE COUNTER */
+
+const alturaNumero =
+    document.getElementById(
+        "alturaNumero"
+    );
+
+
+let contadorEjecutado = false;
+
+
+function animarAltura() {
+
+    if (contadorEjecutado) {
+        return;
+    }
+
+
+    contadorEjecutado = true;
+
+
+    const destino = 4170;
+
+    const duracion = 1800;
+
+    const inicio =
+        performance.now();
+
+
+    function actualizar(tiempo) {
+
+        const progreso =
+            Math.min(
+                (tiempo - inicio) /
+                duracion,
+                1
+            );
+
+
+        const suavizado =
+            1 -
+            Math.pow(
+                1 - progreso,
+                3
+            );
+
+
+        const valor =
+            Math.floor(
+                destino *
+                suavizado
+            );
+
+
+        alturaNumero.textContent =
+            valor.toLocaleString(
+                "en-US"
+            );
+
+
+        if (progreso < 1) {
+
+            requestAnimationFrame(
+                actualizar
+            );
+
+        } else {
+
+            alturaNumero.textContent =
+                "4,170";
+
+        }
+
+    }
+
+
+    requestAnimationFrame(
+        actualizar
+    );
+
+}
+
+
+const alturaObserver =
+    new IntersectionObserver(
+
+        function(entries) {
+
+            entries.forEach(
+
+                function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        animarAltura();
+
+                        alturaObserver.disconnect();
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold: 0.45
+        }
+
+    );
+
+
+alturaObserver.observe(
+    alturaNumero
+);
+
+
+
+/* EXPERIENCE PROGRESS */
+
 const experiencias =
     document.querySelectorAll(
         "[data-experiencia]"
@@ -1640,7 +1954,7 @@ function actualizarProgreso(numero) {
     );
 
 
-    const stepActivo =
+    const activo =
         document.querySelector(
             '[data-progress="' +
             numero +
@@ -1648,21 +1962,20 @@ function actualizarProgreso(numero) {
         );
 
 
-    if (stepActivo) {
+    if (activo) {
 
-        stepActivo.classList.add(
+        activo.classList.add(
             "activo"
         );
 
     }
 
 
-    const porcentaje =
-        ((numero - 1) / 3) * 100;
-
-
     progressFill.style.height =
-        porcentaje + "%";
+        (
+            ((numero - 1) / 3) *
+            100
+        ) + "%";
 
 
     mobileProgressNumber.textContent =
@@ -1685,14 +1998,10 @@ const experienciaObserver =
 
                     if (entry.isIntersecting) {
 
-                        const numero =
+                        actualizarProgreso(
                             Number(
                                 entry.target.dataset.experiencia
-                            );
-
-
-                        actualizarProgreso(
-                            numero
+                            )
                         );
 
                     }
@@ -1723,6 +2032,8 @@ experiencias.forEach(
 );
 
 
+
+/* FLOATING MENU */
 
 const floating =
     document.getElementById(
@@ -1756,7 +2067,6 @@ floatingTrigger.addEventListener(
     }
 
 );
-
 
 
 document.addEventListener(

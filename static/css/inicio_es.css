@@ -1,11 +1,4 @@
-/* =========================================================
-   SOFITURISMO
-   PREMIUM TRAVEL EXPERIENCE
-========================================================= */
-
-
 :root {
-
     --navy: #052844;
     --navy-deep: #031a2d;
     --navy-soft: #0c3d62;
@@ -20,71 +13,48 @@
     --muted: #69757c;
 
     --white: #ffffff;
-
 }
 
 
-
-/* =========================================================
-   RESET
-========================================================= */
-
-
 * {
-
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
-
 }
 
 
 html {
-
     scroll-behavior: smooth;
-
     scroll-padding-top: 65px;
-
 }
 
 
 body {
-
     font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-    color:
-        var(--text);
+    color: var(--text);
 
     background:
         var(--sand-light);
 
-    overflow-x:
-        hidden;
+    overflow-x: hidden;
 
-    -webkit-text-size-adjust:
-        100%;
-
+    -webkit-text-size-adjust: 100%;
 }
 
 
 a {
-
     color: inherit;
-
     text-decoration: none;
-
 }
 
 
 img,
 video {
-
     display: block;
-
 }
 
 
@@ -95,7 +65,6 @@ video {
 
 
 .header {
-
     position: fixed;
 
     z-index: 1500;
@@ -126,12 +95,10 @@ video {
         background .35s ease,
         backdrop-filter .35s ease,
         box-shadow .35s ease;
-
 }
 
 
 .header.scrolled {
-
     background:
         rgba(3,26,45,.93);
 
@@ -144,12 +111,10 @@ video {
     box-shadow:
         0 10px 35px
         rgba(0,0,0,.14);
-
 }
 
 
 .marca {
-
     justify-self: start;
 
     display: flex;
@@ -157,31 +122,25 @@ video {
     flex-direction: column;
 
     line-height: 1;
-
 }
 
 
 .marca-principal {
-
     font-size: 24px;
 
     font-weight: 800;
 
     letter-spacing: -1px;
-
 }
 
 
 .marca-principal span {
-
     color:
         var(--gold);
-
 }
 
 
 .marca small {
-
     margin-top: 5px;
 
     color:
@@ -192,23 +151,19 @@ video {
     letter-spacing: 2.5px;
 
     text-transform: uppercase;
-
 }
 
 
 .nav {
-
     display: flex;
 
     align-items: center;
 
     gap: 30px;
-
 }
 
 
 .nav a {
-
     position: relative;
 
     color:
@@ -221,22 +176,18 @@ video {
     letter-spacing: 1.5px;
 
     text-transform: uppercase;
-
 }
 
 
 .nav a::after {
-
     content: "";
 
     position: absolute;
 
     left: 0;
-
     bottom: -9px;
 
     width: 0;
-
     height: 1px;
 
     background:
@@ -244,19 +195,15 @@ video {
 
     transition:
         width .25s ease;
-
 }
 
 
 .nav a:hover::after {
-
     width: 100%;
-
 }
 
 
 .idioma {
-
     justify-self: end;
 
     display: flex;
@@ -270,31 +217,24 @@ video {
     font-weight: 800;
 
     letter-spacing: 1px;
-
 }
 
 
 .idioma span {
-
     opacity: .35;
-
 }
 
 
 .idioma a {
-
     opacity: .58;
-
 }
 
 
 .idioma .activo {
-
     opacity: 1;
 
     color:
         var(--gold);
-
 }
 
 
@@ -305,7 +245,6 @@ video {
 
 
 .hero {
-
     position: relative;
 
     min-height: 100vh;
@@ -314,12 +253,10 @@ video {
     overflow: hidden;
 
     color: white;
-
 }
 
 
 .hero-fondo {
-
     position: absolute;
 
     inset: 0;
@@ -327,20 +264,16 @@ video {
     background-image:
         url("../img/portada.png");
 
-    background-size:
-        cover;
+    background-size: cover;
 
-    background-position:
-        center;
+    background-position: center;
 
     transform:
         scale(1.02);
-
 }
 
 
 .hero-overlay {
-
     position: absolute;
 
     inset: 0;
@@ -360,12 +293,10 @@ video {
             rgba(2,19,33,.35),
             transparent 72%
         );
-
 }
 
 
 .hero-contenido {
-
     position: relative;
 
     z-index: 2;
@@ -387,12 +318,10 @@ video {
     display: flex;
 
     flex-direction: column;
-
 }
 
 
 .hero-arriba {
-
     color:
         rgba(255,255,255,.55);
 
@@ -401,21 +330,17 @@ video {
     font-weight: 800;
 
     letter-spacing: 2.8px;
-
 }
 
 
 .hero-central {
-
     margin-top: auto;
 
     max-width: 1000px;
-
 }
 
 
 .hero-mini {
-
     margin-bottom: 17px;
 
     color:
@@ -426,12 +351,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 2.8px;
-
 }
 
 
 .hero h1 {
-
     font-family:
         Georgia,
         "Times New Roman",
@@ -449,12 +372,10 @@ video {
     font-weight: 500;
 
     letter-spacing: -5px;
-
 }
 
 
 .hero h1 > span {
-
     display: block;
 
     margin-top: 10px;
@@ -462,12 +383,10 @@ video {
     font-size: .62em;
 
     letter-spacing: -2px;
-
 }
 
 
 .hero h1 em {
-
     display: block;
 
     margin-top: 7px;
@@ -476,12 +395,10 @@ video {
         var(--gold);
 
     font-weight: 400;
-
 }
 
 
 .hero-descripcion {
-
     max-width: 580px;
 
     margin-top: 28px;
@@ -497,12 +414,10 @@ video {
         );
 
     line-height: 1.72;
-
 }
 
 
 .hero-scroll {
-
     width: fit-content;
 
     margin-top: 38px;
@@ -521,14 +436,11 @@ video {
     font-weight: 800;
 
     letter-spacing: 2px;
-
 }
 
 
 .hero-scroll-circulo {
-
     width: 35px;
-
     height: 35px;
 
     display: grid;
@@ -545,11 +457,7 @@ video {
         var(--gold);
 
     animation:
-        bajar
-        1.8s
-        ease-in-out
-        infinite;
-
+        bajar 1.8s ease-in-out infinite;
 }
 
 
@@ -557,17 +465,13 @@ video {
 
     0%,
     100% {
-
         transform:
             translateY(0);
-
     }
 
     50% {
-
         transform:
             translateY(5px);
-
     }
 
 }
@@ -580,7 +484,6 @@ video {
 
 
 .etiqueta {
-
     color:
         var(--gold-dark);
 
@@ -591,26 +494,22 @@ video {
     letter-spacing: 2.7px;
 
     text-transform: uppercase;
-
 }
 
 
 .etiqueta-dorada {
-
     color:
         var(--gold);
-
 }
 
 
 
 /* =========================================================
-   INTRO PREMIUM
+   INTRO
 ========================================================= */
 
 
 .introduccion {
-
     position: relative;
 
     overflow: hidden;
@@ -643,12 +542,10 @@ video {
             #f0e5d5 48%,
             #f7f1e8 100%
         );
-
 }
 
 
 .introduccion::before {
-
     content: "";
 
     position: absolute;
@@ -670,12 +567,10 @@ video {
             transparent 45px,
             transparent 88px
         );
-
 }
 
 
 .introduccion::after {
-
     content: "";
 
     position: absolute;
@@ -693,29 +588,21 @@ video {
     border-radius: 50%;
 
     box-shadow:
-
-        0 0 0 45px
-        rgba(189,129,40,.04),
-
-        0 0 0 95px
-        rgba(189,129,40,.025);
-
+        0 0 0 45px rgba(189,129,40,.04),
+        0 0 0 95px rgba(189,129,40,.025);
 }
 
 
 .intro-decoracion {
-
     position: absolute;
 
     inset: 0;
 
     pointer-events: none;
-
 }
 
 
 .intro-palabra {
-
     position: absolute;
 
     top: 50%;
@@ -743,16 +630,13 @@ video {
     color: transparent;
 
     -webkit-text-stroke:
-        1px
-        rgba(9,44,72,.055);
+        1px rgba(9,44,72,.055);
 
     user-select: none;
-
 }
 
 
 .intro-orbita {
-
     position: absolute;
 
     border:
@@ -760,34 +644,28 @@ video {
         rgba(189,129,40,.12);
 
     border-radius: 50%;
-
 }
 
 
 .intro-orbita-1 {
-
     width: 340px;
     height: 340px;
 
     right: -140px;
     top: -90px;
-
 }
 
 
 .intro-orbita-2 {
-
     width: 190px;
     height: 190px;
 
     right: 95px;
     top: 105px;
-
 }
 
 
 .introduccion-interior {
-
     position: relative;
 
     z-index: 2;
@@ -801,12 +679,10 @@ video {
     margin: auto;
 
     text-align: center;
-
 }
 
 
 .introduccion h2 {
-
     margin-top: 16px;
 
     font-family:
@@ -826,30 +702,24 @@ video {
     font-weight: 500;
 
     letter-spacing: -3px;
-
 }
 
 
 .introduccion h2 span {
-
     display: block;
 
     color:
         var(--gold-dark);
 
     font-style: italic;
-
 }
 
 
 .introduccion-texto {
-
     max-width: 580px;
 
     margin:
-        27px
-        auto
-        0;
+        27px auto 0;
 
     color:
         var(--muted);
@@ -857,12 +727,10 @@ video {
     font-size: 14px;
 
     line-height: 1.8;
-
 }
 
 
 .territorio {
-
     margin-top: 47px;
 
     display: flex;
@@ -883,95 +751,91 @@ video {
     font-weight: 800;
 
     letter-spacing: 2px;
-
 }
 
 
 .territorio i {
-
     width: 23px;
 
     height: 1px;
 
     background:
         rgba(189,129,40,.52);
-
 }
 
 
 
 /* =========================================================
-   TRANSICIÓN
+   SECCIÓN CINÉTICA
 ========================================================= */
 
 
-.transicion-territorio {
-
+.journey-band {
     position: relative;
-
-    min-height: 220px;
-
-    display: grid;
-
-    place-items: center;
 
     overflow: hidden;
 
-    background:
-        linear-gradient(
-            180deg,
-            #f7f1e8,
-            #e8ddcd
-        );
+    padding:
+        100px 0 95px;
 
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(232,181,82,.17),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(5,40,68,.10),
+            transparent 26%
+        ),
+
+        linear-gradient(
+            150deg,
+            #faf6ee 0%,
+            #ede2d1 52%,
+            #f6efe4 100%
+        );
 }
 
 
-.transicion-linea {
+.journey-band::before {
+    content: "";
 
     position: absolute;
 
-    left: 50%;
-    top: 0;
+    inset: 0;
 
-    width: 1px;
-
-    height: 70px;
+    opacity: .33;
 
     background:
-        linear-gradient(
-            to bottom,
-            transparent,
-            var(--gold-dark)
+
+        repeating-radial-gradient(
+            ellipse at 105% 20%,
+            transparent 0,
+            transparent 55px,
+            rgba(9,44,72,.08) 56px,
+            rgba(9,44,72,.08) 57px,
+            transparent 58px,
+            transparent 112px
         );
 
+    pointer-events: none;
 }
 
 
-.transicion-contenido {
+.journey-bg-word {
+    position: absolute;
 
-    text-align: center;
+    z-index: 0;
 
-}
+    left: 50%;
+    top: 49%;
 
-
-.transicion-contenido span {
-
-    color:
-        var(--gold-dark);
-
-    font-size: 7px;
-
-    font-weight: 800;
-
-    letter-spacing: 2.5px;
-
-}
-
-
-.transicion-contenido p {
-
-    margin-top: 13px;
+    transform:
+        translate(-50%,-50%);
 
     font-family:
         Georgia,
@@ -980,13 +844,475 @@ video {
 
     font-size:
         clamp(
-            25px,
-            4vw,
-            43px
+            130px,
+            25vw,
+            390px
         );
 
+    font-weight: 700;
+
+    letter-spacing: -18px;
+
+    color: transparent;
+
+    -webkit-text-stroke:
+        1px rgba(5,40,68,.055);
+
+    pointer-events: none;
+
+    user-select: none;
+}
+
+
+.journey-decoration {
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(189,129,40,.15);
+
+    border-radius: 50%;
+}
+
+
+.journey-decoration-1 {
+    width: 270px;
+    height: 270px;
+
+    left: -135px;
+    top: 70px;
+}
+
+
+.journey-decoration-2 {
+    width: 400px;
+    height: 400px;
+
+    right: -260px;
+    bottom: -160px;
+}
+
+
+.journey-header {
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(
+            850px,
+            calc(100% - 38px)
+        );
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.journey-header h2 {
+    margin-top: 16px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            44px,
+            6vw,
+            78px
+        );
+
+    line-height: .93;
+
+    font-weight: 500;
+
+    letter-spacing: -3px;
+}
+
+
+.journey-header h2 em {
+    display: block;
+
     color:
-        var(--text);
+        var(--gold-dark);
+
+    font-weight: 400;
+}
+
+
+.journey-header > p {
+    max-width: 570px;
+
+    margin:
+        25px auto 0;
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+
+/* =========================================================
+   TICKERS
+========================================================= */
+
+
+.ticker {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    margin-top: 52px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            black 8%,
+            black 92%,
+            transparent
+        );
+
+    -webkit-mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            black 8%,
+            black 92%,
+            transparent
+        );
+}
+
+
+.ticker-right {
+    margin-top: 40px;
+}
+
+
+.ticker-track {
+    width: max-content;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.ticker-track span {
+    color:
+        rgba(9,44,72,.55);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.8px;
+
+    text-transform: uppercase;
+}
+
+
+.ticker-track i {
+    width: 38px;
+
+    height: 1px;
+
+    background:
+        rgba(189,129,40,.58);
+}
+
+
+.ticker-left
+.ticker-track {
+    animation:
+        tickerIzquierda
+        34s
+        linear
+        infinite;
+}
+
+
+.ticker-right
+.ticker-track {
+    animation:
+        tickerDerecha
+        36s
+        linear
+        infinite;
+}
+
+
+@keyframes tickerIzquierda {
+
+    from {
+        transform:
+            translateX(0);
+    }
+
+    to {
+        transform:
+            translateX(-50%);
+    }
+
+}
+
+
+@keyframes tickerDerecha {
+
+    from {
+        transform:
+            translateX(-50%);
+    }
+
+    to {
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+
+/* =========================================================
+   ALTURA
+========================================================= */
+
+
+.altura-central {
+    position: relative;
+
+    z-index: 3;
+
+    width:
+        min(
+            480px,
+            calc(100% - 36px)
+        );
+
+    margin:
+        56px auto 0;
+
+    padding:
+        40px 25px 36px;
+
+    text-align: center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.58);
+
+    background:
+        rgba(255,255,255,.38);
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(5,40,68,.09);
+}
+
+
+.altura-central::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(189,129,40,.09);
+
+    pointer-events: none;
+}
+
+
+.altura-top {
+    color:
+        var(--gold-dark);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.8px;
+}
+
+
+.altura-numero {
+    margin-top: 12px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            75px,
+            10vw,
+            130px
+        );
+
+    font-weight: 500;
+
+    line-height: .92;
+
+    letter-spacing: -7px;
+
+    color:
+        var(--navy);
+}
+
+
+.altura-unidad {
+    margin-top: 9px;
+
+    color:
+        rgba(9,44,72,.50);
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.4px;
+}
+
+
+.altura-divisor {
+    width: 42px;
+
+    height: 1px;
+
+    margin:
+        23px auto;
+
+    background:
+        var(--gold-dark);
+}
+
+
+.altura-central p {
+    max-width: 330px;
+
+    margin: auto;
+
+    color:
+        var(--muted);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+}
+
+
+.journey-footer {
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(
+            630px,
+            calc(100% - 50px)
+        );
+
+    margin:
+        48px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        auto 1fr auto;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color:
+        rgba(9,44,72,.42);
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.journey-footer-line {
+    position: relative;
+
+    height: 1px;
+
+    background:
+        rgba(9,44,72,.14);
+}
+
+
+.journey-footer-line > span {
+    position: absolute;
+
+    top: 50%;
+    left: 25%;
+
+    width: 8px;
+    height: 8px;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius: 50%;
+
+    background:
+        var(--gold-dark);
+
+    box-shadow:
+        0 0 0 5px
+        rgba(189,129,40,.10);
+
+    animation:
+        viajarLinea
+        5s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes viajarLinea {
+
+    0%,
+    100% {
+        left: 12%;
+    }
+
+    50% {
+        left: 88%;
+    }
 
 }
 
@@ -998,7 +1324,6 @@ video {
 
 
 .ruta {
-
     position: relative;
 
     overflow: hidden;
@@ -1028,12 +1353,10 @@ video {
         var(--navy-deep);
 
     color: white;
-
 }
 
 
 .ruta::before {
-
     content: "";
 
     position: absolute;
@@ -1053,12 +1376,10 @@ video {
             transparent 51px,
             transparent 100px
         );
-
 }
 
 
 .ruta-interior {
-
     position: relative;
 
     z-index: 2;
@@ -1082,23 +1403,19 @@ video {
             9vw,
             130px
         );
-
 }
 
 
 .ruta-intro {
-
     position: sticky;
 
     top: 125px;
 
     height: fit-content;
-
 }
 
 
 .ruta-intro h2 {
-
     margin-top: 15px;
 
     font-family:
@@ -1118,24 +1435,20 @@ video {
     font-weight: 500;
 
     letter-spacing: -2.8px;
-
 }
 
 
 .ruta-intro h2 em {
-
     display: block;
 
     color:
         var(--gold);
 
     font-weight: 400;
-
 }
 
 
 .ruta-intro p {
-
     max-width: 420px;
 
     margin-top: 24px;
@@ -1146,21 +1459,17 @@ video {
     font-size: 13px;
 
     line-height: 1.75;
-
 }
 
 
 .ruta-recorrido {
-
     position: relative;
 
     padding-left: 65px;
-
 }
 
 
 .ruta-linea {
-
     position: absolute;
 
     top: 18px;
@@ -1172,12 +1481,10 @@ video {
 
     background:
         rgba(255,255,255,.12);
-
 }
 
 
 .ruta-linea-activa {
-
     position: absolute;
 
     top: 0;
@@ -1196,35 +1503,28 @@ video {
         top;
 
     transition:
-        transform
-        2.2s
+        transform 2.2s
         cubic-bezier(.2,.7,.2,1);
-
 }
 
 
 .ruta-activa
 .ruta-linea-activa {
-
     transform:
         scaleY(1);
-
 }
 
 
 .ruta-parada {
-
     position: relative;
 
     min-height: 175px;
 
     padding-bottom: 50px;
-
 }
 
 
 .ruta-punto {
-
     position: absolute;
 
     left: -59px;
@@ -1245,12 +1545,10 @@ video {
     box-shadow:
         0 0 0 1px
         rgba(232,181,82,.45);
-
 }
 
 
 .ruta-numero {
-
     display: block;
 
     margin-bottom: 14px;
@@ -1264,12 +1562,10 @@ video {
         serif;
 
     font-size: 18px;
-
 }
 
 
 .ruta-parada small {
-
     color:
         var(--gold);
 
@@ -1278,12 +1574,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 2px;
-
 }
 
 
 .ruta-parada h3 {
-
     margin-top: 7px;
 
     font-family:
@@ -1299,19 +1593,16 @@ video {
         );
 
     font-weight: 500;
-
 }
 
 
 .ruta-parada p {
-
     margin-top: 8px;
 
     color:
         rgba(255,255,255,.48);
 
     font-size: 12px;
-
 }
 
 
@@ -1322,15 +1613,12 @@ video {
 
 
 .experiencias {
-
     background:
         var(--navy-deep);
-
 }
 
 
 .experiencia {
-
     position: relative;
 
     display: block;
@@ -1342,13 +1630,11 @@ video {
     overflow: hidden;
 
     color: white;
-
 }
 
 
 .experiencia img,
 .experiencia video {
-
     position: absolute;
 
     inset: 0;
@@ -1359,24 +1645,19 @@ video {
     object-fit: cover;
 
     transition:
-        transform
-        1.2s
+        transform 1.2s
         cubic-bezier(.2,.7,.2,1);
-
 }
 
 
 .experiencia:hover img,
 .experiencia:hover video {
-
     transform:
         scale(1.035);
-
 }
 
 
 .experiencia-overlay {
-
     position: absolute;
 
     inset: 0;
@@ -1395,12 +1676,10 @@ video {
             rgba(2,18,31,.20),
             transparent 65%
         );
-
 }
 
 
 .experiencia-numero {
-
     position: absolute;
 
     z-index: 2;
@@ -1423,12 +1702,10 @@ video {
         serif;
 
     font-size: 21px;
-
 }
 
 
 .experiencia-contenido {
-
     position: absolute;
 
     z-index: 2;
@@ -1448,12 +1725,10 @@ video {
         );
 
     max-width: 900px;
-
 }
 
 
 .experiencia-categoria {
-
     color:
         var(--gold);
 
@@ -1462,12 +1737,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 2.8px;
-
 }
 
 
 .experiencia h2 {
-
     margin-top: 13px;
 
     font-family:
@@ -1487,24 +1760,20 @@ video {
     font-weight: 500;
 
     letter-spacing: -4px;
-
 }
 
 
 .experiencia h2 em {
-
     display: block;
 
     color:
         var(--gold);
 
     font-weight: 400;
-
 }
 
 
 .experiencia-contenido > p {
-
     max-width: 530px;
 
     margin-top: 21px;
@@ -1515,12 +1784,10 @@ video {
     font-size: 13px;
 
     line-height: 1.72;
-
 }
 
 
 .experiencia-meta {
-
     margin-top: 25px;
 
     display: flex;
@@ -1539,12 +1806,10 @@ video {
     letter-spacing: 1.7px;
 
     text-transform: uppercase;
-
 }
 
 
 .experiencia-flecha {
-
     position: absolute;
 
     z-index: 3;
@@ -1587,19 +1852,16 @@ video {
     transition:
         transform .3s ease,
         background .3s ease;
-
 }
 
 
 .experiencia:hover
 .experiencia-flecha {
-
     transform:
         rotate(45deg);
 
     background:
         rgba(255,255,255,.10);
-
 }
 
 
@@ -1610,7 +1872,6 @@ video {
 
 
 .video-badge {
-
     position: absolute;
 
     z-index: 4;
@@ -1653,12 +1914,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 1.4px;
-
 }
 
 
 .video-punto {
-
     width: 6px;
     height: 6px;
 
@@ -1670,7 +1929,6 @@ video {
     box-shadow:
         0 0 0 4px
         rgba(232,181,82,.13);
-
 }
 
 
@@ -1681,7 +1939,6 @@ video {
 
 
 .pausa {
-
     position: relative;
 
     overflow: hidden;
@@ -1708,33 +1965,10 @@ video {
             #fbf7f0,
             #eee3d4
         );
-
-}
-
-
-.pausa::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 450px;
-    height: 450px;
-
-    border:
-        1px solid
-        rgba(9,44,72,.06);
-
-    border-radius: 50%;
-
-    right: -240px;
-    bottom: -220px;
-
 }
 
 
 .pausa-oscura {
-
     background:
 
         radial-gradient(
@@ -1746,12 +1980,10 @@ video {
         var(--navy);
 
     color: white;
-
 }
 
 
 .pausa-interior {
-
     position: relative;
 
     z-index: 2;
@@ -1759,12 +1991,10 @@ video {
     max-width: 740px;
 
     text-align: center;
-
 }
 
 
 .pausa-interior > span {
-
     display: block;
 
     height: 35px;
@@ -1780,21 +2010,17 @@ video {
     font-size: 60px;
 
     line-height: 1;
-
 }
 
 
 .pausa-oscura
 .pausa-interior > span {
-
     color:
         var(--gold);
-
 }
 
 
 .pausa p {
-
     font-family:
         Georgia,
         "Times New Roman",
@@ -1812,26 +2038,22 @@ video {
     font-weight: 500;
 
     letter-spacing: -2px;
-
 }
 
 
 .pausa-oscura p {
-
     color:
         rgba(255,255,255,.90);
-
 }
 
 
 
 /* =========================================================
-   PROGRESO LATERAL
+   PROGRESO
 ========================================================= */
 
 
 .travel-progress {
-
     position: fixed;
 
     z-index: 900;
@@ -1851,12 +2073,10 @@ video {
     justify-content: space-between;
 
     pointer-events: none;
-
 }
 
 
 .progress-line {
-
     position: absolute;
 
     top: 8px;
@@ -1868,12 +2088,10 @@ video {
 
     background:
         rgba(255,255,255,.22);
-
 }
 
 
 .progress-fill {
-
     position: absolute;
 
     top: 0;
@@ -1887,12 +2105,10 @@ video {
 
     transition:
         height .5s ease;
-
 }
 
 
 .progress-step {
-
     position: relative;
 
     z-index: 2;
@@ -1906,12 +2122,10 @@ video {
     gap: 11px;
 
     pointer-events: auto;
-
 }
 
 
 .progress-dot {
-
     width: 13px;
     height: 13px;
 
@@ -1923,28 +2137,20 @@ video {
 
     background:
         rgba(255,255,255,.52);
-
-    transition:
-        background .3s ease,
-        transform .3s ease;
-
 }
 
 
 .progress-step.activo
 .progress-dot {
-
     background:
         var(--gold);
 
     transform:
         scale(1.15);
-
 }
 
 
 .progress-name {
-
     padding:
         6px 9px;
 
@@ -1967,14 +2173,6 @@ video {
     text-transform: uppercase;
 
     opacity: 0;
-
-    transform:
-        translateX(7px);
-
-    transition:
-        opacity .2s ease,
-        transform .2s ease;
-
 }
 
 
@@ -1982,19 +2180,12 @@ video {
 .progress-name,
 .progress-step.activo
 .progress-name {
-
     opacity: 1;
-
-    transform:
-        translateX(0);
-
 }
 
 
 .mobile-progress {
-
     display: none;
-
 }
 
 
@@ -2005,11 +2196,6 @@ video {
 
 
 .nelson {
-
-    position: relative;
-
-    overflow: hidden;
-
     padding:
         clamp(
             90px,
@@ -2019,55 +2205,13 @@ video {
         18px;
 
     background:
-
-        radial-gradient(
-            circle at 5% 20%,
-            rgba(232,181,82,.08),
-            transparent 24%
-        ),
-
         var(--navy-deep);
 
     color: white;
-
-}
-
-
-.nelson::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 520px;
-    height: 520px;
-
-    right: -260px;
-    bottom: -220px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.045);
-
-    border-radius: 50%;
-
-    box-shadow:
-
-        0 0 0 70px
-        rgba(255,255,255,.015),
-
-        0 0 0 140px
-        rgba(255,255,255,.010);
-
 }
 
 
 .nelson-contenido {
-
-    position: relative;
-
-    z-index: 2;
-
     width:
         min(
             1160px,
@@ -2089,33 +2233,27 @@ video {
         );
 
     align-items: center;
-
 }
 
 
 .nelson-foto {
-
     position: relative;
 
     height: 620px;
 
     overflow: hidden;
-
 }
 
 
 .nelson-foto img {
-
     width: 100%;
     height: 100%;
 
     object-fit: cover;
-
 }
 
 
 .nelson-foto-etiqueta {
-
     position: absolute;
 
     left: 20px;
@@ -2129,14 +2267,10 @@ video {
 
     backdrop-filter:
         blur(12px);
-
-    color: white;
-
 }
 
 
 .nelson-foto-etiqueta span {
-
     display: block;
 
     color:
@@ -2147,12 +2281,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 1.6px;
-
 }
 
 
 .nelson-foto-etiqueta small {
-
     display: block;
 
     margin-top: 4px;
@@ -2161,12 +2293,10 @@ video {
         rgba(255,255,255,.60);
 
     font-size: 9px;
-
 }
 
 
 .nelson-texto h2 {
-
     margin-top: 15px;
 
     font-family:
@@ -2186,24 +2316,20 @@ video {
     font-weight: 500;
 
     letter-spacing: -3px;
-
 }
 
 
 .nelson-texto h2 em {
-
     display: block;
 
     color:
         var(--gold);
 
     font-weight: 400;
-
 }
 
 
 .nelson-texto p {
-
     max-width: 580px;
 
     margin-top: 23px;
@@ -2214,13 +2340,11 @@ video {
     font-size: 13px;
 
     line-height: 1.82;
-
 }
 
 
 .nelson-texto
 .nelson-destacado {
-
     color: white;
 
     font-family:
@@ -2229,7 +2353,6 @@ video {
         serif;
 
     font-size: 19px;
-
 }
 
 
@@ -2240,11 +2363,6 @@ video {
 
 
 .traslados {
-
-    position: relative;
-
-    overflow: hidden;
-
     padding:
         clamp(
             70px,
@@ -2266,16 +2384,10 @@ video {
             #f4ede2,
             #ebe0cf
         );
-
 }
 
 
 .traslados-interior {
-
-    position: relative;
-
-    z-index: 2;
-
     width:
         min(
             1100px,
@@ -2297,18 +2409,14 @@ video {
     gap: 30px;
 
     border-top:
-        1px solid
-        rgba(5,40,68,.15);
+        1px solid rgba(5,40,68,.15);
 
     border-bottom:
-        1px solid
-        rgba(5,40,68,.15);
-
+        1px solid rgba(5,40,68,.15);
 }
 
 
 .traslado-icono {
-
     width: 66px;
     height: 66px;
 
@@ -2317,26 +2425,21 @@ video {
     place-items: center;
 
     border:
-        1px solid
-        rgba(5,40,68,.17);
+        1px solid rgba(5,40,68,.17);
 
     border-radius: 50%;
-
 }
 
 
 .traslado-icono svg {
-
     width: 26px;
 
     fill:
         var(--gold-dark);
-
 }
 
 
 .traslados h2 {
-
     margin-top: 9px;
 
     font-family:
@@ -2354,24 +2457,20 @@ video {
     font-weight: 500;
 
     letter-spacing: -2px;
-
 }
 
 
 .traslados p {
-
     margin-top: 9px;
 
     color:
         var(--muted);
 
     font-size: 12px;
-
 }
 
 
 .traslado-flecha {
-
     width: 61px;
     height: 61px;
 
@@ -2380,8 +2479,7 @@ video {
     place-items: center;
 
     border:
-        1px solid
-        rgba(5,40,68,.20);
+        1px solid rgba(5,40,68,.20);
 
     border-radius: 50%;
 
@@ -2389,21 +2487,6 @@ video {
         var(--gold-dark);
 
     font-size: 22px;
-
-    transition:
-        transform .25s ease,
-        background .25s ease;
-
-}
-
-
-.traslado-flecha:hover {
-
-    transform:
-        translateY(-4px);
-
-    background: white;
-
 }
 
 
@@ -2414,7 +2497,6 @@ video {
 
 
 .postal {
-
     position: relative;
 
     min-height: 82vh;
@@ -2427,12 +2509,10 @@ video {
     overflow: hidden;
 
     color: white;
-
 }
 
 
 .postal-fondo {
-
     position: absolute;
 
     inset: 0;
@@ -2446,28 +2526,23 @@ video {
 
     transform:
         scale(1.03);
-
 }
 
 
 .postal-overlay {
-
     position: absolute;
 
     inset: 0;
 
     background:
-
         linear-gradient(
             rgba(2,19,33,.48),
             rgba(2,19,33,.84)
         );
-
 }
 
 
 .postal-contenido {
-
     position: relative;
 
     z-index: 2;
@@ -2479,12 +2554,10 @@ video {
         );
 
     text-align: center;
-
 }
 
 
 .postal-contenido > span {
-
     color:
         var(--gold);
 
@@ -2493,12 +2566,10 @@ video {
     font-weight: 800;
 
     letter-spacing: 2.8px;
-
 }
 
 
 .postal h2 {
-
     margin-top: 18px;
 
     font-family:
@@ -2518,24 +2589,20 @@ video {
     font-weight: 500;
 
     letter-spacing: -3.5px;
-
 }
 
 
 .postal h2 em {
-
     display: block;
 
     color:
         var(--gold);
 
     font-weight: 400;
-
 }
 
 
 .postal p {
-
     max-width: 500px;
 
     margin:
@@ -2547,12 +2614,10 @@ video {
     font-size: 13px;
 
     line-height: 1.7;
-
 }
 
 
 .postal a {
-
     margin-top: 32px;
 
     display: inline-flex;
@@ -2565,8 +2630,7 @@ video {
         15px 23px;
 
     border:
-        1px solid
-        rgba(255,255,255,.36);
+        1px solid rgba(255,255,255,.36);
 
     border-radius: 100px;
 
@@ -2576,30 +2640,12 @@ video {
     font-size: 10px;
 
     font-weight: 800;
-
-    transition:
-        background .25s ease,
-        transform .25s ease;
-
-}
-
-
-.postal a:hover {
-
-    background:
-        rgba(255,255,255,.12);
-
-    transform:
-        translateY(-3px);
-
 }
 
 
 .postal a strong {
-
     color:
         var(--gold);
-
 }
 
 
@@ -2610,7 +2656,6 @@ video {
 
 
 .contacto {
-
     padding:
         48px
         clamp(18px,4vw,65px)
@@ -2620,12 +2665,10 @@ video {
         var(--navy-deep);
 
     color: white;
-
 }
 
 
 .contacto-interior {
-
     display: flex;
 
     justify-content: space-between;
@@ -2633,12 +2676,10 @@ video {
     align-items: center;
 
     gap: 30px;
-
 }
 
 
 .contacto strong {
-
     font-family:
         Georgia,
         "Times New Roman",
@@ -2647,12 +2688,10 @@ video {
     font-size: 27px;
 
     font-weight: 500;
-
 }
 
 
 .contacto p {
-
     margin-top: 7px;
 
     color:
@@ -2663,12 +2702,10 @@ video {
     letter-spacing: 1.5px;
 
     text-transform: uppercase;
-
 }
 
 
 .contacto-redes {
-
     display: flex;
 
     gap: 25px;
@@ -2683,23 +2720,12 @@ video {
     letter-spacing: .7px;
 
     text-transform: uppercase;
-
-}
-
-
-.contacto-redes a {
-
-    transition:
-        color .2s ease;
-
 }
 
 
 .contacto-redes a:hover {
-
     color:
         var(--gold);
-
 }
 
 
@@ -2710,7 +2736,6 @@ video {
 
 
 .developer-credit {
-
     width: 100%;
 
     margin-top: 38px;
@@ -2728,8 +2753,7 @@ video {
     flex-wrap: wrap;
 
     border-top:
-        1px solid
-        rgba(255,255,255,.07);
+        1px solid rgba(255,255,255,.07);
 
     color:
         rgba(255,255,255,.33);
@@ -2737,19 +2761,15 @@ video {
     font-size: 8px;
 
     letter-spacing: .8px;
-
 }
 
 
 .developer-credit > span {
-
     text-transform: uppercase;
-
 }
 
 
 .developer-credit > strong {
-
     color:
         rgba(255,255,255,.58);
 
@@ -2761,25 +2781,19 @@ video {
     font-size: 9px;
 
     font-weight: 700;
-
 }
 
 
 .developer-links {
-
     display: flex;
 
     align-items: center;
 
     gap: 7px;
-
-    margin-left: 4px;
-
 }
 
 
 .developer-links a {
-
     padding:
         6px 9px;
 
@@ -2790,8 +2804,7 @@ video {
     gap: 5px;
 
     border:
-        1px solid
-        rgba(255,255,255,.08);
+        1px solid rgba(255,255,255,.08);
 
     border-radius: 100px;
 
@@ -2801,31 +2814,10 @@ video {
     font-size: 7px;
 
     text-transform: uppercase;
-
-    transition:
-        color .25s ease,
-        border-color .25s ease,
-        background .25s ease;
-
-}
-
-
-.developer-links a:hover {
-
-    color:
-        var(--gold);
-
-    border-color:
-        rgba(232,181,82,.25);
-
-    background:
-        rgba(255,255,255,.035);
-
 }
 
 
 .developer-links svg {
-
     width: 12px;
     height: 12px;
 
@@ -2835,31 +2827,23 @@ video {
         currentColor;
 
     stroke-width: 1.7;
-
-    stroke-linecap: round;
-    stroke-linejoin: round;
-
 }
 
 
 .developer-links
 .developer-fill {
-
     fill:
         currentColor;
 
     stroke: none;
-
 }
 
 
 .developer-links a:last-child svg {
-
     fill:
         currentColor;
 
     stroke: none;
-
 }
 
 
@@ -2870,7 +2854,6 @@ video {
 
 
 .floating {
-
     position: fixed;
 
     z-index: 2000;
@@ -2890,12 +2873,10 @@ video {
     align-items: flex-end;
 
     gap: 10px;
-
 }
 
 
 .floating-opciones {
-
     display: flex;
 
     flex-direction: column;
@@ -2914,36 +2895,30 @@ video {
     transition:
         opacity .3s ease,
         transform .3s ease;
-
 }
 
 
 .floating.open
 .floating-opciones {
-
     opacity: 1;
 
     pointer-events: auto;
 
     transform:
         translateY(0);
-
 }
 
 
 .floating-item {
-
     display: flex;
 
     align-items: center;
 
     gap: 9px;
-
 }
 
 
 .floating-label {
-
     padding:
         9px 13px;
 
@@ -2955,24 +2930,15 @@ video {
     backdrop-filter:
         blur(12px);
 
-    -webkit-backdrop-filter:
-        blur(12px);
-
     color: white;
 
     font-size: 9px;
 
     font-weight: 700;
-
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,.15);
-
 }
 
 
 .floating-icon {
-
     width: 44px;
     height: 44px;
 
@@ -2988,30 +2954,11 @@ video {
     color: white;
 
     box-shadow:
-        0 10px 28px
-        rgba(0,0,0,.20);
-
-    transition:
-        transform .2s ease,
-        background .2s ease;
-
-}
-
-
-.floating-item:hover
-.floating-icon {
-
-    transform:
-        scale(1.08);
-
-    background:
-        var(--navy-soft);
-
+        0 10px 28px rgba(0,0,0,.20);
 }
 
 
 .floating-icon svg {
-
     width: 20px;
     height: 20px;
 
@@ -3021,62 +2968,49 @@ video {
         currentColor;
 
     stroke-width: 1.8;
-
-    stroke-linecap: round;
-    stroke-linejoin: round;
-
 }
 
 
 .floating-icon
 .relleno {
-
     fill:
         currentColor;
 
     stroke: none;
-
 }
 
 
 .floating-item.whatsapp
 .floating-icon {
-
     background:
         #25d366;
-
 }
 
 
 .floating-item.whatsapp
 .floating-icon svg {
-
     fill: white;
 
     stroke: none;
-
 }
 
 
 
 /* =========================================================
-   BURBUJA CON FOTO
+   BURBUJA
 ========================================================= */
 
 
 .floating-trigger {
-
     border: 0;
 
     cursor: pointer;
 
     font: inherit;
-
 }
 
 
 .floating-profile {
-
     position: relative;
 
     width: 76px;
@@ -3091,12 +3025,10 @@ video {
     background: transparent;
 
     overflow: visible;
-
 }
 
 
 .profile-image {
-
     position: relative;
 
     width: 68px;
@@ -3105,8 +3037,7 @@ video {
     display: block;
 
     border:
-        3px solid
-        rgba(232,181,82,.95);
+        3px solid rgba(232,181,82,.95);
 
     border-radius: 50%;
 
@@ -3114,35 +3045,22 @@ video {
         var(--navy-deep);
 
     box-shadow:
-
-        0 0 0 5px
-        rgba(232,181,82,.11),
-
-        0 15px 38px
-        rgba(0,0,0,.34);
-
-    transition:
-        transform .3s
-        cubic-bezier(.2,.7,.2,1),
-        box-shadow .3s ease;
-
+        0 0 0 5px rgba(232,181,82,.11),
+        0 15px 38px rgba(0,0,0,.34);
 }
 
 
 .profile-image img {
-
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 
     border-radius: 50%;
-
 }
 
 
 .profile-image::before {
-
     content: "";
 
     position: absolute;
@@ -3152,73 +3070,36 @@ video {
     inset: -6px;
 
     border:
-        1px solid
-        rgba(232,181,82,.50);
+        1px solid rgba(232,181,82,.50);
 
     border-radius: 50%;
 
     animation:
-        profilePulse
-        2.7s
-        ease-out
-        infinite;
-
+        profilePulse 2.7s ease-out infinite;
 }
 
 
 @keyframes profilePulse {
 
     0% {
-
         opacity: .75;
 
         transform:
             scale(.94);
-
     }
 
-
-    70% {
-
-        opacity: 0;
-
-        transform:
-            scale(1.30);
-
-    }
-
-
+    70%,
     100% {
-
         opacity: 0;
 
         transform:
             scale(1.30);
-
     }
-
-}
-
-
-.floating-profile:hover
-.profile-image {
-
-    transform:
-        scale(1.07);
-
-    box-shadow:
-
-        0 0 0 7px
-        rgba(232,181,82,.15),
-
-        0 18px 45px
-        rgba(0,0,0,.37);
 
 }
 
 
 .profile-online {
-
     position: absolute;
 
     right: -1px;
@@ -3235,22 +3116,10 @@ video {
 
     background:
         #25d366;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(37,211,102,.15);
-
 }
 
 
-
-/* =========================================================
-   TEXTO BURBUJA
-========================================================= */
-
-
 .floating-help {
-
     position: absolute;
 
     right: 69px;
@@ -3266,8 +3135,7 @@ video {
         10px 14px;
 
     border:
-        1px solid
-        rgba(232,181,82,.25);
+        1px solid rgba(232,181,82,.25);
 
     border-radius:
         100px;
@@ -3278,30 +3146,18 @@ video {
     backdrop-filter:
         blur(13px);
 
-    -webkit-backdrop-filter:
-        blur(13px);
-
     color: white;
 
     font-size: 9px;
 
     font-weight: 800;
 
-    letter-spacing: .3px;
-
     box-shadow:
-        0 10px 28px
-        rgba(0,0,0,.22);
-
-    transition:
-        transform .3s ease,
-        opacity .3s ease;
-
+        0 10px 28px rgba(0,0,0,.22);
 }
 
 
 .floating-help::after {
-
     content: "";
 
     position: absolute;
@@ -3318,30 +3174,14 @@ video {
 
     background:
         rgba(3,26,45,.94);
-
-}
-
-
-.floating.open
-.profile-image {
-
-    transform:
-        scale(.94);
-
 }
 
 
 .floating.open
 .floating-help {
-
     opacity: 0;
 
-    transform:
-        translateY(-50%)
-        translateX(8px);
-
     pointer-events: none;
-
 }
 
 
@@ -3352,7 +3192,6 @@ video {
 
 
 .reveal {
-
     opacity: 0;
 
     transform:
@@ -3361,17 +3200,14 @@ video {
     transition:
         opacity .8s ease,
         transform .8s ease;
-
 }
 
 
 .reveal.visible {
-
     opacity: 1;
 
     transform:
         translateY(0);
-
 }
 
 
@@ -3385,7 +3221,6 @@ video {
 
 
     .header {
-
         height: 66px;
 
         grid-template-columns:
@@ -3393,33 +3228,20 @@ video {
 
         padding:
             0 18px;
-
     }
 
 
     .nav {
-
         display: none;
-
-    }
-
-
-    .marca-principal {
-
-        font-size: 20px;
-
     }
 
 
     .travel-progress {
-
         display: none;
-
     }
 
 
     .mobile-progress {
-
         position: fixed;
 
         z-index: 1400;
@@ -3444,59 +3266,42 @@ video {
         backdrop-filter:
             blur(10px);
 
-        -webkit-backdrop-filter:
-            blur(10px);
-
         color: white;
 
         font-size: 8px;
 
         font-weight: 800;
-
     }
 
 
     .mobile-progress-line {
-
         width: 18px;
+
         height: 1px;
 
         background:
             var(--gold);
-
     }
 
 
     .ruta-interior {
-
         grid-template-columns:
             1fr;
 
         gap: 60px;
-
     }
 
 
     .ruta-intro {
-
         position: static;
-
     }
 
 
     .nelson-contenido {
-
         grid-template-columns:
             1fr;
-
     }
 
-
-    .nelson-foto {
-
-        height: 540px;
-
-    }
 
 }
 
@@ -3511,56 +3316,36 @@ video {
 
 
     .header {
-
         height: 62px;
-
     }
 
 
     .marca-principal {
-
         font-size: 18px;
-
-    }
-
-
-    .marca small {
-
-        font-size: 6px;
-
-        letter-spacing: 2px;
-
     }
 
 
     .hero {
-
         min-height: 96svh;
-
     }
 
 
     .hero-fondo {
-
         background-position:
             58% center;
-
     }
 
 
     .hero-contenido {
-
         width:
             calc(100% - 34px);
 
         padding:
             89px 0 30px;
-
     }
 
 
     .hero h1 {
-
         font-size:
             clamp(
                 52px,
@@ -3571,209 +3356,220 @@ video {
         line-height: .88;
 
         letter-spacing: -3px;
-
     }
 
 
     .hero h1 > span {
-
         font-size: .65em;
-
     }
 
 
     .hero-descripcion {
-
-        max-width: 330px;
-
-        margin-top: 22px;
-
         font-size: 12px;
-
-    }
-
-
-    .hero-scroll {
-
-        margin-top: 29px;
-
     }
 
 
     .introduccion {
-
         padding:
             92px 19px;
-
     }
 
 
     .introduccion-interior {
-
         text-align: left;
-
     }
 
 
     .intro-palabra {
-
         font-size: 145px;
 
         letter-spacing: -8px;
-
-    }
-
-
-    .intro-orbita-1 {
-
-        width: 230px;
-        height: 230px;
-
-        right: -130px;
-
-    }
-
-
-    .intro-orbita-2 {
-
-        display: none;
-
     }
 
 
     .introduccion h2 {
-
         font-size: 47px;
 
         letter-spacing: -2px;
-
-    }
-
-
-    .introduccion-texto {
-
-        font-size: 13px;
-
     }
 
 
     .territorio {
-
         justify-content: flex-start;
 
         gap: 10px;
 
-        margin-top: 35px;
-
         font-size: 7px;
-
     }
 
 
-    .territorio i {
+    /* JOURNEY */
 
-        width: 15px;
-
+    .journey-band {
+        padding:
+            78px 0 72px;
     }
 
 
-    .transicion-territorio {
+    .journey-header {
+        width:
+            calc(100% - 36px);
 
-        min-height: 180px;
-
+        text-align: left;
     }
 
 
-    .transicion-contenido p {
+    .journey-header h2 {
+        font-size: 46px;
 
-        font-size: 29px;
-
+        letter-spacing: -2px;
     }
 
 
-    .ruta {
+    .journey-header h2 em {
+        display: block;
+    }
+
+
+    .journey-header > p {
+        margin-left: 0;
+
+        font-size: 12px;
+    }
+
+
+    .journey-bg-word {
+        font-size: 135px;
+
+        letter-spacing: -7px;
+    }
+
+
+    .ticker {
+        margin-top: 39px;
+    }
+
+
+    .ticker-track {
+        gap: 13px;
+    }
+
+
+    .ticker-track span {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .ticker-track i {
+        width: 24px;
+    }
+
+
+    .altura-central {
+        margin-top: 42px;
 
         padding:
-            76px 18px;
+            32px 18px 29px;
+    }
 
+
+    .altura-numero {
+        font-size: 84px;
+
+        letter-spacing: -5px;
+    }
+
+
+    .altura-unidad {
+        font-size: 6px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .altura-central p {
+        font-size: 14px;
+    }
+
+
+    .journey-footer {
+        width:
+            calc(100% - 40px);
+
+        margin-top: 38px;
+
+        font-size: 6px;
+    }
+
+
+    /* RUTA */
+
+    .ruta {
+        padding:
+            76px 18px;
     }
 
 
     .ruta-intro h2 {
-
         font-size: 48px;
 
         letter-spacing: -2px;
-
     }
 
 
     .ruta-recorrido {
-
         padding-left: 48px;
-
     }
 
 
     .ruta-linea {
-
         left: 8px;
-
     }
 
 
     .ruta-punto {
-
         left: -46px;
-
     }
 
 
     .ruta-parada {
-
         min-height: 150px;
-
     }
 
 
     .ruta-parada h3 {
-
         font-size: 32px;
-
     }
 
 
-    .experiencia {
+    /* EXPERIENCIAS */
 
+    .experiencia {
         height: 78svh;
 
         min-height: 560px;
-
     }
 
 
     .experiencia-numero {
-
         top: 23px;
         left: 17px;
 
         font-size: 16px;
-
     }
 
 
     .experiencia-contenido {
-
         left: 17px;
         right: 17px;
 
         bottom: 29px;
-
     }
 
 
     .experiencia h2 {
-
         max-width: 93%;
 
         font-size:
@@ -3784,21 +3580,10 @@ video {
             );
 
         letter-spacing: -2.3px;
-
-    }
-
-
-    .experiencia-contenido > p {
-
-        max-width: 90%;
-
-        font-size: 12px;
-
     }
 
 
     .experiencia-flecha {
-
         top: 21px;
         right: 16px;
 
@@ -3806,215 +3591,133 @@ video {
 
         width: 42px;
         height: 42px;
-
-        font-size: 15px;
-
     }
 
 
     .video-badge {
-
         top: 76px;
         right: 16px;
-
-        font-size: 6px;
-
     }
 
 
     .pausa {
-
         min-height: 340px;
 
         padding:
             65px 20px;
-
     }
 
 
     .pausa p {
-
         font-size: 38px;
-
-        letter-spacing: -1.6px;
-
     }
 
 
-    .nelson {
+    /* NELSON */
 
+    .nelson {
         padding:
             75px 14px;
-
     }
 
 
     .nelson-contenido {
-
         gap: 40px;
-
     }
 
 
     .nelson-foto {
-
         height: 430px;
-
-    }
-
-
-    .nelson-texto {
-
-        padding:
-            0 6px;
-
     }
 
 
     .nelson-texto h2 {
-
         font-size: 52px;
-
-        letter-spacing: -2px;
-
     }
 
 
-    .nelson-texto p {
-
-        font-size: 13px;
-
-        line-height: 1.72;
-
-    }
-
+    /* TRASLADOS */
 
     .traslados {
-
         padding:
             60px 16px;
-
     }
 
 
     .traslados-interior {
-
         grid-template-columns:
             47px 1fr auto;
 
         gap: 14px;
-
     }
 
 
     .traslado-icono {
-
         width: 47px;
         height: 47px;
-
-    }
-
-
-    .traslado-icono svg {
-
-        width: 19px;
-
     }
 
 
     .traslados h2 {
-
         font-size: 29px;
-
-    }
-
-
-    .traslados p {
-
-        font-size: 9px;
-
     }
 
 
     .traslado-flecha {
-
         width: 45px;
         height: 45px;
-
-        font-size: 17px;
-
     }
 
 
+    /* POSTAL */
+
     .postal {
-
         min-height: 76svh;
-
     }
 
 
     .postal h2 {
-
         font-size: 54px;
 
         letter-spacing: -2px;
-
     }
 
 
-    .contacto {
+    /* FOOTER */
 
+    .contacto {
         padding:
             36px 18px 115px;
-
     }
 
 
     .contacto-interior {
-
         flex-direction: column;
 
         align-items: flex-start;
-
     }
 
 
     .contacto-redes {
-
         flex-wrap: wrap;
 
         gap: 15px;
-
     }
 
 
     .developer-credit {
-
-        margin-top: 30px;
-
-        padding-top: 20px;
-
         justify-content: flex-start;
-
-        gap: 7px;
-
-        font-size: 7px;
-
     }
 
 
     .developer-links {
-
         width: 100%;
-
-        margin:
-            5px 0 0;
-
     }
 
 
-    .floating {
+    /* BURBUJA */
 
+    .floating {
         right: 14px;
 
         bottom:
@@ -4022,43 +3725,34 @@ video {
                 14px +
                 env(safe-area-inset-bottom)
             );
-
     }
 
 
     .floating-profile {
-
         width: 68px;
         height: 68px;
-
     }
 
 
     .profile-image {
-
         width: 61px;
         height: 61px;
-
     }
 
 
     .floating-help {
-
         right: 61px;
 
         padding:
             8px 11px;
 
         font-size: 8px;
-
     }
 
 
     .floating-icon {
-
         width: 42px;
         height: 42px;
-
     }
 
 }
@@ -4074,29 +3768,23 @@ video {
 
 
     html {
-
         scroll-behavior: auto;
-
     }
 
 
     * {
-
         animation:
             none !important;
 
         transition:
             none !important;
-
     }
 
 
     .reveal {
-
         opacity: 1;
 
         transform: none;
-
     }
 
 }
